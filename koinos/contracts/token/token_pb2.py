@@ -11,6 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from koinos import options_pb2 as koinos_dot_options__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -19,8 +20,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/contracts/token',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/contracts/token/token.proto\x12\x16koinos.contracts.token\"\x10\n\x0ename_arguments\"\x1c\n\x0bname_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x12\n\x10symbol_arguments\"\x1e\n\rsymbol_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x14\n\x12\x64\x65\x63imals_arguments\" \n\x0f\x64\x65\x63imals_result\x12\r\n\x05value\x18\x01 \x01(\r\"\x18\n\x16total_supply_arguments\"(\n\x13total_supply_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"%\n\x14\x62\x61lance_of_arguments\x12\r\n\x05owner\x18\x01 \x01(\x0c\"&\n\x11\x62\x61lance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"A\n\x12transfer_arguments\x12\x0c\n\x04\x66rom\x18\x01 \x01(\x0c\x12\n\n\x02to\x18\x02 \x01(\x0c\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\" \n\x0ftransfer_result\x12\r\n\x05value\x18\x01 \x01(\x08\"/\n\x0emint_arguments\x12\n\n\x02to\x18\x01 \x01(\x0c\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bmint_result\x12\r\n\x05value\x18\x01 \x01(\x08\"#\n\x0e\x62\x61lance_object\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\x42>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/tokenb\x06proto3'
-)
+  serialized_pb=b'\n\"koinos/contracts/token/token.proto\x12\x16koinos.contracts.token\x1a\x14koinos/options.proto\"\x10\n\x0ename_arguments\"\x1c\n\x0bname_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x12\n\x10symbol_arguments\"\x1e\n\rsymbol_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x14\n\x12\x64\x65\x63imals_arguments\" \n\x0f\x64\x65\x63imals_result\x12\r\n\x05value\x18\x01 \x01(\r\"\x18\n\x16total_supply_arguments\"(\n\x13total_supply_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"+\n\x14\x62\x61lance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"&\n\x11\x62\x61lance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"M\n\x12transfer_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\" \n\x0ftransfer_result\x12\r\n\x05value\x18\x01 \x01(\x08\"5\n\x0emint_arguments\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bmint_result\x12\r\n\x05value\x18\x01 \x01(\x08\"#\n\x0e\x62\x61lance_object\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\x42>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/tokenb\x06proto3'
+  ,
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
 
 
@@ -45,8 +47,8 @@ _NAME_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=62,
-  serialized_end=78,
+  serialized_start=84,
+  serialized_end=100,
 )
 
 
@@ -77,8 +79,8 @@ _NAME_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=80,
-  serialized_end=108,
+  serialized_start=102,
+  serialized_end=130,
 )
 
 
@@ -102,8 +104,8 @@ _SYMBOL_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=110,
-  serialized_end=128,
+  serialized_start=132,
+  serialized_end=150,
 )
 
 
@@ -134,8 +136,8 @@ _SYMBOL_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=130,
-  serialized_end=160,
+  serialized_start=152,
+  serialized_end=182,
 )
 
 
@@ -159,8 +161,8 @@ _DECIMALS_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=162,
-  serialized_end=182,
+  serialized_start=184,
+  serialized_end=204,
 )
 
 
@@ -191,8 +193,8 @@ _DECIMALS_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=184,
-  serialized_end=216,
+  serialized_start=206,
+  serialized_end=238,
 )
 
 
@@ -216,8 +218,8 @@ _TOTAL_SUPPLY_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=218,
-  serialized_end=242,
+  serialized_start=240,
+  serialized_end=264,
 )
 
 
@@ -248,8 +250,8 @@ _TOTAL_SUPPLY_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=244,
-  serialized_end=284,
+  serialized_start=266,
+  serialized_end=306,
 )
 
 
@@ -267,7 +269,7 @@ _BALANCE_OF_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -280,8 +282,8 @@ _BALANCE_OF_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=286,
-  serialized_end=323,
+  serialized_start=308,
+  serialized_end=351,
 )
 
 
@@ -312,8 +314,8 @@ _BALANCE_OF_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=325,
-  serialized_end=363,
+  serialized_start=353,
+  serialized_end=391,
 )
 
 
@@ -331,14 +333,14 @@ _TRANSFER_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='to', full_name='koinos.contracts.token.transfer_arguments.to', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='koinos.contracts.token.transfer_arguments.value', index=2,
       number=3, type=4, cpp_type=4, label=1,
@@ -358,8 +360,8 @@ _TRANSFER_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=365,
-  serialized_end=430,
+  serialized_start=393,
+  serialized_end=470,
 )
 
 
@@ -390,8 +392,8 @@ _TRANSFER_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=432,
-  serialized_end=464,
+  serialized_start=472,
+  serialized_end=504,
 )
 
 
@@ -409,7 +411,7 @@ _MINT_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='koinos.contracts.token.mint_arguments.value', index=1,
       number=2, type=4, cpp_type=4, label=1,
@@ -429,8 +431,8 @@ _MINT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=466,
-  serialized_end=513,
+  serialized_start=506,
+  serialized_end=559,
 )
 
 
@@ -461,8 +463,8 @@ _MINT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=515,
-  serialized_end=543,
+  serialized_start=561,
+  serialized_end=589,
 )
 
 
@@ -493,8 +495,8 @@ _BALANCE_OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=545,
-  serialized_end=580,
+  serialized_start=591,
+  serialized_end=626,
 )
 
 
@@ -539,8 +541,8 @@ _MANA_BALANCE_OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=582,
-  serialized_end=672,
+  serialized_start=628,
+  serialized_end=718,
 )
 
 DESCRIPTOR.message_types_by_name['name_arguments'] = _NAME_ARGUMENTS
@@ -676,8 +678,12 @@ _sym_db.RegisterMessage(mana_balance_object)
 
 DESCRIPTOR._options = None
 _TOTAL_SUPPLY_RESULT.fields_by_name['value']._options = None
+_BALANCE_OF_ARGUMENTS.fields_by_name['owner']._options = None
 _BALANCE_OF_RESULT.fields_by_name['value']._options = None
+_TRANSFER_ARGUMENTS.fields_by_name['from']._options = None
+_TRANSFER_ARGUMENTS.fields_by_name['to']._options = None
 _TRANSFER_ARGUMENTS.fields_by_name['value']._options = None
+_MINT_ARGUMENTS.fields_by_name['to']._options = None
 _MINT_ARGUMENTS.fields_by_name['value']._options = None
 _BALANCE_OBJECT.fields_by_name['value']._options = None
 _MANA_BALANCE_OBJECT.fields_by_name['balance']._options = None

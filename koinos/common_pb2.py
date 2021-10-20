@@ -11,6 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from koinos import options_pb2 as koinos_dot_options__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -19,8 +20,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z,github.com/koinos/koinos-proto-golang/koinos',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x13koinos/common.proto\x12\x06koinos\"B\n\x0e\x62lock_topology\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x08previous\x18\x03 \x01(\x0c\x42.Z,github.com/koinos/koinos-proto-golang/koinosb\x06proto3'
-)
+  serialized_pb=b'\n\x13koinos/common.proto\x12\x06koinos\x1a\x14koinos/options.proto\"N\n\x0e\x62lock_topology\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x16\n\x08previous\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x42.Z,github.com/koinos/koinos-proto-golang/koinosb\x06proto3'
+  ,
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
 
 
@@ -39,7 +41,7 @@ _BLOCK_TOPOLOGY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\003', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='height', full_name='koinos.block_topology.height', index=1,
       number=2, type=4, cpp_type=4, label=1,
@@ -53,7 +55,7 @@ _BLOCK_TOPOLOGY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\003', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -66,8 +68,8 @@ _BLOCK_TOPOLOGY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=31,
-  serialized_end=97,
+  serialized_start=53,
+  serialized_end=131,
 )
 
 DESCRIPTOR.message_types_by_name['block_topology'] = _BLOCK_TOPOLOGY
@@ -82,5 +84,7 @@ _sym_db.RegisterMessage(block_topology)
 
 
 DESCRIPTOR._options = None
+_BLOCK_TOPOLOGY.fields_by_name['id']._options = None
 _BLOCK_TOPOLOGY.fields_by_name['height']._options = None
+_BLOCK_TOPOLOGY.fields_by_name['previous']._options = None
 # @@protoc_insertion_point(module_scope)

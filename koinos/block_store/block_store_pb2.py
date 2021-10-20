@@ -11,6 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
 
@@ -20,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n$koinos/block_store/block_store.proto\x12\x12koinos.block_store\x1a\x1ekoinos/protocol/protocol.proto\"\x90\x01\n\nblock_item\x12\x10\n\x08\x62lock_id\x18\x01 \x01(\x0c\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"\xae\x01\n\x0c\x62lock_record\x12\x10\n\x08\x62lock_id\x18\x01 \x01(\x0c\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\x12\x1a\n\x12previous_block_ids\x18\x05 \x03(\x0c\x42>Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_storeb\x06proto3'
+  serialized_pb=b'\n$koinos/block_store/block_store.proto\x12\x12koinos.block_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x96\x01\n\nblock_item\x12\x16\n\x08\x62lock_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"\xba\x01\n\x0c\x62lock_record\x12\x16\n\x08\x62lock_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\x12 \n\x12previous_block_ids\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x42>Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_storeb\x06proto3'
   ,
-  dependencies=[koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
 
 
@@ -41,7 +42,7 @@ _BLOCK_ITEM = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\003', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='block_height', full_name='koinos.block_store.block_item.block_height', index=1,
       number=2, type=4, cpp_type=4, label=1,
@@ -75,8 +76,8 @@ _BLOCK_ITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=93,
-  serialized_end=237,
+  serialized_start=115,
+  serialized_end=265,
 )
 
 
@@ -94,7 +95,7 @@ _BLOCK_RECORD = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\003', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='block_height', full_name='koinos.block_store.block_record.block_height', index=1,
       number=2, type=4, cpp_type=4, label=1,
@@ -122,7 +123,7 @@ _BLOCK_RECORD = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\003', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -135,8 +136,8 @@ _BLOCK_RECORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=240,
-  serialized_end=414,
+  serialized_start=268,
+  serialized_end=454,
 )
 
 _BLOCK_ITEM.fields_by_name['block'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK
@@ -163,6 +164,9 @@ _sym_db.RegisterMessage(block_record)
 
 
 DESCRIPTOR._options = None
+_BLOCK_ITEM.fields_by_name['block_id']._options = None
 _BLOCK_ITEM.fields_by_name['block_height']._options = None
+_BLOCK_RECORD.fields_by_name['block_id']._options = None
 _BLOCK_RECORD.fields_by_name['block_height']._options = None
+_BLOCK_RECORD.fields_by_name['previous_block_ids']._options = None
 # @@protoc_insertion_point(module_scope)

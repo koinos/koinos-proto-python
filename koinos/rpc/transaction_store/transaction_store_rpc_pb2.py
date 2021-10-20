@@ -11,6 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos.rpc import rpc_pb2 as koinos_dot_rpc_dot_rpc__pb2
 from koinos.transaction_store import transaction_store_pb2 as koinos_dot_transaction__store_dot_transaction__store__pb2
 
@@ -21,9 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'ZBgithub.com/koinos/koinos-proto-golang/koinos/rpc/transaction_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n8koinos/rpc/transaction_store/transaction_store_rpc.proto\x12\x1ckoinos.rpc.transaction_store\x1a\x14koinos/rpc/rpc.proto\x1a\x30koinos/transaction_store/transaction_store.proto\"9\n\x1eget_transactions_by_id_request\x12\x17\n\x0ftransaction_ids\x18\x01 \x03(\x0c\"c\n\x1fget_transactions_by_id_response\x12@\n\x0ctransactions\x18\x01 \x03(\x0b\x32*.koinos.transaction_store.transaction_item\"\xb4\x01\n\x19transaction_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12^\n\x16get_transactions_by_id\x18\x02 \x01(\x0b\x32<.koinos.rpc.transaction_store.get_transactions_by_id_requestH\x00\x42\t\n\x07request\"\xe4\x01\n\x1atransaction_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12_\n\x16get_transactions_by_id\x18\x03 \x01(\x0b\x32=.koinos.rpc.transaction_store.get_transactions_by_id_responseH\x00\x42\n\n\x08responseBDZBgithub.com/koinos/koinos-proto-golang/koinos/rpc/transaction_storeb\x06proto3'
+  serialized_pb=b'\n8koinos/rpc/transaction_store/transaction_store_rpc.proto\x12\x1ckoinos.rpc.transaction_store\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\x1a\x30koinos/transaction_store/transaction_store.proto\"?\n\x1eget_transactions_by_id_request\x12\x1d\n\x0ftransaction_ids\x18\x01 \x03(\x0c\x42\x04\x80\xb5\x18\x04\"c\n\x1fget_transactions_by_id_response\x12@\n\x0ctransactions\x18\x01 \x03(\x0b\x32*.koinos.transaction_store.transaction_item\"\xb4\x01\n\x19transaction_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12^\n\x16get_transactions_by_id\x18\x02 \x01(\x0b\x32<.koinos.rpc.transaction_store.get_transactions_by_id_requestH\x00\x42\t\n\x07request\"\xe4\x01\n\x1atransaction_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12_\n\x16get_transactions_by_id\x18\x03 \x01(\x0b\x32=.koinos.rpc.transaction_store.get_transactions_by_id_responseH\x00\x42\n\n\x08responseBDZBgithub.com/koinos/koinos-proto-golang/koinos/rpc/transaction_storeb\x06proto3'
   ,
-  dependencies=[koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,koinos_dot_transaction__store_dot_transaction__store__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,koinos_dot_transaction__store_dot_transaction__store__pb2.DESCRIPTOR,])
 
 
 
@@ -42,7 +43,7 @@ _GET_TRANSACTIONS_BY_ID_REQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\004', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -55,8 +56,8 @@ _GET_TRANSACTIONS_BY_ID_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=162,
-  serialized_end=219,
+  serialized_start=184,
+  serialized_end=247,
 )
 
 
@@ -87,8 +88,8 @@ _GET_TRANSACTIONS_BY_ID_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=221,
-  serialized_end=320,
+  serialized_start=249,
+  serialized_end=348,
 )
 
 
@@ -131,8 +132,8 @@ _TRANSACTION_STORE_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=323,
-  serialized_end=503,
+  serialized_start=351,
+  serialized_end=531,
 )
 
 
@@ -182,8 +183,8 @@ _TRANSACTION_STORE_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=506,
-  serialized_end=734,
+  serialized_start=534,
+  serialized_end=762,
 )
 
 _GET_TRANSACTIONS_BY_ID_RESPONSE.fields_by_name['transactions'].message_type = koinos_dot_transaction__store_dot_transaction__store__pb2._TRANSACTION_ITEM
@@ -243,4 +244,5 @@ _sym_db.RegisterMessage(transaction_store_response)
 
 
 DESCRIPTOR._options = None
+_GET_TRANSACTIONS_BY_ID_REQUEST.fields_by_name['transaction_ids']._options = None
 # @@protoc_insertion_point(module_scope)

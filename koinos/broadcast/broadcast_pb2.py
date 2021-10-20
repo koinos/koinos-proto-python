@@ -12,6 +12,7 @@ _sym_db = _symbol_database.Default()
 
 
 from koinos import common_pb2 as koinos_dot_common__pb2
+from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
 
@@ -21,9 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z6github.com/koinos/koinos-proto-golang/koinos/broadcast',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/broadcast/broadcast.proto\x12\x10koinos.broadcast\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x83\x02\n\x14transaction_accepted\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\r\n\x05payer\x18\x02 \x01(\x0c\x12\x18\n\x0cmax_payer_rc\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x12\n\x06height\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x06 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x07 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x08 \x01(\x04\x42\x02\x30\x01\"7\n\x0e\x62lock_accepted\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\">\n\x12\x62lock_irreversible\x12(\n\x08topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\"l\n\nfork_heads\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12%\n\x05heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topologyB8Z6github.com/koinos/koinos-proto-golang/koinos/broadcastb\x06proto3'
+  serialized_pb=b'\n koinos/broadcast/broadcast.proto\x12\x10koinos.broadcast\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x89\x02\n\x14transaction_accepted\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x13\n\x05payer\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x12\n\x06height\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x06 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x07 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x08 \x01(\x04\x42\x02\x30\x01\"7\n\x0e\x62lock_accepted\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\">\n\x12\x62lock_irreversible\x12(\n\x08topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\"l\n\nfork_heads\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12%\n\x05heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topologyB8Z6github.com/koinos/koinos-proto-golang/koinos/broadcastb\x06proto3'
   ,
-  dependencies=[koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
 
 
@@ -49,7 +50,7 @@ _TRANSACTION_ACCEPTED = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='max_payer_rc', full_name='koinos.broadcast.transaction_accepted.max_payer_rc', index=2,
       number=3, type=4, cpp_type=4, label=1,
@@ -104,8 +105,8 @@ _TRANSACTION_ACCEPTED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=108,
-  serialized_end=367,
+  serialized_start=130,
+  serialized_end=395,
 )
 
 
@@ -136,8 +137,8 @@ _BLOCK_ACCEPTED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=369,
-  serialized_end=424,
+  serialized_start=397,
+  serialized_end=452,
 )
 
 
@@ -168,8 +169,8 @@ _BLOCK_IRREVERSIBLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=426,
-  serialized_end=488,
+  serialized_start=454,
+  serialized_end=516,
 )
 
 
@@ -207,8 +208,8 @@ _FORK_HEADS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=490,
-  serialized_end=598,
+  serialized_start=518,
+  serialized_end=626,
 )
 
 _TRANSACTION_ACCEPTED.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION
@@ -252,6 +253,7 @@ _sym_db.RegisterMessage(fork_heads)
 
 
 DESCRIPTOR._options = None
+_TRANSACTION_ACCEPTED.fields_by_name['payer']._options = None
 _TRANSACTION_ACCEPTED.fields_by_name['max_payer_rc']._options = None
 _TRANSACTION_ACCEPTED.fields_by_name['rc_limit']._options = None
 _TRANSACTION_ACCEPTED.fields_by_name['height']._options = None

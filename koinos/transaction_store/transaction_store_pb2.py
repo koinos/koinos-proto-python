@@ -11,6 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
 
@@ -20,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z>github.com/koinos/koinos-proto-golang/koinos/transaction_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n0koinos/transaction_store/transaction_store.proto\x12\x18koinos.transaction_store\x1a\x1ekoinos/protocol/protocol.proto\"`\n\x10transaction_item\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x19\n\x11\x63ontaining_blocks\x18\x02 \x03(\x0c\x42@Z>github.com/koinos/koinos-proto-golang/koinos/transaction_storeb\x06proto3'
+  serialized_pb=b'\n0koinos/transaction_store/transaction_store.proto\x12\x18koinos.transaction_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"f\n\x10transaction_item\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x1f\n\x11\x63ontaining_blocks\x18\x02 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x42@Z>github.com/koinos/koinos-proto-golang/koinos/transaction_storeb\x06proto3'
   ,
-  dependencies=[koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
 
 
@@ -48,7 +49,7 @@ _TRANSACTION_ITEM = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\003', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -61,8 +62,8 @@ _TRANSACTION_ITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=110,
-  serialized_end=206,
+  serialized_start=132,
+  serialized_end=234,
 )
 
 _TRANSACTION_ITEM.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION
@@ -78,4 +79,5 @@ _sym_db.RegisterMessage(transaction_item)
 
 
 DESCRIPTOR._options = None
+_TRANSACTION_ITEM.fields_by_name['containing_blocks']._options = None
 # @@protoc_insertion_point(module_scope)

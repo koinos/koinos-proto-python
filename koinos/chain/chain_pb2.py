@@ -12,6 +12,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos import common_pb2 as koinos_dot_common__pb2
 from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
@@ -22,9 +23,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"P\n\x0b\x63\x61ller_data\x12\x0e\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"#\n\x10prints_arguments\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x0f\n\rprints_result\"Z\n verify_block_signature_arguments\x12\x0e\n\x06\x64igest\x18\x01 \x01(\x0c\x12\x0e\n\x06\x61\x63tive\x18\x02 \x01(\x0c\x12\x16\n\x0esignature_data\x18\x03 \x01(\x0c\".\n\x1dverify_block_signature_result\x12\r\n\x05value\x18\x01 \x01(\x08\"<\n\x1cverify_merkle_root_arguments\x12\x0c\n\x04root\x18\x01 \x01(\x0c\x12\x0e\n\x06hashes\x18\x02 \x03(\x0c\"*\n\x19verify_merkle_root_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x9e\x01\n\x15\x61pply_block_arguments\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12\x1a\n\x12\x63heck_passive_data\x18\x02 \x01(\x08\x12\x1d\n\x15\x63heck_block_signature\x18\x03 \x01(\x08\x12#\n\x1b\x63heck_transaction_signature\x18\x04 \x01(\x08\"\x14\n\x12\x61pply_block_result\"P\n\x1b\x61pply_transaction_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"\x1a\n\x18\x61pply_transaction_result\"c\n)apply_upload_contract_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operation\"(\n&apply_upload_contract_operation_result\"_\n\'apply_call_contract_operation_arguments\x12\x34\n\x02op\x18\x01 \x01(\x0b\x32(.koinos.protocol.call_contract_operation\"&\n$apply_call_contract_operation_result\"c\n)apply_set_system_call_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.set_system_call_operation\"(\n&apply_set_system_call_operation_result\"[\n\x14put_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x0b\n\x03obj\x18\x03 \x01(\x0c\"\"\n\x11put_object_result\x12\r\n\x05value\x18\x01 \x01(\x08\"h\n\x14get_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x18\n\x10object_size_hint\x18\x03 \x01(\r\"\"\n\x11get_object_result\x12\r\n\x05value\x18\x03 \x01(\x0c\"m\n\x19get_next_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x18\n\x10object_size_hint\x18\x03 \x01(\r\"\'\n\x16get_next_object_result\x12\r\n\x05value\x18\x03 \x01(\x0c\"m\n\x19get_prev_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x18\n\x10object_size_hint\x18\x03 \x01(\r\"\'\n\x16get_prev_object_result\x12\r\n\x05value\x18\x03 \x01(\x0c\"Q\n\x17\x63\x61ll_contract_arguments\x12\x13\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"%\n\x14\x63\x61ll_contract_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1b\n\x19get_entry_point_arguments\"\'\n\x16get_entry_point_result\x12\r\n\x05value\x18\x01 \x01(\r\"\'\n%get_contract_arguments_size_arguments\"3\n\"get_contract_arguments_size_result\x12\r\n\x05value\x18\x01 \x01(\r\"\"\n get_contract_arguments_arguments\".\n\x1dget_contract_arguments_result\x12\r\n\x05value\x18\x01 \x01(\x0c\".\n\x1dset_contract_result_arguments\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1c\n\x1aset_contract_result_result\",\n\x17\x65xit_contract_arguments\x12\x11\n\texit_code\x18\x01 \x01(\r\"\x16\n\x14\x65xit_contract_result\"\x19\n\x17get_head_info_arguments\">\n\x14get_head_info_result\x12&\n\x05value\x18\x01 \x01(\x0b\x32\x17.koinos.chain.head_info\"A\n\x0ehash_arguments\x12\x10\n\x04\x63ode\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0b\n\x03obj\x18\x02 \x01(\x0c\x12\x10\n\x04size\x18\x03 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bhash_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"F\n\x1crecover_public_key_arguments\x12\x16\n\x0esignature_data\x18\x01 \x01(\x0c\x12\x0e\n\x06\x64igest\x18\x02 \x01(\x0c\"*\n\x19recover_public_key_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"T\n\x1fget_transaction_payer_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"-\n\x1cget_transaction_payer_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"+\n\x18get_account_rc_arguments\x12\x0f\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\"*\n\x15get_account_rc_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"B\n\x1c\x63onsume_account_rc_arguments\x12\x0f\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"*\n\x19\x63onsume_account_rc_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x1f\n\x1dget_resource_limits_arguments\"N\n\x1aget_resource_limits_result\x12\x30\n\x05value\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\x96\x01\n!consume_block_resources_arguments\x12!\n\x15\x64isk_storage_consumed\x18\x01 \x01(\x04\x42\x02\x30\x01\x12&\n\x1anetwork_bandwidth_consumed\x18\x02 \x01(\x04\x42\x02\x30\x01\x12&\n\x1a\x63ompute_bandwidth_consumed\x18\x03 \x01(\x04\x42\x02\x30\x01\"/\n\x1e\x63onsume_block_resources_result\x12\r\n\x05value\x18\x01 \x01(\x08\"W\n\"get_transaction_rc_limit_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"4\n\x1fget_transaction_rc_limit_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\'\n%get_last_irreversible_block_arguments\"7\n\"get_last_irreversible_block_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_caller_arguments\"=\n\x11get_caller_result\x12(\n\x05value\x18\x01 \x01(\x0b\x32\x19.koinos.chain.caller_data\".\n\x1brequire_authority_arguments\x12\x0f\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\"\x1a\n\x18require_authority_result\"%\n#get_transaction_signature_arguments\"1\n get_transaction_signature_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1b\n\x19get_contract_id_arguments\"\'\n\x16get_contract_id_result\x12\r\n\x05value\x18\x01 \x01(\x0c\".\n\x1bget_account_nonce_arguments\x12\x0f\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\"-\n\x18get_account_nonce_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"#\n\x10prints_arguments\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x0f\n\rprints_result\"Z\n verify_block_signature_arguments\x12\x0e\n\x06\x64igest\x18\x01 \x01(\x0c\x12\x0e\n\x06\x61\x63tive\x18\x02 \x01(\x0c\x12\x16\n\x0esignature_data\x18\x03 \x01(\x0c\".\n\x1dverify_block_signature_result\x12\r\n\x05value\x18\x01 \x01(\x08\"<\n\x1cverify_merkle_root_arguments\x12\x0c\n\x04root\x18\x01 \x01(\x0c\x12\x0e\n\x06hashes\x18\x02 \x03(\x0c\"*\n\x19verify_merkle_root_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x9e\x01\n\x15\x61pply_block_arguments\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12\x1a\n\x12\x63heck_passive_data\x18\x02 \x01(\x08\x12\x1d\n\x15\x63heck_block_signature\x18\x03 \x01(\x08\x12#\n\x1b\x63heck_transaction_signature\x18\x04 \x01(\x08\"\x14\n\x12\x61pply_block_result\"P\n\x1b\x61pply_transaction_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"\x1a\n\x18\x61pply_transaction_result\"c\n)apply_upload_contract_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operation\"(\n&apply_upload_contract_operation_result\"_\n\'apply_call_contract_operation_arguments\x12\x34\n\x02op\x18\x01 \x01(\x0b\x32(.koinos.protocol.call_contract_operation\"&\n$apply_call_contract_operation_result\"c\n)apply_set_system_call_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.set_system_call_operation\"(\n&apply_set_system_call_operation_result\"[\n\x14put_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x0b\n\x03obj\x18\x03 \x01(\x0c\"\"\n\x11put_object_result\x12\r\n\x05value\x18\x01 \x01(\x08\"h\n\x14get_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x18\n\x10object_size_hint\x18\x03 \x01(\r\"\"\n\x11get_object_result\x12\r\n\x05value\x18\x03 \x01(\x0c\"m\n\x19get_next_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x18\n\x10object_size_hint\x18\x03 \x01(\r\"\'\n\x16get_next_object_result\x12\r\n\x05value\x18\x03 \x01(\x0c\"m\n\x19get_prev_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x18\n\x10object_size_hint\x18\x03 \x01(\r\"\'\n\x16get_prev_object_result\x12\r\n\x05value\x18\x03 \x01(\x0c\"W\n\x17\x63\x61ll_contract_arguments\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"%\n\x14\x63\x61ll_contract_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1b\n\x19get_entry_point_arguments\"\'\n\x16get_entry_point_result\x12\r\n\x05value\x18\x01 \x01(\r\"\'\n%get_contract_arguments_size_arguments\"3\n\"get_contract_arguments_size_result\x12\r\n\x05value\x18\x01 \x01(\r\"\"\n get_contract_arguments_arguments\".\n\x1dget_contract_arguments_result\x12\r\n\x05value\x18\x01 \x01(\x0c\".\n\x1dset_contract_result_arguments\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1c\n\x1aset_contract_result_result\",\n\x17\x65xit_contract_arguments\x12\x11\n\texit_code\x18\x01 \x01(\r\"\x16\n\x14\x65xit_contract_result\"\x19\n\x17get_head_info_arguments\">\n\x14get_head_info_result\x12&\n\x05value\x18\x01 \x01(\x0b\x32\x17.koinos.chain.head_info\"A\n\x0ehash_arguments\x12\x10\n\x04\x63ode\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0b\n\x03obj\x18\x02 \x01(\x0c\x12\x10\n\x04size\x18\x03 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bhash_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"F\n\x1crecover_public_key_arguments\x12\x16\n\x0esignature_data\x18\x01 \x01(\x0c\x12\x0e\n\x06\x64igest\x18\x02 \x01(\x0c\"0\n\x19recover_public_key_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"T\n\x1fget_transaction_payer_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"3\n\x1cget_transaction_payer_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"1\n\x18get_account_rc_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"*\n\x15get_account_rc_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"H\n\x1c\x63onsume_account_rc_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"*\n\x19\x63onsume_account_rc_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x1f\n\x1dget_resource_limits_arguments\"N\n\x1aget_resource_limits_result\x12\x30\n\x05value\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\x96\x01\n!consume_block_resources_arguments\x12!\n\x15\x64isk_storage_consumed\x18\x01 \x01(\x04\x42\x02\x30\x01\x12&\n\x1anetwork_bandwidth_consumed\x18\x02 \x01(\x04\x42\x02\x30\x01\x12&\n\x1a\x63ompute_bandwidth_consumed\x18\x03 \x01(\x04\x42\x02\x30\x01\"/\n\x1e\x63onsume_block_resources_result\x12\r\n\x05value\x18\x01 \x01(\x08\"W\n\"get_transaction_rc_limit_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"4\n\x1fget_transaction_rc_limit_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\'\n%get_last_irreversible_block_arguments\"7\n\"get_last_irreversible_block_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_caller_arguments\"=\n\x11get_caller_result\x12(\n\x05value\x18\x01 \x01(\x0b\x32\x19.koinos.chain.caller_data\"4\n\x1brequire_authority_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x1a\n\x18require_authority_result\"%\n#get_transaction_signature_arguments\"1\n get_transaction_signature_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1b\n\x19get_contract_id_arguments\"-\n\x16get_contract_id_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\"4\n\x1bget_account_nonce_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"-\n\x18get_account_nonce_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
-  dependencies=[koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
 _PRIVILEGE = _descriptor.EnumDescriptor(
   name='privilege',
@@ -46,8 +47,8 @@ _PRIVILEGE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4315,
-  serialized_end=4358,
+  serialized_start=4391,
+  serialized_end=4434,
 )
 _sym_db.RegisterEnumDescriptor(_PRIVILEGE)
 
@@ -98,8 +99,8 @@ _OBJECT_SPACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=95,
-  serialized_end=151,
+  serialized_start=117,
+  serialized_end=173,
 )
 
 
@@ -144,8 +145,8 @@ _HEAD_INFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=153,
-  serialized_end=277,
+  serialized_start=175,
+  serialized_end=299,
 )
 
 
@@ -163,7 +164,7 @@ _CALLER_DATA = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='caller_privilege', full_name='koinos.chain.caller_data.caller_privilege', index=1,
       number=2, type=14, cpp_type=8, label=1,
@@ -183,8 +184,8 @@ _CALLER_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=279,
-  serialized_end=359,
+  serialized_start=301,
+  serialized_end=387,
 )
 
 
@@ -250,8 +251,8 @@ _RESOURCE_LIMIT_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=362,
-  serialized_end=592,
+  serialized_start=390,
+  serialized_end=620,
 )
 
 
@@ -282,8 +283,8 @@ _PRINTS_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=594,
-  serialized_end=629,
+  serialized_start=622,
+  serialized_end=657,
 )
 
 
@@ -307,8 +308,8 @@ _PRINTS_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=631,
-  serialized_end=646,
+  serialized_start=659,
+  serialized_end=674,
 )
 
 
@@ -353,8 +354,8 @@ _VERIFY_BLOCK_SIGNATURE_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=648,
-  serialized_end=738,
+  serialized_start=676,
+  serialized_end=766,
 )
 
 
@@ -385,8 +386,8 @@ _VERIFY_BLOCK_SIGNATURE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=740,
-  serialized_end=786,
+  serialized_start=768,
+  serialized_end=814,
 )
 
 
@@ -424,8 +425,8 @@ _VERIFY_MERKLE_ROOT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=788,
-  serialized_end=848,
+  serialized_start=816,
+  serialized_end=876,
 )
 
 
@@ -456,8 +457,8 @@ _VERIFY_MERKLE_ROOT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=850,
-  serialized_end=892,
+  serialized_start=878,
+  serialized_end=920,
 )
 
 
@@ -509,8 +510,8 @@ _APPLY_BLOCK_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=895,
-  serialized_end=1053,
+  serialized_start=923,
+  serialized_end=1081,
 )
 
 
@@ -534,8 +535,8 @@ _APPLY_BLOCK_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1055,
-  serialized_end=1075,
+  serialized_start=1083,
+  serialized_end=1103,
 )
 
 
@@ -566,8 +567,8 @@ _APPLY_TRANSACTION_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1077,
-  serialized_end=1157,
+  serialized_start=1105,
+  serialized_end=1185,
 )
 
 
@@ -591,8 +592,8 @@ _APPLY_TRANSACTION_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1159,
-  serialized_end=1185,
+  serialized_start=1187,
+  serialized_end=1213,
 )
 
 
@@ -623,8 +624,8 @@ _APPLY_UPLOAD_CONTRACT_OPERATION_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1187,
-  serialized_end=1286,
+  serialized_start=1215,
+  serialized_end=1314,
 )
 
 
@@ -648,8 +649,8 @@ _APPLY_UPLOAD_CONTRACT_OPERATION_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1288,
-  serialized_end=1328,
+  serialized_start=1316,
+  serialized_end=1356,
 )
 
 
@@ -680,8 +681,8 @@ _APPLY_CALL_CONTRACT_OPERATION_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1330,
-  serialized_end=1425,
+  serialized_start=1358,
+  serialized_end=1453,
 )
 
 
@@ -705,8 +706,8 @@ _APPLY_CALL_CONTRACT_OPERATION_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1427,
-  serialized_end=1465,
+  serialized_start=1455,
+  serialized_end=1493,
 )
 
 
@@ -737,8 +738,8 @@ _APPLY_SET_SYSTEM_CALL_OPERATION_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1467,
-  serialized_end=1566,
+  serialized_start=1495,
+  serialized_end=1594,
 )
 
 
@@ -762,8 +763,8 @@ _APPLY_SET_SYSTEM_CALL_OPERATION_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1568,
-  serialized_end=1608,
+  serialized_start=1596,
+  serialized_end=1636,
 )
 
 
@@ -808,8 +809,8 @@ _PUT_OBJECT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1610,
-  serialized_end=1701,
+  serialized_start=1638,
+  serialized_end=1729,
 )
 
 
@@ -840,8 +841,8 @@ _PUT_OBJECT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1703,
-  serialized_end=1737,
+  serialized_start=1731,
+  serialized_end=1765,
 )
 
 
@@ -886,8 +887,8 @@ _GET_OBJECT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1739,
-  serialized_end=1843,
+  serialized_start=1767,
+  serialized_end=1871,
 )
 
 
@@ -918,8 +919,8 @@ _GET_OBJECT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1845,
-  serialized_end=1879,
+  serialized_start=1873,
+  serialized_end=1907,
 )
 
 
@@ -964,8 +965,8 @@ _GET_NEXT_OBJECT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1881,
-  serialized_end=1990,
+  serialized_start=1909,
+  serialized_end=2018,
 )
 
 
@@ -996,8 +997,8 @@ _GET_NEXT_OBJECT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1992,
-  serialized_end=2031,
+  serialized_start=2020,
+  serialized_end=2059,
 )
 
 
@@ -1042,8 +1043,8 @@ _GET_PREV_OBJECT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2033,
-  serialized_end=2142,
+  serialized_start=2061,
+  serialized_end=2170,
 )
 
 
@@ -1074,8 +1075,8 @@ _GET_PREV_OBJECT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2144,
-  serialized_end=2183,
+  serialized_start=2172,
+  serialized_end=2211,
 )
 
 
@@ -1093,7 +1094,7 @@ _CALL_CONTRACT_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\005', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='entry_point', full_name='koinos.chain.call_contract_arguments.entry_point', index=1,
       number=2, type=13, cpp_type=3, label=1,
@@ -1120,8 +1121,8 @@ _CALL_CONTRACT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2185,
-  serialized_end=2266,
+  serialized_start=2213,
+  serialized_end=2300,
 )
 
 
@@ -1152,8 +1153,8 @@ _CALL_CONTRACT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2268,
-  serialized_end=2305,
+  serialized_start=2302,
+  serialized_end=2339,
 )
 
 
@@ -1177,8 +1178,8 @@ _GET_ENTRY_POINT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2307,
-  serialized_end=2334,
+  serialized_start=2341,
+  serialized_end=2368,
 )
 
 
@@ -1209,8 +1210,8 @@ _GET_ENTRY_POINT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2336,
-  serialized_end=2375,
+  serialized_start=2370,
+  serialized_end=2409,
 )
 
 
@@ -1234,8 +1235,8 @@ _GET_CONTRACT_ARGUMENTS_SIZE_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2377,
-  serialized_end=2416,
+  serialized_start=2411,
+  serialized_end=2450,
 )
 
 
@@ -1266,8 +1267,8 @@ _GET_CONTRACT_ARGUMENTS_SIZE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2418,
-  serialized_end=2469,
+  serialized_start=2452,
+  serialized_end=2503,
 )
 
 
@@ -1291,8 +1292,8 @@ _GET_CONTRACT_ARGUMENTS_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2471,
-  serialized_end=2505,
+  serialized_start=2505,
+  serialized_end=2539,
 )
 
 
@@ -1323,8 +1324,8 @@ _GET_CONTRACT_ARGUMENTS_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2507,
-  serialized_end=2553,
+  serialized_start=2541,
+  serialized_end=2587,
 )
 
 
@@ -1355,8 +1356,8 @@ _SET_CONTRACT_RESULT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2555,
-  serialized_end=2601,
+  serialized_start=2589,
+  serialized_end=2635,
 )
 
 
@@ -1380,8 +1381,8 @@ _SET_CONTRACT_RESULT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2603,
-  serialized_end=2631,
+  serialized_start=2637,
+  serialized_end=2665,
 )
 
 
@@ -1412,8 +1413,8 @@ _EXIT_CONTRACT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2633,
-  serialized_end=2677,
+  serialized_start=2667,
+  serialized_end=2711,
 )
 
 
@@ -1437,8 +1438,8 @@ _EXIT_CONTRACT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2679,
-  serialized_end=2701,
+  serialized_start=2713,
+  serialized_end=2735,
 )
 
 
@@ -1462,8 +1463,8 @@ _GET_HEAD_INFO_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2703,
-  serialized_end=2728,
+  serialized_start=2737,
+  serialized_end=2762,
 )
 
 
@@ -1494,8 +1495,8 @@ _GET_HEAD_INFO_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2730,
-  serialized_end=2792,
+  serialized_start=2764,
+  serialized_end=2826,
 )
 
 
@@ -1540,8 +1541,8 @@ _HASH_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2794,
-  serialized_end=2859,
+  serialized_start=2828,
+  serialized_end=2893,
 )
 
 
@@ -1572,8 +1573,8 @@ _HASH_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2861,
-  serialized_end=2889,
+  serialized_start=2895,
+  serialized_end=2923,
 )
 
 
@@ -1611,8 +1612,8 @@ _RECOVER_PUBLIC_KEY_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2891,
-  serialized_end=2961,
+  serialized_start=2925,
+  serialized_end=2995,
 )
 
 
@@ -1630,7 +1631,7 @@ _RECOVER_PUBLIC_KEY_RESULT = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1643,8 +1644,8 @@ _RECOVER_PUBLIC_KEY_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2963,
-  serialized_end=3005,
+  serialized_start=2997,
+  serialized_end=3045,
 )
 
 
@@ -1675,8 +1676,8 @@ _GET_TRANSACTION_PAYER_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3007,
-  serialized_end=3091,
+  serialized_start=3047,
+  serialized_end=3131,
 )
 
 
@@ -1694,7 +1695,7 @@ _GET_TRANSACTION_PAYER_RESULT = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1707,8 +1708,8 @@ _GET_TRANSACTION_PAYER_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3093,
-  serialized_end=3138,
+  serialized_start=3133,
+  serialized_end=3184,
 )
 
 
@@ -1726,7 +1727,7 @@ _GET_ACCOUNT_RC_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1739,8 +1740,8 @@ _GET_ACCOUNT_RC_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3140,
-  serialized_end=3183,
+  serialized_start=3186,
+  serialized_end=3235,
 )
 
 
@@ -1771,8 +1772,8 @@ _GET_ACCOUNT_RC_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3185,
-  serialized_end=3227,
+  serialized_start=3237,
+  serialized_end=3279,
 )
 
 
@@ -1790,7 +1791,7 @@ _CONSUME_ACCOUNT_RC_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='koinos.chain.consume_account_rc_arguments.value', index=1,
       number=2, type=4, cpp_type=4, label=1,
@@ -1810,8 +1811,8 @@ _CONSUME_ACCOUNT_RC_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3229,
-  serialized_end=3295,
+  serialized_start=3281,
+  serialized_end=3353,
 )
 
 
@@ -1842,8 +1843,8 @@ _CONSUME_ACCOUNT_RC_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3297,
-  serialized_end=3339,
+  serialized_start=3355,
+  serialized_end=3397,
 )
 
 
@@ -1867,8 +1868,8 @@ _GET_RESOURCE_LIMITS_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3341,
-  serialized_end=3372,
+  serialized_start=3399,
+  serialized_end=3430,
 )
 
 
@@ -1899,8 +1900,8 @@ _GET_RESOURCE_LIMITS_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3374,
-  serialized_end=3452,
+  serialized_start=3432,
+  serialized_end=3510,
 )
 
 
@@ -1945,8 +1946,8 @@ _CONSUME_BLOCK_RESOURCES_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3455,
-  serialized_end=3605,
+  serialized_start=3513,
+  serialized_end=3663,
 )
 
 
@@ -1977,8 +1978,8 @@ _CONSUME_BLOCK_RESOURCES_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3607,
-  serialized_end=3654,
+  serialized_start=3665,
+  serialized_end=3712,
 )
 
 
@@ -2009,8 +2010,8 @@ _GET_TRANSACTION_RC_LIMIT_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3656,
-  serialized_end=3743,
+  serialized_start=3714,
+  serialized_end=3801,
 )
 
 
@@ -2041,8 +2042,8 @@ _GET_TRANSACTION_RC_LIMIT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3745,
-  serialized_end=3797,
+  serialized_start=3803,
+  serialized_end=3855,
 )
 
 
@@ -2066,8 +2067,8 @@ _GET_LAST_IRREVERSIBLE_BLOCK_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3799,
-  serialized_end=3838,
+  serialized_start=3857,
+  serialized_end=3896,
 )
 
 
@@ -2098,8 +2099,8 @@ _GET_LAST_IRREVERSIBLE_BLOCK_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3840,
-  serialized_end=3895,
+  serialized_start=3898,
+  serialized_end=3953,
 )
 
 
@@ -2123,8 +2124,8 @@ _GET_CALLER_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3897,
-  serialized_end=3919,
+  serialized_start=3955,
+  serialized_end=3977,
 )
 
 
@@ -2155,8 +2156,8 @@ _GET_CALLER_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3921,
-  serialized_end=3982,
+  serialized_start=3979,
+  serialized_end=4040,
 )
 
 
@@ -2174,7 +2175,7 @@ _REQUIRE_AUTHORITY_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -2187,8 +2188,8 @@ _REQUIRE_AUTHORITY_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3984,
-  serialized_end=4030,
+  serialized_start=4042,
+  serialized_end=4094,
 )
 
 
@@ -2212,8 +2213,8 @@ _REQUIRE_AUTHORITY_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4032,
-  serialized_end=4058,
+  serialized_start=4096,
+  serialized_end=4122,
 )
 
 
@@ -2237,8 +2238,8 @@ _GET_TRANSACTION_SIGNATURE_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4060,
-  serialized_end=4097,
+  serialized_start=4124,
+  serialized_end=4161,
 )
 
 
@@ -2269,8 +2270,8 @@ _GET_TRANSACTION_SIGNATURE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4099,
-  serialized_end=4148,
+  serialized_start=4163,
+  serialized_end=4212,
 )
 
 
@@ -2294,8 +2295,8 @@ _GET_CONTRACT_ID_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4150,
-  serialized_end=4177,
+  serialized_start=4214,
+  serialized_end=4241,
 )
 
 
@@ -2313,7 +2314,7 @@ _GET_CONTRACT_ID_RESULT = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\005', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -2326,8 +2327,8 @@ _GET_CONTRACT_ID_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4179,
-  serialized_end=4218,
+  serialized_start=4243,
+  serialized_end=4288,
 )
 
 
@@ -2345,7 +2346,7 @@ _GET_ACCOUNT_NONCE_ARGUMENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -2358,8 +2359,8 @@ _GET_ACCOUNT_NONCE_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4220,
-  serialized_end=4266,
+  serialized_start=4290,
+  serialized_end=4342,
 )
 
 
@@ -2390,8 +2391,8 @@ _GET_ACCOUNT_NONCE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4268,
-  serialized_end=4313,
+  serialized_start=4344,
+  serialized_end=4389,
 )
 
 _HEAD_INFO.fields_by_name['head_topology'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
@@ -2977,20 +2978,29 @@ _sym_db.RegisterMessage(get_account_nonce_result)
 DESCRIPTOR._options = None
 _HEAD_INFO.fields_by_name['head_block_time']._options = None
 _HEAD_INFO.fields_by_name['last_irreversible_block']._options = None
+_CALLER_DATA.fields_by_name['caller']._options = None
 _RESOURCE_LIMIT_DATA.fields_by_name['disk_storage_limit']._options = None
 _RESOURCE_LIMIT_DATA.fields_by_name['disk_storage_cost']._options = None
 _RESOURCE_LIMIT_DATA.fields_by_name['network_bandwidth_limit']._options = None
 _RESOURCE_LIMIT_DATA.fields_by_name['network_bandwidth_cost']._options = None
 _RESOURCE_LIMIT_DATA.fields_by_name['compute_bandwidth_limit']._options = None
 _RESOURCE_LIMIT_DATA.fields_by_name['compute_bandwidth_cost']._options = None
+_CALL_CONTRACT_ARGUMENTS.fields_by_name['contract_id']._options = None
 _HASH_ARGUMENTS.fields_by_name['code']._options = None
 _HASH_ARGUMENTS.fields_by_name['size']._options = None
+_RECOVER_PUBLIC_KEY_RESULT.fields_by_name['value']._options = None
+_GET_TRANSACTION_PAYER_RESULT.fields_by_name['value']._options = None
+_GET_ACCOUNT_RC_ARGUMENTS.fields_by_name['account']._options = None
 _GET_ACCOUNT_RC_RESULT.fields_by_name['value']._options = None
+_CONSUME_ACCOUNT_RC_ARGUMENTS.fields_by_name['account']._options = None
 _CONSUME_ACCOUNT_RC_ARGUMENTS.fields_by_name['value']._options = None
 _CONSUME_BLOCK_RESOURCES_ARGUMENTS.fields_by_name['disk_storage_consumed']._options = None
 _CONSUME_BLOCK_RESOURCES_ARGUMENTS.fields_by_name['network_bandwidth_consumed']._options = None
 _CONSUME_BLOCK_RESOURCES_ARGUMENTS.fields_by_name['compute_bandwidth_consumed']._options = None
 _GET_TRANSACTION_RC_LIMIT_RESULT.fields_by_name['value']._options = None
 _GET_LAST_IRREVERSIBLE_BLOCK_RESULT.fields_by_name['value']._options = None
+_REQUIRE_AUTHORITY_ARGUMENTS.fields_by_name['account']._options = None
+_GET_CONTRACT_ID_RESULT.fields_by_name['value']._options = None
+_GET_ACCOUNT_NONCE_ARGUMENTS.fields_by_name['account']._options = None
 _GET_ACCOUNT_NONCE_RESULT.fields_by_name['value']._options = None
 # @@protoc_insertion_point(module_scope)
