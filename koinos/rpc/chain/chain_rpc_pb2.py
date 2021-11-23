@@ -24,7 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z6github.com/koinos/koinos-proto-golang/koinos/rpc/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/rpc/chain/chain_rpc.proto\x12\x10koinos.rpc.chain\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x18koinos/chain/chain.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"\xa0\x01\n\x14submit_block_request\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12\x1b\n\x13verify_passive_data\x18\x02 \x01(\x08\x12\x1e\n\x16verify_block_signature\x18\x03 \x01(\x08\x12$\n\x1cverify_transaction_signature\x18\x04 \x01(\x08\"\x17\n\x15submit_block_response\"\x92\x01\n\x1asubmit_transaction_request\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x1b\n\x13verify_passive_data\x18\x02 \x01(\x08\x12$\n\x1cverify_transaction_signature\x18\x03 \x01(\x08\"\x1d\n\x1bsubmit_transaction_response\"\x17\n\x15get_head_info_request\"l\n\x16get_head_info_response\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12#\n\x17last_irreversible_block\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_chain_id_request\")\n\x15get_chain_id_response\x12\x10\n\x08\x63hain_id\x18\x01 \x01(\x0c\"\x18\n\x16get_fork_heads_request\"~\n\x17get_fork_heads_response\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12*\n\nfork_heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topology\"U\n\x15read_contract_request\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"6\n\x16read_contract_response\x12\x0e\n\x06result\x18\x01 \x01(\x0c\x12\x0c\n\x04logs\x18\x02 \x01(\t\"2\n\x19get_account_nonce_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"/\n\x1aget_account_nonce_response\x12\x11\n\x05nonce\x18\x01 \x01(\x04\x42\x02\x30\x01\"/\n\x16get_account_rc_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\")\n\x17get_account_rc_response\x12\x0e\n\x02rc\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x1d\n\x1bget_resource_limits_request\"^\n\x1cget_resource_limits_response\x12>\n\x13resource_limit_data\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\xb8\x05\n\rchain_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12>\n\x0csubmit_block\x18\x02 \x01(\x0b\x32&.koinos.rpc.chain.submit_block_requestH\x00\x12J\n\x12submit_transaction\x18\x03 \x01(\x0b\x32,.koinos.rpc.chain.submit_transaction_requestH\x00\x12@\n\rget_head_info\x18\x04 \x01(\x0b\x32\'.koinos.rpc.chain.get_head_info_requestH\x00\x12>\n\x0cget_chain_id\x18\x05 \x01(\x0b\x32&.koinos.rpc.chain.get_chain_id_requestH\x00\x12\x42\n\x0eget_fork_heads\x18\x06 \x01(\x0b\x32(.koinos.rpc.chain.get_fork_heads_requestH\x00\x12@\n\rread_contract\x18\x07 \x01(\x0b\x32\'.koinos.rpc.chain.read_contract_requestH\x00\x12H\n\x11get_account_nonce\x18\x08 \x01(\x0b\x32+.koinos.rpc.chain.get_account_nonce_requestH\x00\x12\x42\n\x0eget_account_rc\x18\t \x01(\x0b\x32(.koinos.rpc.chain.get_account_rc_requestH\x00\x12L\n\x13get_resource_limits\x18\n \x01(\x0b\x32-.koinos.rpc.chain.get_resource_limits_requestH\x00\x42\t\n\x07request\"\xf0\x05\n\x0e\x63hain_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12?\n\x0csubmit_block\x18\x03 \x01(\x0b\x32\'.koinos.rpc.chain.submit_block_responseH\x00\x12K\n\x12submit_transaction\x18\x04 \x01(\x0b\x32-.koinos.rpc.chain.submit_transaction_responseH\x00\x12\x41\n\rget_head_info\x18\x05 \x01(\x0b\x32(.koinos.rpc.chain.get_head_info_responseH\x00\x12?\n\x0cget_chain_id\x18\x06 \x01(\x0b\x32\'.koinos.rpc.chain.get_chain_id_responseH\x00\x12\x43\n\x0eget_fork_heads\x18\x07 \x01(\x0b\x32).koinos.rpc.chain.get_fork_heads_responseH\x00\x12\x41\n\rread_contract\x18\x08 \x01(\x0b\x32(.koinos.rpc.chain.read_contract_responseH\x00\x12I\n\x11get_account_nonce\x18\t \x01(\x0b\x32,.koinos.rpc.chain.get_account_nonce_responseH\x00\x12\x43\n\x0eget_account_rc\x18\n \x01(\x0b\x32).koinos.rpc.chain.get_account_rc_responseH\x00\x12M\n\x13get_resource_limits\x18\x0b \x01(\x0b\x32..koinos.rpc.chain.get_resource_limits_responseH\x00\x42\n\n\x08responseB8Z6github.com/koinos/koinos-proto-golang/koinos/rpc/chainb\x06proto3'
+  serialized_pb=b'\n koinos/rpc/chain/chain_rpc.proto\x12\x10koinos.rpc.chain\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x18koinos/chain/chain.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"\xa0\x01\n\x14submit_block_request\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12\x1b\n\x13verify_passive_data\x18\x02 \x01(\x08\x12\x1e\n\x16verify_block_signature\x18\x03 \x01(\x08\x12$\n\x1cverify_transaction_signature\x18\x04 \x01(\x08\"H\n\x15submit_block_response\x12/\n\x07receipt\x18\x01 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"\x92\x01\n\x1asubmit_transaction_request\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x1b\n\x13verify_passive_data\x18\x02 \x01(\x08\x12$\n\x1cverify_transaction_signature\x18\x03 \x01(\x08\"T\n\x1bsubmit_transaction_response\x12\x35\n\x07receipt\x18\x01 \x01(\x0b\x32$.koinos.protocol.transaction_receipt\"\x17\n\x15get_head_info_request\"l\n\x16get_head_info_response\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12#\n\x17last_irreversible_block\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_chain_id_request\")\n\x15get_chain_id_response\x12\x10\n\x08\x63hain_id\x18\x01 \x01(\x0c\"\x18\n\x16get_fork_heads_request\"~\n\x17get_fork_heads_response\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12*\n\nfork_heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topology\"U\n\x15read_contract_request\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"6\n\x16read_contract_response\x12\x0e\n\x06result\x18\x01 \x01(\x0c\x12\x0c\n\x04logs\x18\x02 \x01(\t\"2\n\x19get_account_nonce_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"/\n\x1aget_account_nonce_response\x12\x11\n\x05nonce\x18\x01 \x01(\x04\x42\x02\x30\x01\"/\n\x16get_account_rc_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\")\n\x17get_account_rc_response\x12\x0e\n\x02rc\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x1d\n\x1bget_resource_limits_request\"^\n\x1cget_resource_limits_response\x12>\n\x13resource_limit_data\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\xb8\x05\n\rchain_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12>\n\x0csubmit_block\x18\x02 \x01(\x0b\x32&.koinos.rpc.chain.submit_block_requestH\x00\x12J\n\x12submit_transaction\x18\x03 \x01(\x0b\x32,.koinos.rpc.chain.submit_transaction_requestH\x00\x12@\n\rget_head_info\x18\x04 \x01(\x0b\x32\'.koinos.rpc.chain.get_head_info_requestH\x00\x12>\n\x0cget_chain_id\x18\x05 \x01(\x0b\x32&.koinos.rpc.chain.get_chain_id_requestH\x00\x12\x42\n\x0eget_fork_heads\x18\x06 \x01(\x0b\x32(.koinos.rpc.chain.get_fork_heads_requestH\x00\x12@\n\rread_contract\x18\x07 \x01(\x0b\x32\'.koinos.rpc.chain.read_contract_requestH\x00\x12H\n\x11get_account_nonce\x18\x08 \x01(\x0b\x32+.koinos.rpc.chain.get_account_nonce_requestH\x00\x12\x42\n\x0eget_account_rc\x18\t \x01(\x0b\x32(.koinos.rpc.chain.get_account_rc_requestH\x00\x12L\n\x13get_resource_limits\x18\n \x01(\x0b\x32-.koinos.rpc.chain.get_resource_limits_requestH\x00\x42\t\n\x07request\"\xf0\x05\n\x0e\x63hain_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12?\n\x0csubmit_block\x18\x03 \x01(\x0b\x32\'.koinos.rpc.chain.submit_block_responseH\x00\x12K\n\x12submit_transaction\x18\x04 \x01(\x0b\x32-.koinos.rpc.chain.submit_transaction_responseH\x00\x12\x41\n\rget_head_info\x18\x05 \x01(\x0b\x32(.koinos.rpc.chain.get_head_info_responseH\x00\x12?\n\x0cget_chain_id\x18\x06 \x01(\x0b\x32\'.koinos.rpc.chain.get_chain_id_responseH\x00\x12\x43\n\x0eget_fork_heads\x18\x07 \x01(\x0b\x32).koinos.rpc.chain.get_fork_heads_responseH\x00\x12\x41\n\rread_contract\x18\x08 \x01(\x0b\x32(.koinos.rpc.chain.read_contract_responseH\x00\x12I\n\x11get_account_nonce\x18\t \x01(\x0b\x32,.koinos.rpc.chain.get_account_nonce_responseH\x00\x12\x43\n\x0eget_account_rc\x18\n \x01(\x0b\x32).koinos.rpc.chain.get_account_rc_responseH\x00\x12M\n\x13get_resource_limits\x18\x0b \x01(\x0b\x32..koinos.rpc.chain.get_resource_limits_responseH\x00\x42\n\n\x08responseB8Z6github.com/koinos/koinos-proto-golang/koinos/rpc/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_chain_dot_chain__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
 
@@ -92,6 +92,13 @@ _SUBMIT_BLOCK_RESPONSE = _descriptor.Descriptor(
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
+    _descriptor.FieldDescriptor(
+      name='receipt', full_name='koinos.rpc.chain.submit_block_response.receipt', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -105,7 +112,7 @@ _SUBMIT_BLOCK_RESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=340,
-  serialized_end=363,
+  serialized_end=412,
 )
 
 
@@ -150,8 +157,8 @@ _SUBMIT_TRANSACTION_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=366,
-  serialized_end=512,
+  serialized_start=415,
+  serialized_end=561,
 )
 
 
@@ -163,6 +170,13 @@ _SUBMIT_TRANSACTION_RESPONSE = _descriptor.Descriptor(
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
+    _descriptor.FieldDescriptor(
+      name='receipt', full_name='koinos.rpc.chain.submit_transaction_response.receipt', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -175,8 +189,8 @@ _SUBMIT_TRANSACTION_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=514,
-  serialized_end=543,
+  serialized_start=563,
+  serialized_end=647,
 )
 
 
@@ -200,8 +214,8 @@ _GET_HEAD_INFO_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=545,
-  serialized_end=568,
+  serialized_start=649,
+  serialized_end=672,
 )
 
 
@@ -239,8 +253,8 @@ _GET_HEAD_INFO_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=570,
-  serialized_end=678,
+  serialized_start=674,
+  serialized_end=782,
 )
 
 
@@ -264,8 +278,8 @@ _GET_CHAIN_ID_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=680,
-  serialized_end=702,
+  serialized_start=784,
+  serialized_end=806,
 )
 
 
@@ -296,8 +310,8 @@ _GET_CHAIN_ID_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=704,
-  serialized_end=745,
+  serialized_start=808,
+  serialized_end=849,
 )
 
 
@@ -321,8 +335,8 @@ _GET_FORK_HEADS_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=747,
-  serialized_end=771,
+  serialized_start=851,
+  serialized_end=875,
 )
 
 
@@ -360,8 +374,8 @@ _GET_FORK_HEADS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=773,
-  serialized_end=899,
+  serialized_start=877,
+  serialized_end=1003,
 )
 
 
@@ -406,8 +420,8 @@ _READ_CONTRACT_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=901,
-  serialized_end=986,
+  serialized_start=1005,
+  serialized_end=1090,
 )
 
 
@@ -445,8 +459,8 @@ _READ_CONTRACT_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=988,
-  serialized_end=1042,
+  serialized_start=1092,
+  serialized_end=1146,
 )
 
 
@@ -477,8 +491,8 @@ _GET_ACCOUNT_NONCE_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1044,
-  serialized_end=1094,
+  serialized_start=1148,
+  serialized_end=1198,
 )
 
 
@@ -509,8 +523,8 @@ _GET_ACCOUNT_NONCE_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1096,
-  serialized_end=1143,
+  serialized_start=1200,
+  serialized_end=1247,
 )
 
 
@@ -541,8 +555,8 @@ _GET_ACCOUNT_RC_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1145,
-  serialized_end=1192,
+  serialized_start=1249,
+  serialized_end=1296,
 )
 
 
@@ -573,8 +587,8 @@ _GET_ACCOUNT_RC_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1194,
-  serialized_end=1235,
+  serialized_start=1298,
+  serialized_end=1339,
 )
 
 
@@ -598,8 +612,8 @@ _GET_RESOURCE_LIMITS_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1237,
-  serialized_end=1266,
+  serialized_start=1341,
+  serialized_end=1370,
 )
 
 
@@ -630,8 +644,8 @@ _GET_RESOURCE_LIMITS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1268,
-  serialized_end=1362,
+  serialized_start=1372,
+  serialized_end=1466,
 )
 
 
@@ -730,8 +744,8 @@ _CHAIN_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1365,
-  serialized_end=2061,
+  serialized_start=1469,
+  serialized_end=2165,
 )
 
 
@@ -837,12 +851,14 @@ _CHAIN_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=2064,
-  serialized_end=2816,
+  serialized_start=2168,
+  serialized_end=2920,
 )
 
 _SUBMIT_BLOCK_REQUEST.fields_by_name['block'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK
+_SUBMIT_BLOCK_RESPONSE.fields_by_name['receipt'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK_RECEIPT
 _SUBMIT_TRANSACTION_REQUEST.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION
+_SUBMIT_TRANSACTION_RESPONSE.fields_by_name['receipt'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION_RECEIPT
 _GET_HEAD_INFO_RESPONSE.fields_by_name['head_topology'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _GET_FORK_HEADS_RESPONSE.fields_by_name['last_irreversible_block'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _GET_FORK_HEADS_RESPONSE.fields_by_name['fork_heads'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY

@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z5github.com/koinos/koinos-proto-golang/koinos/protocol',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n%koinos/protocol/system_call_ids.proto\x12\x0fkoinos.protocol*\xcd\x06\n\x0esystem_call_id\x12\x0f\n\x0breserved_id\x10\x00\x12\n\n\x06prints\x10\x01\x12\x17\n\x13verify_block_header\x10\x02\x12\x0f\n\x0b\x61pply_block\x10\x03\x12\x15\n\x11\x61pply_transaction\x10\x04\x12#\n\x1f\x61pply_upload_contract_operation\x10\x05\x12!\n\x1d\x61pply_call_contract_operation\x10\x06\x12#\n\x1f\x61pply_set_system_call_operation\x10\x07\x12\x0e\n\nput_object\x10\x08\x12\x0e\n\nget_object\x10\t\x12\x13\n\x0fget_next_object\x10\n\x12\x13\n\x0fget_prev_object\x10\x0b\x12\x11\n\rcall_contract\x10\x0c\x12\x13\n\x0fget_entry_point\x10\r\x12\x1f\n\x1bget_contract_arguments_size\x10\x0e\x12\x1a\n\x16get_contract_arguments\x10\x0f\x12\x17\n\x13set_contract_result\x10\x10\x12\x11\n\rexit_contract\x10\x11\x12\x11\n\rget_head_info\x10\x12\x12\x08\n\x04hash\x10\x13\x12\x16\n\x12recover_public_key\x10\x14\x12\x1a\n\x16verify_block_signature\x10\x15\x12\x16\n\x12verify_merkle_root\x10\x16\x12\x19\n\x15get_transaction_payer\x10\x17\x12\x1c\n\x18get_transaction_rc_limit\x10\x19\x12\x1f\n\x1bget_last_irreversible_block\x10\x1a\x12\x0e\n\nget_caller\x10\x1b\x12\x15\n\x11require_authority\x10\x1c\x12\x1d\n\x19get_transaction_signature\x10\x1d\x12\x13\n\x0fget_contract_id\x10\x1e\x12\x15\n\x11get_account_nonce\x10\x1f\x12\x12\n\x0eget_account_rc\x10 \x12\x16\n\x12\x63onsume_account_rc\x10!\x12\x17\n\x13get_resource_limits\x10\"\x12\x1b\n\x17\x63onsume_block_resources\x10#B7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
+  serialized_pb=b'\n%koinos/protocol/system_call_ids.proto\x12\x0fkoinos.protocol*\xd8\x06\n\x0esystem_call_id\x12\x0f\n\x0breserved_id\x10\x00\x12\n\n\x06prints\x10\x01\x12\x17\n\x13verify_block_header\x10\x02\x12\x0f\n\x0b\x61pply_block\x10\x03\x12\x15\n\x11\x61pply_transaction\x10\x04\x12#\n\x1f\x61pply_upload_contract_operation\x10\x05\x12!\n\x1d\x61pply_call_contract_operation\x10\x06\x12#\n\x1f\x61pply_set_system_call_operation\x10\x07\x12\x0e\n\nput_object\x10\x08\x12\x0e\n\nget_object\x10\t\x12\x13\n\x0fget_next_object\x10\n\x12\x13\n\x0fget_prev_object\x10\x0b\x12\x11\n\rcall_contract\x10\x0c\x12\x13\n\x0fget_entry_point\x10\r\x12\x1f\n\x1bget_contract_arguments_size\x10\x0e\x12\x1a\n\x16get_contract_arguments\x10\x0f\x12\x17\n\x13set_contract_result\x10\x10\x12\x11\n\rexit_contract\x10\x11\x12\x11\n\rget_head_info\x10\x12\x12\x08\n\x04hash\x10\x13\x12\x16\n\x12recover_public_key\x10\x14\x12\x1a\n\x16verify_block_signature\x10\x15\x12\x16\n\x12verify_merkle_root\x10\x16\x12\x19\n\x15get_transaction_payer\x10\x17\x12\x1c\n\x18get_transaction_rc_limit\x10\x19\x12\x1f\n\x1bget_last_irreversible_block\x10\x1a\x12\x0e\n\nget_caller\x10\x1b\x12\x15\n\x11require_authority\x10\x1c\x12\x1d\n\x19get_transaction_signature\x10\x1d\x12\x13\n\x0fget_contract_id\x10\x1e\x12\x15\n\x11get_account_nonce\x10\x1f\x12\x12\n\x0eget_account_rc\x10 \x12\x16\n\x12\x63onsume_account_rc\x10!\x12\x17\n\x13get_resource_limits\x10\"\x12\x1b\n\x17\x63onsume_block_resources\x10#\x12\t\n\x05\x65vent\x10$B7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
 )
 
 _SYSTEM_CALL_ID = _descriptor.EnumDescriptor(
@@ -205,11 +205,16 @@ _SYSTEM_CALL_ID = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='event', index=35, number=36,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=59,
-  serialized_end=904,
+  serialized_end=915,
 )
 _sym_db.RegisterEnumDescriptor(_SYSTEM_CALL_ID)
 
@@ -249,6 +254,7 @@ get_account_rc = 32
 consume_account_rc = 33
 get_resource_limits = 34
 consume_block_resources = 35
+event = 36
 
 
 DESCRIPTOR.enum_types_by_name['system_call_id'] = _SYSTEM_CALL_ID
