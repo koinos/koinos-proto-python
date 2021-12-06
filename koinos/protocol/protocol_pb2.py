@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z5github.com/koinos/koinos-proto-golang/koinos/protocol',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/protocol/protocol.proto\x12\x0fkoinos.protocol\x1a\x14koinos/options.proto\"h\n\nevent_data\x12\x10\n\x08sequence\x18\x01 \x01(\r\x12\x14\n\x06source\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\x12\x16\n\x08impacted\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x06\"F\n\x14\x63ontract_call_bundle\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"w\n\x12system_call_target\x12\x12\n\x08thunk_id\x18\x01 \x01(\rH\x00\x12\x43\n\x12system_call_bundle\x18\x02 \x01(\x0b\x32%.koinos.protocol.contract_call_bundleH\x00\x42\x08\n\x06target\"U\n\x19upload_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x10\n\x08\x62ytecode\x18\x02 \x01(\x0c\x12\x0b\n\x03\x61\x62i\x18\x03 \x01(\t\"W\n\x17\x63\x61ll_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"a\n\x19set_system_call_operation\x12\x0f\n\x07\x63\x61ll_id\x18\x01 \x01(\r\x12\x33\n\x06target\x18\x02 \x01(\x0b\x32#.koinos.protocol.system_call_target\"\xe2\x01\n\toperation\x12\x45\n\x0fupload_contract\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operationH\x00\x12\x41\n\rcall_contract\x18\x02 \x01(\x0b\x32(.koinos.protocol.call_contract_operationH\x00\x12\x45\n\x0fset_system_call\x18\x03 \x01(\x0b\x32*.koinos.protocol.set_system_call_operationH\x00\x42\x04\n\x02op\"r\n\x17\x61\x63tive_transaction_data\x12\x14\n\x08rc_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x05nonce\x18\x02 \x01(\x04\x42\x02\x30\x01\x12.\n\noperations\x18\x03 \x03(\x0b\x32\x1a.koinos.protocol.operation\"G\n\x0btransaction\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x0e\n\x06\x61\x63tive\x18\x02 \x01(\x0c\x12\x16\n\x0esignature_data\x18\x04 \x01(\x0c\"\xa7\x02\n\x13transaction_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x13\n\x05payer\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x13\n\x07rc_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x06 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x07 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x08 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x08reverted\x18\t \x01(\x08\x12+\n\x06\x65vents\x18\n \x03(\x0b\x32\x1b.koinos.protocol.event_data\"D\n\x11\x61\x63tive_block_data\x12\x1f\n\x17transaction_merkle_root\x18\x01 \x01(\x0c\x12\x0e\n\x06signer\x18\x03 \x01(\x0c\"u\n\x0c\x62lock_header\x12\x16\n\x08previous\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x15\n\ttimestamp\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x1aprevious_state_merkle_root\x18\x04 \x01(\x0c\"\xa4\x01\n\x05\x62lock\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12-\n\x06header\x18\x02 \x01(\x0b\x32\x1d.koinos.protocol.block_header\x12\x0e\n\x06\x61\x63tive\x18\x03 \x01(\x0c\x12\x16\n\x0esignature_data\x18\x05 \x01(\x0c\x12\x32\n\x0ctransactions\x18\x06 \x03(\x0b\x32\x1c.koinos.protocol.transaction\"\xa8\x02\n\rblock_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x19\n\x11state_merkle_root\x18\x06 \x01(\x0c\x12+\n\x06\x65vents\x18\x07 \x03(\x0b\x32\x1b.koinos.protocol.event_data\x12\x42\n\x14transaction_receipts\x18\x08 \x03(\x0b\x32$.koinos.protocol.transaction_receiptB7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/protocol/protocol.proto\x12\x0fkoinos.protocol\x1a\x14koinos/options.proto\"h\n\nevent_data\x12\x10\n\x08sequence\x18\x01 \x01(\r\x12\x14\n\x06source\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\x12\x16\n\x08impacted\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x06\"F\n\x14\x63ontract_call_bundle\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"w\n\x12system_call_target\x12\x12\n\x08thunk_id\x18\x01 \x01(\rH\x00\x12\x43\n\x12system_call_bundle\x18\x02 \x01(\x0b\x32%.koinos.protocol.contract_call_bundleH\x00\x42\x08\n\x06target\"U\n\x19upload_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x10\n\x08\x62ytecode\x18\x02 \x01(\x0c\x12\x0b\n\x03\x61\x62i\x18\x03 \x01(\t\"W\n\x17\x63\x61ll_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"a\n\x19set_system_call_operation\x12\x0f\n\x07\x63\x61ll_id\x18\x01 \x01(\r\x12\x33\n\x06target\x18\x02 \x01(\x0b\x32#.koinos.protocol.system_call_target\"S\n\x1dset_system_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x17\n\x0fsystem_contract\x18\x02 \x01(\x08\"\xb1\x02\n\toperation\x12\x45\n\x0fupload_contract\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operationH\x00\x12\x41\n\rcall_contract\x18\x02 \x01(\x0b\x32(.koinos.protocol.call_contract_operationH\x00\x12\x45\n\x0fset_system_call\x18\x03 \x01(\x0b\x32*.koinos.protocol.set_system_call_operationH\x00\x12M\n\x13set_system_contract\x18\x04 \x01(\x0b\x32..koinos.protocol.set_system_contract_operationH\x00\x42\x04\n\x02op\"r\n\x17\x61\x63tive_transaction_data\x12\x14\n\x08rc_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x05nonce\x18\x02 \x01(\x04\x42\x02\x30\x01\x12.\n\noperations\x18\x03 \x03(\x0b\x32\x1a.koinos.protocol.operation\"G\n\x0btransaction\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x0e\n\x06\x61\x63tive\x18\x02 \x01(\x0c\x12\x16\n\x0esignature_data\x18\x04 \x01(\x0c\"\xa7\x02\n\x13transaction_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x13\n\x05payer\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x13\n\x07rc_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x06 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x07 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x08 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x08reverted\x18\t \x01(\x08\x12+\n\x06\x65vents\x18\n \x03(\x0b\x32\x1b.koinos.protocol.event_data\"D\n\x11\x61\x63tive_block_data\x12\x1f\n\x17transaction_merkle_root\x18\x01 \x01(\x0c\x12\x0e\n\x06signer\x18\x03 \x01(\x0c\"u\n\x0c\x62lock_header\x12\x16\n\x08previous\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x15\n\ttimestamp\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x1aprevious_state_merkle_root\x18\x04 \x01(\x0c\"\xa4\x01\n\x05\x62lock\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12-\n\x06header\x18\x02 \x01(\x0b\x32\x1d.koinos.protocol.block_header\x12\x0e\n\x06\x61\x63tive\x18\x03 \x01(\x0c\x12\x16\n\x0esignature_data\x18\x05 \x01(\x0c\x12\x32\n\x0ctransactions\x18\x06 \x03(\x0b\x32\x1c.koinos.protocol.transaction\"\xa8\x02\n\rblock_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x19\n\x11state_merkle_root\x18\x06 \x01(\x0c\x12+\n\x06\x65vents\x18\x07 \x03(\x0b\x32\x1b.koinos.protocol.event_data\x12\x42\n\x14transaction_receipts\x18\x08 \x03(\x0b\x32$.koinos.protocol.transaction_receiptB7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -301,6 +301,45 @@ _SET_SYSTEM_CALL_OPERATION = _descriptor.Descriptor(
 )
 
 
+_SET_SYSTEM_CONTRACT_OPERATION = _descriptor.Descriptor(
+  name='set_system_contract_operation',
+  full_name='koinos.protocol.set_system_contract_operation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='contract_id', full_name='koinos.protocol.set_system_contract_operation.contract_id', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\200\265\030\005', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='system_contract', full_name='koinos.protocol.set_system_contract_operation.system_contract', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=647,
+  serialized_end=730,
+)
+
+
 _OPERATION = _descriptor.Descriptor(
   name='operation',
   full_name='koinos.protocol.operation',
@@ -330,6 +369,13 @@ _OPERATION = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='set_system_contract', full_name='koinos.protocol.operation.set_system_contract', index=3,
+      number=4, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -347,8 +393,8 @@ _OPERATION = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=648,
-  serialized_end=874,
+  serialized_start=733,
+  serialized_end=1038,
 )
 
 
@@ -393,8 +439,8 @@ _ACTIVE_TRANSACTION_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=876,
-  serialized_end=990,
+  serialized_start=1040,
+  serialized_end=1154,
 )
 
 
@@ -439,8 +485,8 @@ _TRANSACTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=992,
-  serialized_end=1063,
+  serialized_start=1156,
+  serialized_end=1227,
 )
 
 
@@ -534,8 +580,8 @@ _TRANSACTION_RECEIPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1066,
-  serialized_end=1361,
+  serialized_start=1230,
+  serialized_end=1525,
 )
 
 
@@ -573,8 +619,8 @@ _ACTIVE_BLOCK_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1363,
-  serialized_end=1431,
+  serialized_start=1527,
+  serialized_end=1595,
 )
 
 
@@ -626,8 +672,8 @@ _BLOCK_HEADER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1433,
-  serialized_end=1550,
+  serialized_start=1597,
+  serialized_end=1714,
 )
 
 
@@ -686,8 +732,8 @@ _BLOCK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1553,
-  serialized_end=1717,
+  serialized_start=1717,
+  serialized_end=1881,
 )
 
 
@@ -767,8 +813,8 @@ _BLOCK_RECEIPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1720,
-  serialized_end=2016,
+  serialized_start=1884,
+  serialized_end=2180,
 )
 
 _SYSTEM_CALL_TARGET.fields_by_name['system_call_bundle'].message_type = _CONTRACT_CALL_BUNDLE
@@ -782,6 +828,7 @@ _SET_SYSTEM_CALL_OPERATION.fields_by_name['target'].message_type = _SYSTEM_CALL_
 _OPERATION.fields_by_name['upload_contract'].message_type = _UPLOAD_CONTRACT_OPERATION
 _OPERATION.fields_by_name['call_contract'].message_type = _CALL_CONTRACT_OPERATION
 _OPERATION.fields_by_name['set_system_call'].message_type = _SET_SYSTEM_CALL_OPERATION
+_OPERATION.fields_by_name['set_system_contract'].message_type = _SET_SYSTEM_CONTRACT_OPERATION
 _OPERATION.oneofs_by_name['op'].fields.append(
   _OPERATION.fields_by_name['upload_contract'])
 _OPERATION.fields_by_name['upload_contract'].containing_oneof = _OPERATION.oneofs_by_name['op']
@@ -791,6 +838,9 @@ _OPERATION.fields_by_name['call_contract'].containing_oneof = _OPERATION.oneofs_
 _OPERATION.oneofs_by_name['op'].fields.append(
   _OPERATION.fields_by_name['set_system_call'])
 _OPERATION.fields_by_name['set_system_call'].containing_oneof = _OPERATION.oneofs_by_name['op']
+_OPERATION.oneofs_by_name['op'].fields.append(
+  _OPERATION.fields_by_name['set_system_contract'])
+_OPERATION.fields_by_name['set_system_contract'].containing_oneof = _OPERATION.oneofs_by_name['op']
 _ACTIVE_TRANSACTION_DATA.fields_by_name['operations'].message_type = _OPERATION
 _TRANSACTION_RECEIPT.fields_by_name['events'].message_type = _EVENT_DATA
 _BLOCK.fields_by_name['header'].message_type = _BLOCK_HEADER
@@ -803,6 +853,7 @@ DESCRIPTOR.message_types_by_name['system_call_target'] = _SYSTEM_CALL_TARGET
 DESCRIPTOR.message_types_by_name['upload_contract_operation'] = _UPLOAD_CONTRACT_OPERATION
 DESCRIPTOR.message_types_by_name['call_contract_operation'] = _CALL_CONTRACT_OPERATION
 DESCRIPTOR.message_types_by_name['set_system_call_operation'] = _SET_SYSTEM_CALL_OPERATION
+DESCRIPTOR.message_types_by_name['set_system_contract_operation'] = _SET_SYSTEM_CONTRACT_OPERATION
 DESCRIPTOR.message_types_by_name['operation'] = _OPERATION
 DESCRIPTOR.message_types_by_name['active_transaction_data'] = _ACTIVE_TRANSACTION_DATA
 DESCRIPTOR.message_types_by_name['transaction'] = _TRANSACTION
@@ -854,6 +905,13 @@ set_system_call_operation = _reflection.GeneratedProtocolMessageType('set_system
   # @@protoc_insertion_point(class_scope:koinos.protocol.set_system_call_operation)
   })
 _sym_db.RegisterMessage(set_system_call_operation)
+
+set_system_contract_operation = _reflection.GeneratedProtocolMessageType('set_system_contract_operation', (_message.Message,), {
+  'DESCRIPTOR' : _SET_SYSTEM_CONTRACT_OPERATION,
+  '__module__' : 'koinos.protocol.protocol_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.protocol.set_system_contract_operation)
+  })
+_sym_db.RegisterMessage(set_system_contract_operation)
 
 operation = _reflection.GeneratedProtocolMessageType('operation', (_message.Message,), {
   'DESCRIPTOR' : _OPERATION,
@@ -918,6 +976,7 @@ _EVENT_DATA.fields_by_name['impacted']._options = None
 _CONTRACT_CALL_BUNDLE.fields_by_name['contract_id']._options = None
 _UPLOAD_CONTRACT_OPERATION.fields_by_name['contract_id']._options = None
 _CALL_CONTRACT_OPERATION.fields_by_name['contract_id']._options = None
+_SET_SYSTEM_CONTRACT_OPERATION.fields_by_name['contract_id']._options = None
 _ACTIVE_TRANSACTION_DATA.fields_by_name['rc_limit']._options = None
 _ACTIVE_TRANSACTION_DATA.fields_by_name['nonce']._options = None
 _TRANSACTION.fields_by_name['id']._options = None
