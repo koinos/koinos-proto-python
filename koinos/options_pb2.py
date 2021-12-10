@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z,github.com/koinos/koinos-proto-golang/koinos',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x14koinos/options.proto\x12\x06koinos\x1a google/protobuf/descriptor.proto*m\n\nbytes_type\x12\n\n\x06\x42\x41SE64\x10\x00\x12\n\n\x06\x42\x41SE58\x10\x01\x12\x07\n\x03HEX\x10\x02\x12\x0c\n\x08\x42LOCK_ID\x10\x03\x12\x12\n\x0eTRANSACTION_ID\x10\x04\x12\x0f\n\x0b\x43ONTRACT_ID\x10\x05\x12\x0b\n\x07\x41\x44\x44RESS\x10\x06:Q\n\x11koinos_bytes_type\x12\x1d.google.protobuf.FieldOptions\x18\xd0\x86\x03 \x01(\x0e\x32\x12.koinos.bytes_type\x88\x01\x01\x42.Z,github.com/koinos/koinos-proto-golang/koinosb\x06proto3'
+  serialized_pb=b'\n\x14koinos/options.proto\x12\x06koinos\x1a google/protobuf/descriptor.proto*m\n\nbytes_type\x12\n\n\x06\x42\x41SE64\x10\x00\x12\n\n\x06\x42\x41SE58\x10\x01\x12\x07\n\x03HEX\x10\x02\x12\x0c\n\x08\x42LOCK_ID\x10\x03\x12\x12\n\x0eTRANSACTION_ID\x10\x04\x12\x0f\n\x0b\x43ONTRACT_ID\x10\x05\x12\x0b\n\x07\x41\x44\x44RESS\x10\x06:E\n\x05\x62type\x12\x1d.google.protobuf.FieldOptions\x18\xd0\x86\x03 \x01(\x0e\x32\x12.koinos.bytes_type\x88\x01\x01\x42.Z,github.com/koinos/koinos-proto-golang/koinosb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_descriptor__pb2.DESCRIPTOR,])
 
@@ -84,9 +84,9 @@ TRANSACTION_ID = 4
 CONTRACT_ID = 5
 ADDRESS = 6
 
-KOINOS_BYTES_TYPE_FIELD_NUMBER = 50000
-koinos_bytes_type = _descriptor.FieldDescriptor(
-  name='koinos_bytes_type', full_name='koinos.koinos_bytes_type', index=0,
+BTYPE_FIELD_NUMBER = 50000
+btype = _descriptor.FieldDescriptor(
+  name='btype', full_name='koinos.btype', index=0,
   number=50000, type=14, cpp_type=8, label=1,
   has_default_value=False, default_value=0,
   message_type=None, enum_type=None, containing_type=None,
@@ -94,11 +94,11 @@ koinos_bytes_type = _descriptor.FieldDescriptor(
   serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key)
 
 DESCRIPTOR.enum_types_by_name['bytes_type'] = _BYTES_TYPE
-DESCRIPTOR.extensions_by_name['koinos_bytes_type'] = koinos_bytes_type
+DESCRIPTOR.extensions_by_name['btype'] = btype
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-koinos_bytes_type.enum_type = _BYTES_TYPE
-google_dot_protobuf_dot_descriptor__pb2.FieldOptions.RegisterExtension(koinos_bytes_type)
+btype.enum_type = _BYTES_TYPE
+google_dot_protobuf_dot_descriptor__pb2.FieldOptions.RegisterExtension(btype)
 
 DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)
