@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z6github.com/koinos/koinos-proto-golang/koinos/broadcast',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/broadcast/broadcast.proto\x12\x10koinos.broadcast\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x94\x01\n\x14transaction_accepted\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x35\n\x07receipt\x18\x02 \x01(\x0b\x32$.koinos.protocol.transaction_receipt\x12\x12\n\x06height\x18\x03 \x01(\x04\x42\x02\x30\x01\"h\n\x0e\x62lock_accepted\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x02 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\">\n\x12\x62lock_irreversible\x12(\n\x08topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\"l\n\nfork_heads\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12%\n\x05heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topologyB8Z6github.com/koinos/koinos-proto-golang/koinos/broadcastb\x06proto3'
+  serialized_pb=b'\n koinos/broadcast/broadcast.proto\x12\x10koinos.broadcast\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x94\x01\n\x14transaction_accepted\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x35\n\x07receipt\x18\x02 \x01(\x0b\x32$.koinos.protocol.transaction_receipt\x12\x12\n\x06height\x18\x03 \x01(\x04\x42\x02\x30\x01\"O\n\x1apending_transaction_failed\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"h\n\x0e\x62lock_accepted\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x02 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\">\n\x12\x62lock_irreversible\x12(\n\x08topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\"l\n\nfork_heads\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12%\n\x05heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topologyB8Z6github.com/koinos/koinos-proto-golang/koinos/broadcastb\x06proto3'
   ,
   dependencies=[koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
@@ -75,6 +75,38 @@ _TRANSACTION_ACCEPTED = _descriptor.Descriptor(
 )
 
 
+_PENDING_TRANSACTION_FAILED = _descriptor.Descriptor(
+  name='pending_transaction_failed',
+  full_name='koinos.broadcast.pending_transaction_failed',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='transaction', full_name='koinos.broadcast.pending_transaction_failed.transaction', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=280,
+  serialized_end=359,
+)
+
+
 _BLOCK_ACCEPTED = _descriptor.Descriptor(
   name='block_accepted',
   full_name='koinos.broadcast.block_accepted',
@@ -109,8 +141,8 @@ _BLOCK_ACCEPTED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=280,
-  serialized_end=384,
+  serialized_start=361,
+  serialized_end=465,
 )
 
 
@@ -141,8 +173,8 @@ _BLOCK_IRREVERSIBLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=386,
-  serialized_end=448,
+  serialized_start=467,
+  serialized_end=529,
 )
 
 
@@ -180,18 +212,20 @@ _FORK_HEADS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=450,
-  serialized_end=558,
+  serialized_start=531,
+  serialized_end=639,
 )
 
 _TRANSACTION_ACCEPTED.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION
 _TRANSACTION_ACCEPTED.fields_by_name['receipt'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION_RECEIPT
+_PENDING_TRANSACTION_FAILED.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION
 _BLOCK_ACCEPTED.fields_by_name['block'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK
 _BLOCK_ACCEPTED.fields_by_name['receipt'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK_RECEIPT
 _BLOCK_IRREVERSIBLE.fields_by_name['topology'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _FORK_HEADS.fields_by_name['last_irreversible_block'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _FORK_HEADS.fields_by_name['heads'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 DESCRIPTOR.message_types_by_name['transaction_accepted'] = _TRANSACTION_ACCEPTED
+DESCRIPTOR.message_types_by_name['pending_transaction_failed'] = _PENDING_TRANSACTION_FAILED
 DESCRIPTOR.message_types_by_name['block_accepted'] = _BLOCK_ACCEPTED
 DESCRIPTOR.message_types_by_name['block_irreversible'] = _BLOCK_IRREVERSIBLE
 DESCRIPTOR.message_types_by_name['fork_heads'] = _FORK_HEADS
@@ -203,6 +237,13 @@ transaction_accepted = _reflection.GeneratedProtocolMessageType('transaction_acc
   # @@protoc_insertion_point(class_scope:koinos.broadcast.transaction_accepted)
   })
 _sym_db.RegisterMessage(transaction_accepted)
+
+pending_transaction_failed = _reflection.GeneratedProtocolMessageType('pending_transaction_failed', (_message.Message,), {
+  'DESCRIPTOR' : _PENDING_TRANSACTION_FAILED,
+  '__module__' : 'koinos.broadcast.broadcast_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.broadcast.pending_transaction_failed)
+  })
+_sym_db.RegisterMessage(pending_transaction_failed)
 
 block_accepted = _reflection.GeneratedProtocolMessageType('block_accepted', (_message.Message,), {
   'DESCRIPTOR' : _BLOCK_ACCEPTED,
