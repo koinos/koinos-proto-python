@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"8\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"8\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
@@ -47,8 +47,8 @@ _PRIVILEGE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=752,
-  serialized_end=795,
+  serialized_start=902,
+  serialized_end=945,
 )
 _sym_db.RegisterEnumDescriptor(_PRIVILEGE)
 
@@ -333,15 +333,97 @@ _CONTRACT_METADATA_OBJECT = _descriptor.Descriptor(
   serialized_end=750,
 )
 
+
+_GENESIS_ENTRY = _descriptor.Descriptor(
+  name='genesis_entry',
+  full_name='koinos.chain.genesis_entry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='space', full_name='koinos.chain.genesis_entry.space', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='key', full_name='koinos.chain.genesis_entry.key', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.chain.genesis_entry.value', index=2,
+      number=3, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=752,
+  serialized_end=838,
+)
+
+
+_GENESIS_DATA = _descriptor.Descriptor(
+  name='genesis_data',
+  full_name='koinos.chain.genesis_data',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='entries', full_name='koinos.chain.genesis_data.entries', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=840,
+  serialized_end=900,
+)
+
 _DATABASE_KEY.fields_by_name['space'].message_type = _OBJECT_SPACE
 _HEAD_INFO.fields_by_name['head_topology'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _CALLER_DATA.fields_by_name['caller_privilege'].enum_type = _PRIVILEGE
+_GENESIS_ENTRY.fields_by_name['space'].message_type = _OBJECT_SPACE
+_GENESIS_DATA.fields_by_name['entries'].message_type = _GENESIS_ENTRY
 DESCRIPTOR.message_types_by_name['object_space'] = _OBJECT_SPACE
 DESCRIPTOR.message_types_by_name['database_key'] = _DATABASE_KEY
 DESCRIPTOR.message_types_by_name['head_info'] = _HEAD_INFO
 DESCRIPTOR.message_types_by_name['caller_data'] = _CALLER_DATA
 DESCRIPTOR.message_types_by_name['resource_limit_data'] = _RESOURCE_LIMIT_DATA
 DESCRIPTOR.message_types_by_name['contract_metadata_object'] = _CONTRACT_METADATA_OBJECT
+DESCRIPTOR.message_types_by_name['genesis_entry'] = _GENESIS_ENTRY
+DESCRIPTOR.message_types_by_name['genesis_data'] = _GENESIS_DATA
 DESCRIPTOR.enum_types_by_name['privilege'] = _PRIVILEGE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -386,6 +468,20 @@ contract_metadata_object = _reflection.GeneratedProtocolMessageType('contract_me
   # @@protoc_insertion_point(class_scope:koinos.chain.contract_metadata_object)
   })
 _sym_db.RegisterMessage(contract_metadata_object)
+
+genesis_entry = _reflection.GeneratedProtocolMessageType('genesis_entry', (_message.Message,), {
+  'DESCRIPTOR' : _GENESIS_ENTRY,
+  '__module__' : 'koinos.chain.chain_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.chain.genesis_entry)
+  })
+_sym_db.RegisterMessage(genesis_entry)
+
+genesis_data = _reflection.GeneratedProtocolMessageType('genesis_data', (_message.Message,), {
+  'DESCRIPTOR' : _GENESIS_DATA,
+  '__module__' : 'koinos.chain.chain_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.chain.genesis_data)
+  })
+_sym_db.RegisterMessage(genesis_data)
 
 
 DESCRIPTOR._options = None
