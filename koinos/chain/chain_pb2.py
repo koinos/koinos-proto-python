@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"8\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"*\n\x15max_account_resources\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"8\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
@@ -47,8 +47,8 @@ _PRIVILEGE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=902,
-  serialized_end=945,
+  serialized_start=946,
+  serialized_end=989,
 )
 _sym_db.RegisterEnumDescriptor(_PRIVILEGE)
 
@@ -143,6 +143,38 @@ _DATABASE_KEY = _descriptor.Descriptor(
 )
 
 
+_MAX_ACCOUNT_RESOURCES = _descriptor.Descriptor(
+  name='max_account_resources',
+  full_name='koinos.chain.max_account_resources',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.chain.max_account_resources.value', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=247,
+  serialized_end=289,
+)
+
+
 _HEAD_INFO = _descriptor.Descriptor(
   name='head_info',
   full_name='koinos.chain.head_info',
@@ -184,8 +216,8 @@ _HEAD_INFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=247,
-  serialized_end=371,
+  serialized_start=291,
+  serialized_end=415,
 )
 
 
@@ -223,8 +255,8 @@ _CALLER_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=373,
-  serialized_end=459,
+  serialized_start=417,
+  serialized_end=503,
 )
 
 
@@ -290,8 +322,8 @@ _RESOURCE_LIMIT_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=462,
-  serialized_end=692,
+  serialized_start=506,
+  serialized_end=736,
 )
 
 
@@ -329,8 +361,8 @@ _CONTRACT_METADATA_OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=694,
-  serialized_end=750,
+  serialized_start=738,
+  serialized_end=794,
 )
 
 
@@ -375,8 +407,8 @@ _GENESIS_ENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=752,
-  serialized_end=838,
+  serialized_start=796,
+  serialized_end=882,
 )
 
 
@@ -407,8 +439,8 @@ _GENESIS_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=840,
-  serialized_end=900,
+  serialized_start=884,
+  serialized_end=944,
 )
 
 _DATABASE_KEY.fields_by_name['space'].message_type = _OBJECT_SPACE
@@ -418,6 +450,7 @@ _GENESIS_ENTRY.fields_by_name['space'].message_type = _OBJECT_SPACE
 _GENESIS_DATA.fields_by_name['entries'].message_type = _GENESIS_ENTRY
 DESCRIPTOR.message_types_by_name['object_space'] = _OBJECT_SPACE
 DESCRIPTOR.message_types_by_name['database_key'] = _DATABASE_KEY
+DESCRIPTOR.message_types_by_name['max_account_resources'] = _MAX_ACCOUNT_RESOURCES
 DESCRIPTOR.message_types_by_name['head_info'] = _HEAD_INFO
 DESCRIPTOR.message_types_by_name['caller_data'] = _CALLER_DATA
 DESCRIPTOR.message_types_by_name['resource_limit_data'] = _RESOURCE_LIMIT_DATA
@@ -440,6 +473,13 @@ database_key = _reflection.GeneratedProtocolMessageType('database_key', (_messag
   # @@protoc_insertion_point(class_scope:koinos.chain.database_key)
   })
 _sym_db.RegisterMessage(database_key)
+
+max_account_resources = _reflection.GeneratedProtocolMessageType('max_account_resources', (_message.Message,), {
+  'DESCRIPTOR' : _MAX_ACCOUNT_RESOURCES,
+  '__module__' : 'koinos.chain.chain_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.chain.max_account_resources)
+  })
+_sym_db.RegisterMessage(max_account_resources)
 
 head_info = _reflection.GeneratedProtocolMessageType('head_info', (_message.Message,), {
   'DESCRIPTOR' : _HEAD_INFO,
@@ -485,6 +525,7 @@ _sym_db.RegisterMessage(genesis_data)
 
 
 DESCRIPTOR._options = None
+_MAX_ACCOUNT_RESOURCES.fields_by_name['value']._options = None
 _HEAD_INFO.fields_by_name['head_block_time']._options = None
 _HEAD_INFO.fields_by_name['last_irreversible_block']._options = None
 _CALLER_DATA.fields_by_name['caller']._options = None
