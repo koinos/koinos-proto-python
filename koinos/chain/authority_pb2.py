@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ckoinos/chain/authority.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"=\n\x0b\x63\x61ll_target\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"o\n\x13\x61uthorize_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12(\n\x05\x63\x61lls\x18\x02 \x03(\x0b\x32\x19.koinos.chain.call_target\"!\n\x10\x61uthorize_result\x12\r\n\x05value\x18\x01 \x01(\x08*H\n\x12\x61uthorization_type\x12\x11\n\rcall_contract\x10\x00\x12\n\n\x06use_rc\x10\x01\x12\x13\n\x0fupload_contract\x10\x02\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x1ckoinos/chain/authority.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"=\n\x0b\x63\x61ll_target\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"|\n\x13\x61uthorize_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12,\n\x04\x63\x61ll\x18\x02 \x01(\x0b\x32\x19.koinos.chain.call_targetH\x00\x88\x01\x01\x42\x07\n\x05_call\"!\n\x10\x61uthorize_result\x12\r\n\x05value\x18\x01 \x01(\x08*H\n\x12\x61uthorization_type\x12\x11\n\rcall_contract\x10\x00\x12\n\n\x06use_rc\x10\x01\x12\x13\n\x0fupload_contract\x10\x02\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
@@ -52,8 +52,8 @@ _AUTHORIZATION_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=332,
-  serialized_end=404,
+  serialized_start=345,
+  serialized_end=417,
 )
 _sym_db.RegisterEnumDescriptor(_AUTHORIZATION_TYPE)
 
@@ -119,9 +119,9 @@ _AUTHORIZE_ARGUMENTS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='calls', full_name='koinos.chain.authorize_arguments.calls', index=1,
-      number=2, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
+      name='call', full_name='koinos.chain.authorize_arguments.call', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -136,9 +136,14 @@ _AUTHORIZE_ARGUMENTS = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_call', full_name='koinos.chain.authorize_arguments._call',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=184,
-  serialized_end=295,
+  serialized_end=308,
 )
 
 
@@ -169,12 +174,15 @@ _AUTHORIZE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=297,
-  serialized_end=330,
+  serialized_start=310,
+  serialized_end=343,
 )
 
 _AUTHORIZE_ARGUMENTS.fields_by_name['type'].enum_type = _AUTHORIZATION_TYPE
-_AUTHORIZE_ARGUMENTS.fields_by_name['calls'].message_type = _CALL_TARGET
+_AUTHORIZE_ARGUMENTS.fields_by_name['call'].message_type = _CALL_TARGET
+_AUTHORIZE_ARGUMENTS.oneofs_by_name['_call'].fields.append(
+  _AUTHORIZE_ARGUMENTS.fields_by_name['call'])
+_AUTHORIZE_ARGUMENTS.fields_by_name['call'].containing_oneof = _AUTHORIZE_ARGUMENTS.oneofs_by_name['_call']
 DESCRIPTOR.message_types_by_name['call_target'] = _CALL_TARGET
 DESCRIPTOR.message_types_by_name['authorize_arguments'] = _AUTHORIZE_ARGUMENTS
 DESCRIPTOR.message_types_by_name['authorize_result'] = _AUTHORIZE_RESULT

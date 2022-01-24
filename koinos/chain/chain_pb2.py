@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"*\n\x15max_account_resources\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"\xa0\x01\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\x12 \n\x18\x61uthorizes_call_contract\x18\x03 \x01(\x08\x12 \n\x18\x61uthorizes_use_resources\x18\x04 \x01(\x08\x12\"\n\x1a\x61uthorizes_upload_contract\x18\x05 \x01(\x08\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"*\n\x15max_account_resources\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"\x99\x01\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\x12 \n\x18\x61uthorizes_call_contract\x18\x03 \x01(\x08\x12\x19\n\x11\x61uthorizes_use_rc\x18\x04 \x01(\x08\x12\"\n\x1a\x61uthorizes_upload_contract\x18\x05 \x01(\x08\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
@@ -47,8 +47,8 @@ _PRIVILEGE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1051,
-  serialized_end=1094,
+  serialized_start=1044,
+  serialized_end=1087,
 )
 _sym_db.RegisterEnumDescriptor(_PRIVILEGE)
 
@@ -357,7 +357,7 @@ _CONTRACT_METADATA_OBJECT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='authorizes_use_resources', full_name='koinos.chain.contract_metadata_object.authorizes_use_resources', index=3,
+      name='authorizes_use_rc', full_name='koinos.chain.contract_metadata_object.authorizes_use_rc', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -383,7 +383,7 @@ _CONTRACT_METADATA_OBJECT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=739,
-  serialized_end=899,
+  serialized_end=892,
 )
 
 
@@ -428,8 +428,8 @@ _GENESIS_ENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=901,
-  serialized_end=987,
+  serialized_start=894,
+  serialized_end=980,
 )
 
 
@@ -460,8 +460,8 @@ _GENESIS_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=989,
-  serialized_end=1049,
+  serialized_start=982,
+  serialized_end=1042,
 )
 
 _DATABASE_KEY.fields_by_name['space'].message_type = _OBJECT_SPACE
