@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/chain/object_spaces.proto\x12\x0ckoinos.chain*\x8f\x01\n\x0fsystem_space_id\x12\x0f\n\x0breserved_id\x10\x00\x12\x0c\n\x08metadata\x10\x01\x12\x18\n\x14system_call_dispatch\x10\x03\x12\x15\n\x11\x63ontract_bytecode\x10\x04\x12\x15\n\x11\x63ontract_metadata\x10\x05\x12\x15\n\x11transaction_nonce\x10\x06\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n koinos/chain/object_spaces.proto\x12\x0ckoinos.chain*~\n\x0fsystem_space_id\x12\x0c\n\x08metadata\x10\x00\x12\x18\n\x14system_call_dispatch\x10\x01\x12\x15\n\x11\x63ontract_bytecode\x10\x02\x12\x15\n\x11\x63ontract_metadata\x10\x03\x12\x15\n\x11transaction_nonce\x10\x04\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
 )
 
 _SYSTEM_SPACE_ID = _descriptor.EnumDescriptor(
@@ -31,50 +31,44 @@ _SYSTEM_SPACE_ID = _descriptor.EnumDescriptor(
   create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='reserved_id', index=0, number=0,
+      name='metadata', index=0, number=0,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='metadata', index=1, number=1,
+      name='system_call_dispatch', index=1, number=1,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='system_call_dispatch', index=2, number=3,
+      name='contract_bytecode', index=2, number=2,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='contract_bytecode', index=3, number=4,
+      name='contract_metadata', index=3, number=3,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='contract_metadata', index=4, number=5,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='transaction_nonce', index=5, number=6,
+      name='transaction_nonce', index=4, number=4,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=51,
-  serialized_end=194,
+  serialized_start=50,
+  serialized_end=176,
 )
 _sym_db.RegisterEnumDescriptor(_SYSTEM_SPACE_ID)
 
 system_space_id = enum_type_wrapper.EnumTypeWrapper(_SYSTEM_SPACE_ID)
-reserved_id = 0
-metadata = 1
-system_call_dispatch = 3
-contract_bytecode = 4
-contract_metadata = 5
-transaction_nonce = 6
+metadata = 0
+system_call_dispatch = 1
+contract_bytecode = 2
+contract_metadata = 3
+transaction_nonce = 4
 
 
 DESCRIPTOR.enum_types_by_name['system_space_id'] = _SYSTEM_SPACE_ID
