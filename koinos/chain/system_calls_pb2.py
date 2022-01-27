@@ -26,7 +26,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1fkoinos/chain/system_calls.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x1ckoinos/chain/authority.proto\x1a\x18koinos/chain/chain.proto\x1a\x18koinos/chain/value.proto\"S\n\x1a\x61uthorize_system_arguments\x12\x35\n\x04type\x18\x01 \x01(\x0e\x32\'.koinos.chain.system_authorization_type\"(\n\x17\x61uthorize_system_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x86\x01\n\x1averify_signature_arguments\x12\x1f\n\x04type\x18\x01 \x01(\x0e\x32\x11.koinos.chain.dsa\x12\x18\n\npublic_key\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x14\n\x06\x64igest\x18\x04 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"(\n\x17verify_signature_result\x12\r\n\x05value\x18\x01 \x01(\x08\"b\n\x1crecover_public_key_arguments\x12\x1f\n\x04type\x18\x01 \x01(\x0e\x32\x11.koinos.chain.dsa\x12\x11\n\tsignature\x18\x02 \x01(\x0c\x12\x0e\n\x06\x64igest\x18\x03 \x01(\x0c\"0\n\x19recover_public_key_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"0\n\x1fget_transaction_field_arguments\x12\r\n\x05\x66ield\x18\x01 \x01(\t\"G\n\x1cget_transaction_field_result\x12\'\n\x05value\x18\x01 \x01(\x0b\x32\x18.koinos.chain.value_type\"*\n\x19get_block_field_arguments\x12\r\n\x05\x66ield\x18\x01 \x01(\t\"A\n\x16get_block_field_result\x12\'\n\x05value\x18\x01 \x01(\x0b\x32\x18.koinos.chain.value_type\"E\n\x0f\x65vent_arguments\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\x0c\x12\x16\n\x08impacted\x18\x03 \x03(\x0c\x42\x04\x80\xb5\x18\x06\"\x0e\n\x0c\x65vent_result\" \n\rlog_arguments\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x0c\n\nlog_result\"u\n!process_block_signature_arguments\x12\x0e\n\x06\x64igest\x18\x01 \x01(\x0c\x12-\n\x06header\x18\x02 \x01(\x0b\x32\x1d.koinos.protocol.block_header\x12\x11\n\tsignature\x18\x03 \x01(\x0c\"/\n\x1eprocess_block_signature_result\x12\r\n\x05value\x18\x01 \x01(\x08\"<\n\x1cverify_merkle_root_arguments\x12\x0c\n\x04root\x18\x01 \x01(\x0c\x12\x0e\n\x06hashes\x18\x02 \x03(\x0c\"*\n\x19verify_merkle_root_result\x12\r\n\x05value\x18\x01 \x01(\x08\">\n\x15\x61pply_block_arguments\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\"\x14\n\x12\x61pply_block_result\"P\n\x1b\x61pply_transaction_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"\x1a\n\x18\x61pply_transaction_result\"c\n)apply_upload_contract_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operation\"(\n&apply_upload_contract_operation_result\"_\n\'apply_call_contract_operation_arguments\x12\x34\n\x02op\x18\x01 \x01(\x0b\x32(.koinos.protocol.call_contract_operation\"&\n$apply_call_contract_operation_result\"c\n)apply_set_system_call_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.set_system_call_operation\"(\n&apply_set_system_call_operation_result\"k\n-apply_set_system_contract_operation_arguments\x12:\n\x02op\x18\x01 \x01(\x0b\x32..koinos.protocol.set_system_contract_operation\",\n*apply_set_system_contract_operation_result\"[\n\x14put_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x0b\n\x03obj\x18\x03 \x01(\x0c\"\"\n\x11put_object_result\x12\r\n\x05value\x18\x01 \x01(\x05\"Q\n\x17remove_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"\x16\n\x14remove_object_result\"N\n\x14get_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"=\n\x0f\x64\x61tabase_object\x12\x0e\n\x06\x65xists\x18\x01 \x01(\x08\x12\r\n\x05value\x18\x02 \x01(\x0c\x12\x0b\n\x03key\x18\x03 \x01(\x0c\"A\n\x11get_object_result\x12,\n\x05value\x18\x01 \x01(\x0b\x32\x1d.koinos.chain.database_object\"S\n\x19get_next_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"F\n\x16get_next_object_result\x12,\n\x05value\x18\x01 \x01(\x0b\x32\x1d.koinos.chain.database_object\"S\n\x19get_prev_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"F\n\x16get_prev_object_result\x12,\n\x05value\x18\x01 \x01(\x0b\x32\x1d.koinos.chain.database_object\"W\n\x17\x63\x61ll_contract_arguments\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"%\n\x14\x63\x61ll_contract_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1b\n\x19get_entry_point_arguments\"\'\n\x16get_entry_point_result\x12\r\n\x05value\x18\x01 \x01(\r\"\'\n%get_contract_arguments_size_arguments\"3\n\"get_contract_arguments_size_result\x12\r\n\x05value\x18\x01 \x01(\r\"\"\n get_contract_arguments_arguments\".\n\x1dget_contract_arguments_result\x12\r\n\x05value\x18\x01 \x01(\x0c\".\n\x1dset_contract_result_arguments\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1c\n\x1aset_contract_result_result\",\n\x17\x65xit_contract_arguments\x12\x11\n\texit_code\x18\x01 \x01(\r\"\x16\n\x14\x65xit_contract_result\"\x19\n\x17get_head_info_arguments\">\n\x14get_head_info_result\x12&\n\x05value\x18\x01 \x01(\x0b\x32\x17.koinos.chain.head_info\"A\n\x0ehash_arguments\x12\x10\n\x04\x63ode\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0b\n\x03obj\x18\x02 \x01(\x0c\x12\x10\n\x04size\x18\x03 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bhash_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"1\n\x18get_account_rc_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"*\n\x15get_account_rc_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"H\n\x1c\x63onsume_account_rc_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"*\n\x19\x63onsume_account_rc_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x1f\n\x1dget_resource_limits_arguments\"N\n\x1aget_resource_limits_result\x12\x30\n\x05value\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\x96\x01\n!consume_block_resources_arguments\x12!\n\x15\x64isk_storage_consumed\x18\x01 \x01(\x04\x42\x02\x30\x01\x12&\n\x1anetwork_bandwidth_consumed\x18\x02 \x01(\x04\x42\x02\x30\x01\x12&\n\x1a\x63ompute_bandwidth_consumed\x18\x03 \x01(\x04\x42\x02\x30\x01\"/\n\x1e\x63onsume_block_resources_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\'\n%get_last_irreversible_block_arguments\"7\n\"get_last_irreversible_block_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_caller_arguments\"=\n\x11get_caller_result\x12(\n\x05value\x18\x01 \x01(\x0b\x32\x19.koinos.chain.caller_data\"4\n\x1brequire_authority_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x1a\n\x18require_authority_result\"\x1b\n\x19get_contract_id_arguments\"-\n\x16get_contract_id_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\"4\n\x1bget_account_nonce_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"-\n\x18get_account_nonce_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01*\x1a\n\x03\x64sa\x12\x13\n\x0f\x65\x63\x64sa_secp256k1\x10\x00*I\n\x19system_authorization_type\x12\x17\n\x13set_system_contract\x10\x00\x12\x13\n\x0fset_system_call\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x1fkoinos/chain/system_calls.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x1ckoinos/chain/authority.proto\x1a\x18koinos/chain/chain.proto\x1a\x18koinos/chain/value.proto\"S\n\x1a\x61uthorize_system_arguments\x12\x35\n\x04type\x18\x01 \x01(\x0e\x32\'.koinos.chain.system_authorization_type\"(\n\x17\x61uthorize_system_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x86\x01\n\x1averify_signature_arguments\x12\x1f\n\x04type\x18\x01 \x01(\x0e\x32\x11.koinos.chain.dsa\x12\x18\n\npublic_key\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x14\n\x06\x64igest\x18\x04 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"(\n\x17verify_signature_result\x12\r\n\x05value\x18\x01 \x01(\x08\"b\n\x1crecover_public_key_arguments\x12\x1f\n\x04type\x18\x01 \x01(\x0e\x32\x11.koinos.chain.dsa\x12\x11\n\tsignature\x18\x02 \x01(\x0c\x12\x0e\n\x06\x64igest\x18\x03 \x01(\x0c\"0\n\x19recover_public_key_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"0\n\x1fget_transaction_field_arguments\x12\r\n\x05\x66ield\x18\x01 \x01(\t\"G\n\x1cget_transaction_field_result\x12\'\n\x05value\x18\x01 \x01(\x0b\x32\x18.koinos.chain.value_type\"*\n\x19get_block_field_arguments\x12\r\n\x05\x66ield\x18\x01 \x01(\t\"A\n\x16get_block_field_result\x12\'\n\x05value\x18\x01 \x01(\x0b\x32\x18.koinos.chain.value_type\"E\n\x0f\x65vent_arguments\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\x0c\x12\x16\n\x08impacted\x18\x03 \x03(\x0c\x42\x04\x80\xb5\x18\x06\"\x0e\n\x0c\x65vent_result\" \n\rlog_arguments\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x0c\n\nlog_result\"u\n!process_block_signature_arguments\x12\x0e\n\x06\x64igest\x18\x01 \x01(\x0c\x12-\n\x06header\x18\x02 \x01(\x0b\x32\x1d.koinos.protocol.block_header\x12\x11\n\tsignature\x18\x03 \x01(\x0c\"/\n\x1eprocess_block_signature_result\x12\r\n\x05value\x18\x01 \x01(\x08\"<\n\x1cverify_merkle_root_arguments\x12\x0c\n\x04root\x18\x01 \x01(\x0c\x12\x0e\n\x06hashes\x18\x02 \x03(\x0c\"*\n\x19verify_merkle_root_result\x12\r\n\x05value\x18\x01 \x01(\x08\">\n\x15\x61pply_block_arguments\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\"\x14\n\x12\x61pply_block_result\"P\n\x1b\x61pply_transaction_arguments\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\"\x1a\n\x18\x61pply_transaction_result\"c\n)apply_upload_contract_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operation\"(\n&apply_upload_contract_operation_result\"_\n\'apply_call_contract_operation_arguments\x12\x34\n\x02op\x18\x01 \x01(\x0b\x32(.koinos.protocol.call_contract_operation\"&\n$apply_call_contract_operation_result\"c\n)apply_set_system_call_operation_arguments\x12\x36\n\x02op\x18\x01 \x01(\x0b\x32*.koinos.protocol.set_system_call_operation\"(\n&apply_set_system_call_operation_result\"k\n-apply_set_system_contract_operation_arguments\x12:\n\x02op\x18\x01 \x01(\x0b\x32..koinos.protocol.set_system_contract_operation\",\n*apply_set_system_contract_operation_result\"[\n\x14put_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x0b\n\x03obj\x18\x03 \x01(\x0c\"\"\n\x11put_object_result\x12\r\n\x05value\x18\x01 \x01(\x05\"Q\n\x17remove_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"\x16\n\x14remove_object_result\"N\n\x14get_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"=\n\x0f\x64\x61tabase_object\x12\x0e\n\x06\x65xists\x18\x01 \x01(\x08\x12\r\n\x05value\x18\x02 \x01(\x0c\x12\x0b\n\x03key\x18\x03 \x01(\x0c\"A\n\x11get_object_result\x12,\n\x05value\x18\x01 \x01(\x0b\x32\x1d.koinos.chain.database_object\"S\n\x19get_next_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"F\n\x16get_next_object_result\x12,\n\x05value\x18\x01 \x01(\x0b\x32\x1d.koinos.chain.database_object\"S\n\x19get_prev_object_arguments\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"F\n\x16get_prev_object_result\x12,\n\x05value\x18\x01 \x01(\x0b\x32\x1d.koinos.chain.database_object\"W\n\x17\x63\x61ll_contract_arguments\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"%\n\x14\x63\x61ll_contract_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1b\n\x19get_entry_point_arguments\"\'\n\x16get_entry_point_result\x12\r\n\x05value\x18\x01 \x01(\r\"\'\n%get_contract_arguments_size_arguments\"3\n\"get_contract_arguments_size_result\x12\r\n\x05value\x18\x01 \x01(\r\"\"\n get_contract_arguments_arguments\".\n\x1dget_contract_arguments_result\x12\r\n\x05value\x18\x01 \x01(\x0c\".\n\x1dset_contract_result_arguments\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x1c\n\x1aset_contract_result_result\",\n\x17\x65xit_contract_arguments\x12\x11\n\texit_code\x18\x01 \x01(\r\"\x16\n\x14\x65xit_contract_result\"\x19\n\x17get_head_info_arguments\">\n\x14get_head_info_result\x12&\n\x05value\x18\x01 \x01(\x0b\x32\x17.koinos.chain.head_info\"A\n\x0ehash_arguments\x12\x10\n\x04\x63ode\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0b\n\x03obj\x18\x02 \x01(\x0c\x12\x10\n\x04size\x18\x03 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bhash_result\x12\r\n\x05value\x18\x01 \x01(\x0c\"1\n\x18get_account_rc_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"*\n\x15get_account_rc_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"H\n\x1c\x63onsume_account_rc_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"*\n\x19\x63onsume_account_rc_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\x1f\n\x1dget_resource_limits_arguments\"N\n\x1aget_resource_limits_result\x12\x30\n\x05value\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\x96\x01\n!consume_block_resources_arguments\x12!\n\x15\x64isk_storage_consumed\x18\x01 \x01(\x04\x42\x02\x30\x01\x12&\n\x1anetwork_bandwidth_consumed\x18\x02 \x01(\x04\x42\x02\x30\x01\x12&\n\x1a\x63ompute_bandwidth_consumed\x18\x03 \x01(\x04\x42\x02\x30\x01\"/\n\x1e\x63onsume_block_resources_result\x12\r\n\x05value\x18\x01 \x01(\x08\"\'\n%get_last_irreversible_block_arguments\"7\n\"get_last_irreversible_block_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_caller_arguments\"=\n\x11get_caller_result\x12(\n\x05value\x18\x01 \x01(\x0b\x32\x19.koinos.chain.caller_data\"d\n\x1brequire_authority_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12\x15\n\x07\x61\x63\x63ount\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x1a\n\x18require_authority_result\"\x1b\n\x19get_contract_id_arguments\"-\n\x16get_contract_id_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\"4\n\x1bget_account_nonce_arguments\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"-\n\x18get_account_nonce_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01*\x1a\n\x03\x64sa\x12\x13\n\x0f\x65\x63\x64sa_secp256k1\x10\x00*I\n\x19system_authorization_type\x12\x17\n\x13set_system_contract\x10\x00\x12\x13\n\x0fset_system_call\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_chain_dot_authority__pb2.DESCRIPTOR,koinos_dot_chain_dot_chain__pb2.DESCRIPTOR,koinos_dot_chain_dot_value__pb2.DESCRIPTOR,])
 
@@ -45,8 +45,8 @@ _DSA = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4523,
-  serialized_end=4549,
+  serialized_start=4571,
+  serialized_end=4597,
 )
 _sym_db.RegisterEnumDescriptor(_DSA)
 
@@ -71,8 +71,8 @@ _SYSTEM_AUTHORIZATION_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4551,
-  serialized_end=4624,
+  serialized_start=4599,
+  serialized_end=4672,
 )
 _sym_db.RegisterEnumDescriptor(_SYSTEM_AUTHORIZATION_TYPE)
 
@@ -2349,8 +2349,15 @@ _REQUIRE_AUTHORITY_ARGUMENTS = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='account', full_name='koinos.chain.require_authority_arguments.account', index=0,
-      number=1, type=12, cpp_type=9, label=1,
+      name='type', full_name='koinos.chain.require_authority_arguments.type', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='account', full_name='koinos.chain.require_authority_arguments.account', index=1,
+      number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -2368,7 +2375,7 @@ _REQUIRE_AUTHORITY_ARGUMENTS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=4264,
-  serialized_end=4316,
+  serialized_end=4364,
 )
 
 
@@ -2392,8 +2399,8 @@ _REQUIRE_AUTHORITY_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4318,
-  serialized_end=4344,
+  serialized_start=4366,
+  serialized_end=4392,
 )
 
 
@@ -2417,8 +2424,8 @@ _GET_CONTRACT_ID_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4346,
-  serialized_end=4373,
+  serialized_start=4394,
+  serialized_end=4421,
 )
 
 
@@ -2449,8 +2456,8 @@ _GET_CONTRACT_ID_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4375,
-  serialized_end=4420,
+  serialized_start=4423,
+  serialized_end=4468,
 )
 
 
@@ -2481,8 +2488,8 @@ _GET_ACCOUNT_NONCE_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4422,
-  serialized_end=4474,
+  serialized_start=4470,
+  serialized_end=4522,
 )
 
 
@@ -2513,8 +2520,8 @@ _GET_ACCOUNT_NONCE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4476,
-  serialized_end=4521,
+  serialized_start=4524,
+  serialized_end=4569,
 )
 
 _AUTHORIZE_SYSTEM_ARGUMENTS.fields_by_name['type'].enum_type = _SYSTEM_AUTHORIZATION_TYPE
@@ -2540,6 +2547,7 @@ _GET_PREV_OBJECT_RESULT.fields_by_name['value'].message_type = _DATABASE_OBJECT
 _GET_HEAD_INFO_RESULT.fields_by_name['value'].message_type = koinos_dot_chain_dot_chain__pb2._HEAD_INFO
 _GET_RESOURCE_LIMITS_RESULT.fields_by_name['value'].message_type = koinos_dot_chain_dot_chain__pb2._RESOURCE_LIMIT_DATA
 _GET_CALLER_RESULT.fields_by_name['value'].message_type = koinos_dot_chain_dot_chain__pb2._CALLER_DATA
+_REQUIRE_AUTHORITY_ARGUMENTS.fields_by_name['type'].enum_type = koinos_dot_chain_dot_authority__pb2._AUTHORIZATION_TYPE
 DESCRIPTOR.message_types_by_name['authorize_system_arguments'] = _AUTHORIZE_SYSTEM_ARGUMENTS
 DESCRIPTOR.message_types_by_name['authorize_system_result'] = _AUTHORIZE_SYSTEM_RESULT
 DESCRIPTOR.message_types_by_name['verify_signature_arguments'] = _VERIFY_SIGNATURE_ARGUMENTS
