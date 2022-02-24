@@ -24,7 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n,koinos/rpc/block_store/block_store_rpc.proto\x12\x16koinos.rpc.block_store\x1a$koinos/block_store/block_store.proto\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"a\n\x18get_blocks_by_id_request\x12\x17\n\tblock_ids\x18\x01 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x12\x14\n\x0creturn_block\x18\x02 \x01(\x08\x12\x16\n\x0ereturn_receipt\x18\x03 \x01(\x08\"P\n\x19get_blocks_by_id_response\x12\x33\n\x0b\x62lock_items\x18\x01 \x03(\x0b\x32\x1e.koinos.block_store.block_item\"\xa0\x01\n\x1cget_blocks_by_height_request\x12\x1b\n\rhead_block_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12!\n\x15\x61ncestor_start_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x12\n\nnum_blocks\x18\x03 \x01(\r\x12\x14\n\x0creturn_block\x18\x04 \x01(\x08\x12\x16\n\x0ereturn_receipt\x18\x05 \x01(\x08\"T\n\x1dget_blocks_by_height_response\x12\x33\n\x0b\x62lock_items\x18\x01 \x03(\x0b\x32\x1e.koinos.block_store.block_item\"A\n\x11\x61\x64\x64_block_request\x12,\n\x0c\x62lock_to_add\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\"\x14\n\x12\x61\x64\x64_block_response\"\x1b\n\x19get_highest_block_request\"F\n\x1aget_highest_block_response\x12(\n\x08topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\"\x82\x03\n\x13\x62lock_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12L\n\x10get_blocks_by_id\x18\x02 \x01(\x0b\x32\x30.koinos.rpc.block_store.get_blocks_by_id_requestH\x00\x12T\n\x14get_blocks_by_height\x18\x03 \x01(\x0b\x32\x34.koinos.rpc.block_store.get_blocks_by_height_requestH\x00\x12>\n\tadd_block\x18\x04 \x01(\x0b\x32).koinos.rpc.block_store.add_block_requestH\x00\x12N\n\x11get_highest_block\x18\x05 \x01(\x0b\x32\x31.koinos.rpc.block_store.get_highest_block_requestH\x00\x42\t\n\x07request\"\xb5\x03\n\x14\x62lock_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12M\n\x10get_blocks_by_id\x18\x03 \x01(\x0b\x32\x31.koinos.rpc.block_store.get_blocks_by_id_responseH\x00\x12U\n\x14get_blocks_by_height\x18\x04 \x01(\x0b\x32\x35.koinos.rpc.block_store.get_blocks_by_height_responseH\x00\x12?\n\tadd_block\x18\x05 \x01(\x0b\x32*.koinos.rpc.block_store.add_block_responseH\x00\x12O\n\x11get_highest_block\x18\x06 \x01(\x0b\x32\x32.koinos.rpc.block_store.get_highest_block_responseH\x00\x42\n\n\x08responseB>Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_storeb\x06proto3'
+  serialized_pb=b'\n,koinos/rpc/block_store/block_store_rpc.proto\x12\x16koinos.rpc.block_store\x1a$koinos/block_store/block_store.proto\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"a\n\x18get_blocks_by_id_request\x12\x17\n\tblock_ids\x18\x01 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x12\x14\n\x0creturn_block\x18\x02 \x01(\x08\x12\x16\n\x0ereturn_receipt\x18\x03 \x01(\x08\"P\n\x19get_blocks_by_id_response\x12\x33\n\x0b\x62lock_items\x18\x01 \x03(\x0b\x32\x1e.koinos.block_store.block_item\"\xa0\x01\n\x1cget_blocks_by_height_request\x12\x1b\n\rhead_block_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12!\n\x15\x61ncestor_start_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x12\n\nnum_blocks\x18\x03 \x01(\r\x12\x14\n\x0creturn_block\x18\x04 \x01(\x08\x12\x16\n\x0ereturn_receipt\x18\x05 \x01(\x08\"T\n\x1dget_blocks_by_height_response\x12\x33\n\x0b\x62lock_items\x18\x01 \x03(\x0b\x32\x1e.koinos.block_store.block_item\"y\n\x11\x61\x64\x64_block_request\x12,\n\x0c\x62lock_to_add\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\x12\x36\n\x0ereceipt_to_add\x18\x02 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"\x14\n\x12\x61\x64\x64_block_response\"\x1b\n\x19get_highest_block_request\"F\n\x1aget_highest_block_response\x12(\n\x08topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\"\x82\x03\n\x13\x62lock_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12L\n\x10get_blocks_by_id\x18\x02 \x01(\x0b\x32\x30.koinos.rpc.block_store.get_blocks_by_id_requestH\x00\x12T\n\x14get_blocks_by_height\x18\x03 \x01(\x0b\x32\x34.koinos.rpc.block_store.get_blocks_by_height_requestH\x00\x12>\n\tadd_block\x18\x04 \x01(\x0b\x32).koinos.rpc.block_store.add_block_requestH\x00\x12N\n\x11get_highest_block\x18\x05 \x01(\x0b\x32\x31.koinos.rpc.block_store.get_highest_block_requestH\x00\x42\t\n\x07request\"\xb5\x03\n\x14\x62lock_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12M\n\x10get_blocks_by_id\x18\x03 \x01(\x0b\x32\x31.koinos.rpc.block_store.get_blocks_by_id_responseH\x00\x12U\n\x14get_blocks_by_height\x18\x04 \x01(\x0b\x32\x35.koinos.rpc.block_store.get_blocks_by_height_responseH\x00\x12?\n\tadd_block\x18\x05 \x01(\x0b\x32*.koinos.rpc.block_store.add_block_responseH\x00\x12O\n\x11get_highest_block\x18\x06 \x01(\x0b\x32\x32.koinos.rpc.block_store.get_highest_block_responseH\x00\x42\n\n\x08responseB>Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_storeb\x06proto3'
   ,
   dependencies=[koinos_dot_block__store_dot_block__store__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
 
@@ -216,6 +216,13 @@ _ADD_BLOCK_REQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='receipt_to_add', full_name='koinos.rpc.block_store.add_block_request.receipt_to_add', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -229,7 +236,7 @@ _ADD_BLOCK_REQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=637,
-  serialized_end=702,
+  serialized_end=758,
 )
 
 
@@ -253,8 +260,8 @@ _ADD_BLOCK_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=704,
-  serialized_end=724,
+  serialized_start=760,
+  serialized_end=780,
 )
 
 
@@ -278,8 +285,8 @@ _GET_HIGHEST_BLOCK_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=726,
-  serialized_end=753,
+  serialized_start=782,
+  serialized_end=809,
 )
 
 
@@ -310,8 +317,8 @@ _GET_HIGHEST_BLOCK_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=755,
-  serialized_end=825,
+  serialized_start=811,
+  serialized_end=881,
 )
 
 
@@ -375,8 +382,8 @@ _BLOCK_STORE_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=828,
-  serialized_end=1214,
+  serialized_start=884,
+  serialized_end=1270,
 )
 
 
@@ -447,13 +454,14 @@ _BLOCK_STORE_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1217,
-  serialized_end=1654,
+  serialized_start=1273,
+  serialized_end=1710,
 )
 
 _GET_BLOCKS_BY_ID_RESPONSE.fields_by_name['block_items'].message_type = koinos_dot_block__store_dot_block__store__pb2._BLOCK_ITEM
 _GET_BLOCKS_BY_HEIGHT_RESPONSE.fields_by_name['block_items'].message_type = koinos_dot_block__store_dot_block__store__pb2._BLOCK_ITEM
 _ADD_BLOCK_REQUEST.fields_by_name['block_to_add'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK
+_ADD_BLOCK_REQUEST.fields_by_name['receipt_to_add'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK_RECEIPT
 _GET_HIGHEST_BLOCK_RESPONSE.fields_by_name['topology'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _BLOCK_STORE_REQUEST.fields_by_name['reserved'].message_type = koinos_dot_rpc_dot_rpc__pb2._RESERVED_RPC
 _BLOCK_STORE_REQUEST.fields_by_name['get_blocks_by_id'].message_type = _GET_BLOCKS_BY_ID_REQUEST
