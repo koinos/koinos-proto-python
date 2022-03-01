@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z5github.com/koinos/koinos-proto-golang/koinos/protocol',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/value.proto\x12\x0ckoinos.chain\x1a\x19google/protobuf/any.proto\"\xab\x03\n\nvalue_type\x12-\n\rmessage_value\x18\x01 \x01(\x0b\x32\x14.google.protobuf.AnyH\x00\x12\x16\n\x0c\x64ouble_value\x18\x02 \x01(\x01H\x00\x12\x15\n\x0b\x66loat_value\x18\x03 \x01(\x02H\x00\x12\x15\n\x0bint32_value\x18\x04 \x01(\x05H\x00\x12\x15\n\x0bint64_value\x18\x05 \x01(\x03H\x00\x12\x16\n\x0cuint32_value\x18\x06 \x01(\rH\x00\x12\x16\n\x0cuint64_value\x18\x07 \x01(\x04H\x00\x12\x16\n\x0csint32_value\x18\x08 \x01(\x11H\x00\x12\x16\n\x0csint64_value\x18\t \x01(\x12H\x00\x12\x17\n\rfixed32_value\x18\n \x01(\x07H\x00\x12\x17\n\rfixed64_value\x18\x0b \x01(\x06H\x00\x12\x18\n\x0esfixed32_value\x18\x0c \x01(\x0fH\x00\x12\x18\n\x0esfixed64_value\x18\r \x01(\x10H\x00\x12\x14\n\nbool_value\x18\x0e \x01(\x08H\x00\x12\x16\n\x0cstring_value\x18\x0f \x01(\tH\x00\x12\x15\n\x0b\x62ytes_value\x18\x10 \x01(\x0cH\x00\x42\x06\n\x04kind\")\n\tenum_type\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06number\x18\x02 \x01(\x05\"5\n\tlist_type\x12(\n\x06values\x18\x01 \x03(\x0b\x32\x18.koinos.chain.value_typeB7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/value.proto\x12\x0ckoinos.chain\x1a\x19google/protobuf/any.proto\"\xbf\x03\n\nvalue_type\x12-\n\rmessage_value\x18\x01 \x01(\x0b\x32\x14.google.protobuf.AnyH\x00\x12\x16\n\x0c\x64ouble_value\x18\x02 \x01(\x01H\x00\x12\x15\n\x0b\x66loat_value\x18\x03 \x01(\x02H\x00\x12\x15\n\x0bint32_value\x18\x04 \x01(\x05H\x00\x12\x19\n\x0bint64_value\x18\x05 \x01(\x03\x42\x02\x30\x01H\x00\x12\x16\n\x0cuint32_value\x18\x06 \x01(\rH\x00\x12\x1a\n\x0cuint64_value\x18\x07 \x01(\x04\x42\x02\x30\x01H\x00\x12\x16\n\x0csint32_value\x18\x08 \x01(\x11H\x00\x12\x1a\n\x0csint64_value\x18\t \x01(\x12\x42\x02\x30\x01H\x00\x12\x17\n\rfixed32_value\x18\n \x01(\x07H\x00\x12\x1b\n\rfixed64_value\x18\x0b \x01(\x06\x42\x02\x30\x01H\x00\x12\x18\n\x0esfixed32_value\x18\x0c \x01(\x0fH\x00\x12\x1c\n\x0esfixed64_value\x18\r \x01(\x10\x42\x02\x30\x01H\x00\x12\x14\n\nbool_value\x18\x0e \x01(\x08H\x00\x12\x16\n\x0cstring_value\x18\x0f \x01(\tH\x00\x12\x15\n\x0b\x62ytes_value\x18\x10 \x01(\x0cH\x00\x42\x06\n\x04kind\")\n\tenum_type\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06number\x18\x02 \x01(\x05\"5\n\tlist_type\x12(\n\x06values\x18\x01 \x03(\x0b\x32\x18.koinos.chain.value_typeB7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 
@@ -69,7 +69,7 @@ _VALUE_TYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='uint32_value', full_name='koinos.chain.value_type.uint32_value', index=5,
       number=6, type=13, cpp_type=3, label=1,
@@ -83,7 +83,7 @@ _VALUE_TYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='sint32_value', full_name='koinos.chain.value_type.sint32_value', index=7,
       number=8, type=17, cpp_type=1, label=1,
@@ -97,7 +97,7 @@ _VALUE_TYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='fixed32_value', full_name='koinos.chain.value_type.fixed32_value', index=9,
       number=10, type=7, cpp_type=3, label=1,
@@ -111,7 +111,7 @@ _VALUE_TYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='sfixed32_value', full_name='koinos.chain.value_type.sfixed32_value', index=11,
       number=12, type=15, cpp_type=1, label=1,
@@ -125,7 +125,7 @@ _VALUE_TYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='bool_value', full_name='koinos.chain.value_type.bool_value', index=13,
       number=14, type=8, cpp_type=7, label=1,
@@ -165,7 +165,7 @@ _VALUE_TYPE = _descriptor.Descriptor(
     fields=[]),
   ],
   serialized_start=70,
-  serialized_end=497,
+  serialized_end=517,
 )
 
 
@@ -203,8 +203,8 @@ _ENUM_TYPE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=499,
-  serialized_end=540,
+  serialized_start=519,
+  serialized_end=560,
 )
 
 
@@ -235,8 +235,8 @@ _LIST_TYPE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=542,
-  serialized_end=595,
+  serialized_start=562,
+  serialized_end=615,
 )
 
 _VALUE_TYPE.fields_by_name['message_value'].message_type = google_dot_protobuf_dot_any__pb2._ANY
@@ -317,4 +317,9 @@ _sym_db.RegisterMessage(list_type)
 
 
 DESCRIPTOR._options = None
+_VALUE_TYPE.fields_by_name['int64_value']._options = None
+_VALUE_TYPE.fields_by_name['uint64_value']._options = None
+_VALUE_TYPE.fields_by_name['sint64_value']._options = None
+_VALUE_TYPE.fields_by_name['fixed64_value']._options = None
+_VALUE_TYPE.fields_by_name['sfixed64_value']._options = None
 # @@protoc_insertion_point(module_scope)
