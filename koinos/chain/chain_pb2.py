@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"*\n\x15max_account_resources\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"\xaa\x01\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\x12 \n\x18\x61uthorizes_call_contract\x18\x03 \x01(\x08\x12*\n\"authorizes_transaction_application\x18\x04 \x01(\x08\x12\"\n\x1a\x61uthorizes_upload_contract\x18\x05 \x01(\x08\"8\n\x17\x63ompute_bandwidth_entry\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07\x63ompute\x18\x02 \x01(\x04\"T\n\x1a\x63ompute_bandwidth_registry\x12\x36\n\x07\x65ntries\x18\x01 \x03(\x0b\x32%.koinos.chain.compute_bandwidth_entry\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/chain.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"F\n\x0c\x64\x61tabase_key\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\"*\n\x15max_account_resources\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"|\n\thead_info\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12\x1b\n\x0fhead_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17last_irreversible_block\x18\x03 \x01(\x04\x42\x02\x30\x01\"V\n\x0b\x63\x61ller_data\x12\x14\n\x06\x63\x61ller\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x31\n\x10\x63\x61ller_privilege\x18\x02 \x01(\x0e\x32\x17.koinos.chain.privilege\"\xe6\x01\n\x13resource_limit_data\x12\x1e\n\x12\x64isk_storage_limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_cost\x18\x02 \x01(\x04\x42\x02\x30\x01\x12#\n\x17network_bandwidth_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_cost\x18\x04 \x01(\x04\x42\x02\x30\x01\x12#\n\x17\x63ompute_bandwidth_limit\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_cost\x18\x06 \x01(\x04\x42\x02\x30\x01\"\xaa\x01\n\x18\x63ontract_metadata_object\x12\x0c\n\x04hash\x18\x01 \x01(\x0c\x12\x0e\n\x06system\x18\x02 \x01(\x08\x12 \n\x18\x61uthorizes_call_contract\x18\x03 \x01(\x08\x12*\n\"authorizes_transaction_application\x18\x04 \x01(\x08\x12\"\n\x1a\x61uthorizes_upload_contract\x18\x05 \x01(\x08\"8\n\x17\x63ompute_bandwidth_entry\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07\x63ompute\x18\x02 \x01(\x04\"T\n\x1a\x63ompute_bandwidth_registry\x12\x36\n\x07\x65ntries\x18\x01 \x03(\x0b\x32%.koinos.chain.compute_bandwidth_entry\"V\n\rgenesis_entry\x12)\n\x05space\x18\x01 \x01(\x0b\x32\x1a.koinos.chain.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05value\x18\x03 \x01(\x0c\"<\n\x0cgenesis_data\x12,\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x1b.koinos.chain.genesis_entry*+\n\tprivilege\x12\x0f\n\x0bkernel_mode\x10\x00\x12\r\n\tuser_mode\x10\x01*\x1a\n\x03\x64sa\x12\x13\n\x0f\x65\x63\x64sa_secp256k1\x10\x00\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
@@ -53,8 +53,30 @@ _PRIVILEGE = _descriptor.EnumDescriptor(
 _sym_db.RegisterEnumDescriptor(_PRIVILEGE)
 
 privilege = enum_type_wrapper.EnumTypeWrapper(_PRIVILEGE)
+_DSA = _descriptor.EnumDescriptor(
+  name='dsa',
+  full_name='koinos.chain.dsa',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='ecdsa_secp256k1', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=1250,
+  serialized_end=1276,
+)
+_sym_db.RegisterEnumDescriptor(_DSA)
+
+dsa = enum_type_wrapper.EnumTypeWrapper(_DSA)
 kernel_mode = 0
 user_mode = 1
+ecdsa_secp256k1 = 0
 
 
 
@@ -553,6 +575,7 @@ DESCRIPTOR.message_types_by_name['compute_bandwidth_registry'] = _COMPUTE_BANDWI
 DESCRIPTOR.message_types_by_name['genesis_entry'] = _GENESIS_ENTRY
 DESCRIPTOR.message_types_by_name['genesis_data'] = _GENESIS_DATA
 DESCRIPTOR.enum_types_by_name['privilege'] = _PRIVILEGE
+DESCRIPTOR.enum_types_by_name['dsa'] = _DSA
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 object_space = _reflection.GeneratedProtocolMessageType('object_space', (_message.Message,), {
