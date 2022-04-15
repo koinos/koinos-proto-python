@@ -13,8 +13,6 @@ _sym_db = _symbol_database.Default()
 
 
 from koinos import options_pb2 as koinos_dot_options__pb2
-from koinos import common_pb2 as koinos_dot_common__pb2
-from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -23,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ckoinos/chain/authority.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\"=\n\x0b\x63\x61ll_target\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"|\n\x13\x61uthorize_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12,\n\x04\x63\x61ll\x18\x02 \x01(\x0b\x32\x19.koinos.chain.call_targetH\x00\x88\x01\x01\x42\x07\n\x05_call\"!\n\x10\x61uthorize_result\x12\r\n\x05value\x18\x01 \x01(\x08*Y\n\x12\x61uthorization_type\x12\x11\n\rcontract_call\x10\x00\x12\x1b\n\x17transaction_application\x10\x01\x12\x13\n\x0f\x63ontract_upload\x10\x02\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x1ckoinos/chain/authority.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\"=\n\x0b\x63\x61ll_target\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"|\n\x13\x61uthorize_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12,\n\x04\x63\x61ll\x18\x02 \x01(\x0b\x32\x19.koinos.chain.call_targetH\x00\x88\x01\x01\x42\x07\n\x05_call\"!\n\x10\x61uthorize_result\x12\r\n\x05value\x18\x01 \x01(\x08*Y\n\x12\x61uthorization_type\x12\x11\n\rcontract_call\x10\x00\x12\x1b\n\x17transaction_application\x10\x01\x12\x13\n\x0f\x63ontract_upload\x10\x02\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
   ,
-  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
 _AUTHORIZATION_TYPE = _descriptor.EnumDescriptor(
   name='authorization_type',
@@ -52,8 +50,8 @@ _AUTHORIZATION_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=345,
-  serialized_end=434,
+  serialized_start=292,
+  serialized_end=381,
 )
 _sym_db.RegisterEnumDescriptor(_AUTHORIZATION_TYPE)
 
@@ -98,8 +96,8 @@ _CALL_TARGET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=121,
-  serialized_end=182,
+  serialized_start=68,
+  serialized_end=129,
 )
 
 
@@ -142,8 +140,8 @@ _AUTHORIZE_ARGUMENTS = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=184,
-  serialized_end=308,
+  serialized_start=131,
+  serialized_end=255,
 )
 
 
@@ -174,8 +172,8 @@ _AUTHORIZE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=310,
-  serialized_end=343,
+  serialized_start=257,
+  serialized_end=290,
 )
 
 _AUTHORIZE_ARGUMENTS.fields_by_name['type'].enum_type = _AUTHORIZATION_TYPE

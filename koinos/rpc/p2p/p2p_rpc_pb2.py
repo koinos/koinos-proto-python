@@ -11,7 +11,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos.rpc import rpc_pb2 as koinos_dot_rpc_dot_rpc__pb2
 
 
@@ -21,9 +20,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z4github.com/koinos/koinos-proto-golang/koinos/rpc/p2p',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ckoinos/rpc/p2p/p2p_rpc.proto\x12\x0ekoinos.rpc.p2p\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\"\x1b\n\x19get_gossip_status_request\"-\n\x1aget_gossip_status_response\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\"\x8e\x01\n\x0bp2p_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12\x46\n\x11get_gossip_status\x18\x02 \x01(\x0b\x32).koinos.rpc.p2p.get_gossip_status_requestH\x00\x42\t\n\x07request\"\xbe\x01\n\x0cp2p_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12G\n\x11get_gossip_status\x18\x03 \x01(\x0b\x32*.koinos.rpc.p2p.get_gossip_status_responseH\x00\x42\n\n\x08responseB6Z4github.com/koinos/koinos-proto-golang/koinos/rpc/p2pb\x06proto3'
+  serialized_pb=b'\n\x1ckoinos/rpc/p2p/p2p_rpc.proto\x12\x0ekoinos.rpc.p2p\x1a\x14koinos/rpc/rpc.proto\"\x1b\n\x19get_gossip_status_request\"-\n\x1aget_gossip_status_response\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\"\x8e\x01\n\x0bp2p_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12\x46\n\x11get_gossip_status\x18\x02 \x01(\x0b\x32).koinos.rpc.p2p.get_gossip_status_requestH\x00\x42\t\n\x07request\"\xbe\x01\n\x0cp2p_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12G\n\x11get_gossip_status\x18\x03 \x01(\x0b\x32*.koinos.rpc.p2p.get_gossip_status_responseH\x00\x42\n\n\x08responseB6Z4github.com/koinos/koinos-proto-golang/koinos/rpc/p2pb\x06proto3'
   ,
-  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
 
 
 
@@ -48,8 +47,8 @@ _GET_GOSSIP_STATUS_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=92,
-  serialized_end=119,
+  serialized_start=70,
+  serialized_end=97,
 )
 
 
@@ -80,8 +79,8 @@ _GET_GOSSIP_STATUS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=121,
-  serialized_end=166,
+  serialized_start=99,
+  serialized_end=144,
 )
 
 
@@ -124,8 +123,8 @@ _P2P_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=169,
-  serialized_end=311,
+  serialized_start=147,
+  serialized_end=289,
 )
 
 
@@ -175,8 +174,8 @@ _P2P_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=314,
-  serialized_end=504,
+  serialized_start=292,
+  serialized_end=482,
 )
 
 _P2P_REQUEST.fields_by_name['reserved'].message_type = koinos_dot_rpc_dot_rpc__pb2._RESERVED_RPC

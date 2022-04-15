@@ -11,8 +11,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from koinos import options_pb2 as koinos_dot_options__pb2
-from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z@github.com/koinos/koinos-proto-golang/koinos/contract_meta_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n4koinos/contract_meta_store/contract_meta_store.proto\x12\x1akoinos.contract_meta_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"!\n\x12\x63ontract_meta_item\x12\x0b\n\x03\x61\x62i\x18\x01 \x01(\tBBZ@github.com/koinos/koinos-proto-golang/koinos/contract_meta_storeb\x06proto3'
-  ,
-  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  serialized_pb=b'\n4koinos/contract_meta_store/contract_meta_store.proto\x12\x1akoinos.contract_meta_store\"!\n\x12\x63ontract_meta_item\x12\x0b\n\x03\x61\x62i\x18\x01 \x01(\tBBZ@github.com/koinos/koinos-proto-golang/koinos/contract_meta_storeb\x06proto3'
+)
 
 
 
@@ -55,8 +52,8 @@ _CONTRACT_META_ITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=138,
-  serialized_end=171,
+  serialized_start=84,
+  serialized_end=117,
 )
 
 DESCRIPTOR.message_types_by_name['contract_meta_item'] = _CONTRACT_META_ITEM
