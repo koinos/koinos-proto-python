@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/contracts/token',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/contracts/token/token.proto\x12\x16koinos.contracts.token\x1a\x14koinos/options.proto\"\x10\n\x0ename_arguments\"\x1c\n\x0bname_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x12\n\x10symbol_arguments\"\x1e\n\rsymbol_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x14\n\x12\x64\x65\x63imals_arguments\" \n\x0f\x64\x65\x63imals_result\x12\r\n\x05value\x18\x01 \x01(\r\"\x18\n\x16total_supply_arguments\"(\n\x13total_supply_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"+\n\x14\x62\x61lance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"&\n\x11\x62\x61lance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"M\n\x12transfer_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\" \n\x0ftransfer_result\x12\r\n\x05value\x18\x01 \x01(\x08\"5\n\x0emint_arguments\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bmint_result\x12\r\n\x05value\x18\x01 \x01(\x08\"#\n\x0e\x62\x61lance_object\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\"1\n\nmint_event\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"I\n\x0etransfer_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x42>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/tokenb\x06proto3'
+  serialized_pb=b'\n\"koinos/contracts/token/token.proto\x12\x16koinos.contracts.token\x1a\x14koinos/options.proto\"\x10\n\x0ename_arguments\"\x1c\n\x0bname_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x12\n\x10symbol_arguments\"\x1e\n\rsymbol_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x14\n\x12\x64\x65\x63imals_arguments\" \n\x0f\x64\x65\x63imals_result\x12\r\n\x05value\x18\x01 \x01(\r\"\x18\n\x16total_supply_arguments\"(\n\x13total_supply_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"+\n\x14\x62\x61lance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"&\n\x11\x62\x61lance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"M\n\x12transfer_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\" \n\x0ftransfer_result\x12\r\n\x05value\x18\x01 \x01(\x08\"5\n\x0emint_arguments\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0bmint_result\x12\r\n\x05value\x18\x01 \x01(\x08\"7\n\x0e\x62urn_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\x1c\n\x0b\x62urn_result\x12\r\n\x05value\x18\x01 \x01(\x08\"#\n\x0e\x62\x61lance_object\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\"3\n\nburn_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"1\n\nmint_event\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"I\n\x0etransfer_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x42>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/tokenb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -468,6 +468,77 @@ _MINT_RESULT = _descriptor.Descriptor(
 )
 
 
+_BURN_ARGUMENTS = _descriptor.Descriptor(
+  name='burn_arguments',
+  full_name='koinos.contracts.token.burn_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='from', full_name='koinos.contracts.token.burn_arguments.from', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.token.burn_arguments.value', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=591,
+  serialized_end=646,
+)
+
+
+_BURN_RESULT = _descriptor.Descriptor(
+  name='burn_result',
+  full_name='koinos.contracts.token.burn_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.token.burn_result.value', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=648,
+  serialized_end=676,
+)
+
+
 _BALANCE_OBJECT = _descriptor.Descriptor(
   name='balance_object',
   full_name='koinos.contracts.token.balance_object',
@@ -495,8 +566,8 @@ _BALANCE_OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=591,
-  serialized_end=626,
+  serialized_start=678,
+  serialized_end=713,
 )
 
 
@@ -541,8 +612,47 @@ _MANA_BALANCE_OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=628,
-  serialized_end=718,
+  serialized_start=715,
+  serialized_end=805,
+)
+
+
+_BURN_EVENT = _descriptor.Descriptor(
+  name='burn_event',
+  full_name='koinos.contracts.token.burn_event',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='from', full_name='koinos.contracts.token.burn_event.from', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.token.burn_event.value', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=807,
+  serialized_end=858,
 )
 
 
@@ -580,8 +690,8 @@ _MINT_EVENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=720,
-  serialized_end=769,
+  serialized_start=860,
+  serialized_end=909,
 )
 
 
@@ -626,8 +736,8 @@ _TRANSFER_EVENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=771,
-  serialized_end=844,
+  serialized_start=911,
+  serialized_end=984,
 )
 
 DESCRIPTOR.message_types_by_name['name_arguments'] = _NAME_ARGUMENTS
@@ -644,8 +754,11 @@ DESCRIPTOR.message_types_by_name['transfer_arguments'] = _TRANSFER_ARGUMENTS
 DESCRIPTOR.message_types_by_name['transfer_result'] = _TRANSFER_RESULT
 DESCRIPTOR.message_types_by_name['mint_arguments'] = _MINT_ARGUMENTS
 DESCRIPTOR.message_types_by_name['mint_result'] = _MINT_RESULT
+DESCRIPTOR.message_types_by_name['burn_arguments'] = _BURN_ARGUMENTS
+DESCRIPTOR.message_types_by_name['burn_result'] = _BURN_RESULT
 DESCRIPTOR.message_types_by_name['balance_object'] = _BALANCE_OBJECT
 DESCRIPTOR.message_types_by_name['mana_balance_object'] = _MANA_BALANCE_OBJECT
+DESCRIPTOR.message_types_by_name['burn_event'] = _BURN_EVENT
 DESCRIPTOR.message_types_by_name['mint_event'] = _MINT_EVENT
 DESCRIPTOR.message_types_by_name['transfer_event'] = _TRANSFER_EVENT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -748,6 +861,20 @@ mint_result = _reflection.GeneratedProtocolMessageType('mint_result', (_message.
   })
 _sym_db.RegisterMessage(mint_result)
 
+burn_arguments = _reflection.GeneratedProtocolMessageType('burn_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _BURN_ARGUMENTS,
+  '__module__' : 'koinos.contracts.token.token_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.token.burn_arguments)
+  })
+_sym_db.RegisterMessage(burn_arguments)
+
+burn_result = _reflection.GeneratedProtocolMessageType('burn_result', (_message.Message,), {
+  'DESCRIPTOR' : _BURN_RESULT,
+  '__module__' : 'koinos.contracts.token.token_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.token.burn_result)
+  })
+_sym_db.RegisterMessage(burn_result)
+
 balance_object = _reflection.GeneratedProtocolMessageType('balance_object', (_message.Message,), {
   'DESCRIPTOR' : _BALANCE_OBJECT,
   '__module__' : 'koinos.contracts.token.token_pb2'
@@ -761,6 +888,13 @@ mana_balance_object = _reflection.GeneratedProtocolMessageType('mana_balance_obj
   # @@protoc_insertion_point(class_scope:koinos.contracts.token.mana_balance_object)
   })
 _sym_db.RegisterMessage(mana_balance_object)
+
+burn_event = _reflection.GeneratedProtocolMessageType('burn_event', (_message.Message,), {
+  'DESCRIPTOR' : _BURN_EVENT,
+  '__module__' : 'koinos.contracts.token.token_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.token.burn_event)
+  })
+_sym_db.RegisterMessage(burn_event)
 
 mint_event = _reflection.GeneratedProtocolMessageType('mint_event', (_message.Message,), {
   'DESCRIPTOR' : _MINT_EVENT,
@@ -786,10 +920,14 @@ _TRANSFER_ARGUMENTS.fields_by_name['to']._options = None
 _TRANSFER_ARGUMENTS.fields_by_name['value']._options = None
 _MINT_ARGUMENTS.fields_by_name['to']._options = None
 _MINT_ARGUMENTS.fields_by_name['value']._options = None
+_BURN_ARGUMENTS.fields_by_name['from']._options = None
+_BURN_ARGUMENTS.fields_by_name['value']._options = None
 _BALANCE_OBJECT.fields_by_name['value']._options = None
 _MANA_BALANCE_OBJECT.fields_by_name['balance']._options = None
 _MANA_BALANCE_OBJECT.fields_by_name['mana']._options = None
 _MANA_BALANCE_OBJECT.fields_by_name['last_mana_update']._options = None
+_BURN_EVENT.fields_by_name['from']._options = None
+_BURN_EVENT.fields_by_name['value']._options = None
 _MINT_EVENT.fields_by_name['to']._options = None
 _MINT_EVENT.fields_by_name['value']._options = None
 _TRANSFER_EVENT.fields_by_name['from']._options = None
