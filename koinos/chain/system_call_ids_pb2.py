@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/chain/system_call_ids.proto\x12\x0ckoinos.chain*\xd5\x08\n\x0esystem_call_id\x12\x0f\n\x0breserved_id\x10\x00\x12\x11\n\rget_head_info\x10\x01\x12\x0f\n\x0b\x61pply_block\x10\x02\x12\x15\n\x11\x61pply_transaction\x10\x03\x12#\n\x1f\x61pply_upload_contract_operation\x10\x04\x12!\n\x1d\x61pply_call_contract_operation\x10\x05\x12#\n\x1f\x61pply_set_system_call_operation\x10\x06\x12\'\n#apply_set_system_contract_operation\x10\x07\x12\x16\n\x12pre_block_callback\x10\x08\x12\x17\n\x13post_block_callback\x10\t\x12\x1c\n\x18pre_transaction_callback\x10\n\x12\x1d\n\x19post_transaction_callback\x10\x0b\x12\x1b\n\x17process_block_signature\x10\x65\x12\x13\n\x0fget_transaction\x10\x66\x12\x19\n\x15get_transaction_field\x10g\x12\r\n\tget_block\x10h\x12\x13\n\x0fget_block_field\x10i\x12\x1f\n\x1bget_last_irreversible_block\x10j\x12\x15\n\x11get_account_nonce\x10k\x12\x18\n\x14verify_account_nonce\x10l\x12\x15\n\x11set_account_nonce\x10m\x12\x1c\n\x18require_system_authority\x10n\x12\x13\n\x0eget_account_rc\x10\xc9\x01\x12\x17\n\x12\x63onsume_account_rc\x10\xca\x01\x12\x18\n\x13get_resource_limits\x10\xcb\x01\x12\x1c\n\x17\x63onsume_block_resources\x10\xcc\x01\x12\x0f\n\nput_object\x10\xad\x02\x12\x12\n\rremove_object\x10\xae\x02\x12\x0f\n\nget_object\x10\xaf\x02\x12\x14\n\x0fget_next_object\x10\xb0\x02\x12\x14\n\x0fget_prev_object\x10\xb1\x02\x12\x08\n\x03log\x10\x91\x03\x12\n\n\x05\x65vent\x10\x92\x03\x12\t\n\x04hash\x10\xf5\x03\x12\x17\n\x12recover_public_key\x10\xf6\x03\x12\x17\n\x12verify_merkle_root\x10\xf7\x03\x12\x15\n\x10verify_signature\x10\xf8\x03\x12\x15\n\x10verify_vrf_proof\x10\xf9\x03\x12\x12\n\rcall_contract\x10\xd9\x04\x12\x14\n\x0fget_entry_point\x10\xda\x04\x12\x1b\n\x16get_contract_arguments\x10\xdb\x04\x12\x18\n\x13set_contract_result\x10\xdc\x04\x12\x12\n\rexit_contract\x10\xdd\x04\x12\x14\n\x0fget_contract_id\x10\xde\x04\x12\x0f\n\nget_caller\x10\xdf\x04\x12\x16\n\x11require_authority\x10\xe0\x04\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\"koinos/chain/system_call_ids.proto\x12\x0ckoinos.chain*\x98\x08\n\x0esystem_call_id\x12\x0f\n\x0breserved_id\x10\x00\x12\x11\n\rget_head_info\x10\x01\x12\x0f\n\x0b\x61pply_block\x10\x02\x12\x15\n\x11\x61pply_transaction\x10\x03\x12#\n\x1f\x61pply_upload_contract_operation\x10\x04\x12!\n\x1d\x61pply_call_contract_operation\x10\x05\x12#\n\x1f\x61pply_set_system_call_operation\x10\x06\x12\'\n#apply_set_system_contract_operation\x10\x07\x12\x16\n\x12pre_block_callback\x10\x08\x12\x17\n\x13post_block_callback\x10\t\x12\x1c\n\x18pre_transaction_callback\x10\n\x12\x1d\n\x19post_transaction_callback\x10\x0b\x12\x10\n\x0cget_chain_id\x10\x0c\x12\x1b\n\x17process_block_signature\x10\x65\x12\x13\n\x0fget_transaction\x10\x66\x12\x19\n\x15get_transaction_field\x10g\x12\r\n\tget_block\x10h\x12\x13\n\x0fget_block_field\x10i\x12\x1f\n\x1bget_last_irreversible_block\x10j\x12\x15\n\x11get_account_nonce\x10k\x12\x18\n\x14verify_account_nonce\x10l\x12\x15\n\x11set_account_nonce\x10m\x12\x1a\n\x16\x63heck_system_authority\x10n\x12\x13\n\x0eget_account_rc\x10\xc9\x01\x12\x17\n\x12\x63onsume_account_rc\x10\xca\x01\x12\x18\n\x13get_resource_limits\x10\xcb\x01\x12\x1c\n\x17\x63onsume_block_resources\x10\xcc\x01\x12\x0f\n\nput_object\x10\xad\x02\x12\x12\n\rremove_object\x10\xae\x02\x12\x0f\n\nget_object\x10\xaf\x02\x12\x14\n\x0fget_next_object\x10\xb0\x02\x12\x14\n\x0fget_prev_object\x10\xb1\x02\x12\x08\n\x03log\x10\x91\x03\x12\n\n\x05\x65vent\x10\x92\x03\x12\t\n\x04hash\x10\xf5\x03\x12\x17\n\x12recover_public_key\x10\xf6\x03\x12\x17\n\x12verify_merkle_root\x10\xf7\x03\x12\x15\n\x10verify_signature\x10\xf8\x03\x12\x15\n\x10verify_vrf_proof\x10\xf9\x03\x12\t\n\x04\x63\x61ll\x10\xd9\x04\x12\t\n\x04\x65xit\x10\xda\x04\x12\x12\n\rget_arguments\x10\xdb\x04\x12\x14\n\x0fget_contract_id\x10\xdc\x04\x12\x0f\n\nget_caller\x10\xdd\x04\x12\x14\n\x0f\x63heck_authority\x10\xde\x04\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
 )
 
 _SYSTEM_CALL_ID = _descriptor.EnumDescriptor(
@@ -91,172 +91,167 @@ _SYSTEM_CALL_ID = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='process_block_signature', index=12, number=101,
+      name='get_chain_id', index=12, number=12,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_transaction', index=13, number=102,
+      name='process_block_signature', index=13, number=101,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_transaction_field', index=14, number=103,
+      name='get_transaction', index=14, number=102,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_block', index=15, number=104,
+      name='get_transaction_field', index=15, number=103,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_block_field', index=16, number=105,
+      name='get_block', index=16, number=104,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_last_irreversible_block', index=17, number=106,
+      name='get_block_field', index=17, number=105,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_account_nonce', index=18, number=107,
+      name='get_last_irreversible_block', index=18, number=106,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='verify_account_nonce', index=19, number=108,
+      name='get_account_nonce', index=19, number=107,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='set_account_nonce', index=20, number=109,
+      name='verify_account_nonce', index=20, number=108,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='require_system_authority', index=21, number=110,
+      name='set_account_nonce', index=21, number=109,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_account_rc', index=22, number=201,
+      name='check_system_authority', index=22, number=110,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='consume_account_rc', index=23, number=202,
+      name='get_account_rc', index=23, number=201,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_resource_limits', index=24, number=203,
+      name='consume_account_rc', index=24, number=202,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='consume_block_resources', index=25, number=204,
+      name='get_resource_limits', index=25, number=203,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='put_object', index=26, number=301,
+      name='consume_block_resources', index=26, number=204,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='remove_object', index=27, number=302,
+      name='put_object', index=27, number=301,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_object', index=28, number=303,
+      name='remove_object', index=28, number=302,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_next_object', index=29, number=304,
+      name='get_object', index=29, number=303,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_prev_object', index=30, number=305,
+      name='get_next_object', index=30, number=304,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='log', index=31, number=401,
+      name='get_prev_object', index=31, number=305,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='event', index=32, number=402,
+      name='log', index=32, number=401,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='hash', index=33, number=501,
+      name='event', index=33, number=402,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='recover_public_key', index=34, number=502,
+      name='hash', index=34, number=501,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='verify_merkle_root', index=35, number=503,
+      name='recover_public_key', index=35, number=502,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='verify_signature', index=36, number=504,
+      name='verify_merkle_root', index=36, number=503,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='verify_vrf_proof', index=37, number=505,
+      name='verify_signature', index=37, number=504,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='call_contract', index=38, number=601,
+      name='verify_vrf_proof', index=38, number=505,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_entry_point', index=39, number=602,
+      name='call', index=39, number=601,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_contract_arguments', index=40, number=603,
+      name='exit', index=40, number=602,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='set_contract_result', index=41, number=604,
+      name='get_arguments', index=41, number=603,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='exit_contract', index=42, number=605,
+      name='get_contract_id', index=42, number=604,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_contract_id', index=43, number=606,
+      name='get_caller', index=43, number=605,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='get_caller', index=44, number=607,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='require_authority', index=45, number=608,
+      name='check_authority', index=44, number=606,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
@@ -264,7 +259,7 @@ _SYSTEM_CALL_ID = _descriptor.EnumDescriptor(
   containing_type=None,
   serialized_options=None,
   serialized_start=53,
-  serialized_end=1162,
+  serialized_end=1101,
 )
 _sym_db.RegisterEnumDescriptor(_SYSTEM_CALL_ID)
 
@@ -281,6 +276,7 @@ pre_block_callback = 8
 post_block_callback = 9
 pre_transaction_callback = 10
 post_transaction_callback = 11
+get_chain_id = 12
 process_block_signature = 101
 get_transaction = 102
 get_transaction_field = 103
@@ -290,7 +286,7 @@ get_last_irreversible_block = 106
 get_account_nonce = 107
 verify_account_nonce = 108
 set_account_nonce = 109
-require_system_authority = 110
+check_system_authority = 110
 get_account_rc = 201
 consume_account_rc = 202
 get_resource_limits = 203
@@ -307,14 +303,12 @@ recover_public_key = 502
 verify_merkle_root = 503
 verify_signature = 504
 verify_vrf_proof = 505
-call_contract = 601
-get_entry_point = 602
-get_contract_arguments = 603
-set_contract_result = 604
-exit_contract = 605
-get_contract_id = 606
-get_caller = 607
-require_authority = 608
+call = 601
+exit = 602
+get_arguments = 603
+get_contract_id = 604
+get_caller = 605
+check_authority = 606
 
 
 DESCRIPTOR.enum_types_by_name['system_call_id'] = _SYSTEM_CALL_ID
