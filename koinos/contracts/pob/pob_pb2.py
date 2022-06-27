@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pob',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/contracts/pob/pob.proto\x12\x14koinos.contracts.pob\x1a\x14koinos/options.proto\"-\n\x11public_key_record\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"x\n\x08metadata\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x18\n\ndifficulty\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1b\n\x0flast_block_time\x18\x03 \x01(\x04\x42\x02\x30\x01\x12!\n\x15target_block_interval\x18\x04 \x01(\x04\x42\x02\x30\x01\"Z\n\x0esignature_data\x12\x17\n\tvrf_proof\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\x08vrf_hash\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"9\n\x0bvrf_payload\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\nblock_time\x18\x02 \x01(\x04\x42\x02\x30\x01\"9\n\x1dregister_public_key_arguments\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"\x1c\n\x1aregister_public_key_result\"a\n\x0e\x62urn_arguments\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0c\x62urn_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x19\n\x0bvhp_address\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\r\n\x0b\x62urn_result\"\x18\n\x16get_metadata_arguments\"G\n\x13get_metadata_result\x12\x30\n\x08metadata\x18\x01 \x01(\x0b\x32\x1e.koinos.contracts.pob.metadata\"L\n\x19register_public_key_event\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x15\n\x07\x61\x64\x64ress\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x42<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pobb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/contracts/pob/pob.proto\x12\x14koinos.contracts.pob\x1a\x14koinos/options.proto\"-\n\x11public_key_record\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"x\n\x08metadata\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x18\n\ndifficulty\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1b\n\x0flast_block_time\x18\x03 \x01(\x04\x42\x02\x30\x01\x12!\n\x15target_block_interval\x18\x04 \x01(\x04\x42\x02\x30\x01\"Z\n\x0esignature_data\x12\x17\n\tvrf_proof\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\x08vrf_hash\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"9\n\x0bvrf_payload\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\nblock_time\x18\x02 \x01(\x04\x42\x02\x30\x01\"9\n\x1dregister_public_key_arguments\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"\x1c\n\x1aregister_public_key_result\"a\n\x0e\x62urn_arguments\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0c\x62urn_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x19\n\x0bvhp_address\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\r\n\x0b\x62urn_result\"\x18\n\x16get_metadata_arguments\"D\n\x13get_metadata_result\x12-\n\x05value\x18\x01 \x01(\x0b\x32\x1e.koinos.contracts.pob.metadata\"L\n\x19register_public_key_event\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x15\n\x07\x61\x64\x64ress\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x42<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pobb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -359,7 +359,7 @@ _GET_METADATA_RESULT = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='metadata', full_name='koinos.contracts.pob.get_metadata_result.metadata', index=0,
+      name='value', full_name='koinos.contracts.pob.get_metadata_result.value', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -378,7 +378,7 @@ _GET_METADATA_RESULT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=627,
-  serialized_end=698,
+  serialized_end=695,
 )
 
 
@@ -416,11 +416,11 @@ _REGISTER_PUBLIC_KEY_EVENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=700,
-  serialized_end=776,
+  serialized_start=697,
+  serialized_end=773,
 )
 
-_GET_METADATA_RESULT.fields_by_name['metadata'].message_type = _METADATA
+_GET_METADATA_RESULT.fields_by_name['value'].message_type = _METADATA
 DESCRIPTOR.message_types_by_name['public_key_record'] = _PUBLIC_KEY_RECORD
 DESCRIPTOR.message_types_by_name['metadata'] = _METADATA
 DESCRIPTOR.message_types_by_name['signature_data'] = _SIGNATURE_DATA
