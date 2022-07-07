@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pob',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/contracts/pob/pob.proto\x12\x14koinos.contracts.pob\x1a\x14koinos/options.proto\"\x90\x01\n\x14\x63onsensus_parameters\x12$\n\x1ctarget_annual_inflation_rate\x18\x01 \x01(\r\x12\x1b\n\x13target_burn_percent\x18\x02 \x01(\r\x12\x1d\n\x15target_block_interval\x18\x03 \x01(\r\x12\x16\n\x0equantum_length\x18\x04 \x01(\r\"-\n\x11public_key_record\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"U\n\x08metadata\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x18\n\ndifficulty\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1b\n\x0flast_block_time\x18\x03 \x01(\x04\x42\x02\x30\x01\"Z\n\x0esignature_data\x12\x17\n\tvrf_proof\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\x08vrf_hash\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"9\n\x0bvrf_payload\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\nblock_time\x18\x02 \x01(\x04\x42\x02\x30\x01\"9\n\x1dregister_public_key_arguments\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"\x1c\n\x1aregister_public_key_result\"a\n\x0e\x62urn_arguments\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0c\x62urn_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x19\n\x0bvhp_address\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\r\n\x0b\x62urn_result\"$\n\"get_consensus_parameters_arguments\"\\\n\x1fget_consensus_parameters_result\x12\x39\n\x05value\x18\x01 \x01(\x0b\x32*.koinos.contracts.pob.consensus_parameters\"\x18\n\x16get_metadata_arguments\"D\n\x13get_metadata_result\x12-\n\x05value\x18\x01 \x01(\x0b\x32\x1e.koinos.contracts.pob.metadata\"L\n\x19register_public_key_event\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x15\n\x07\x61\x64\x64ress\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x42<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pobb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/contracts/pob/pob.proto\x12\x14koinos.contracts.pob\x1a\x14koinos/options.proto\"\x90\x01\n\x14\x63onsensus_parameters\x12$\n\x1ctarget_annual_inflation_rate\x18\x01 \x01(\r\x12\x1b\n\x13target_burn_percent\x18\x02 \x01(\r\x12\x1d\n\x15target_block_interval\x18\x03 \x01(\r\x12\x16\n\x0equantum_length\x18\x04 \x01(\r\"-\n\x11public_key_record\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"U\n\x08metadata\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x18\n\ndifficulty\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1b\n\x0flast_block_time\x18\x03 \x01(\x04\x42\x02\x30\x01\"Z\n\x0esignature_data\x12\x17\n\tvrf_proof\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\x08vrf_hash\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"9\n\x0bvrf_payload\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\nblock_time\x18\x02 \x01(\x04\x42\x02\x30\x01\"Q\n\x1dregister_public_key_arguments\x12\x16\n\x08producer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\npublic_key\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"\x1c\n\x1aregister_public_key_result\"a\n\x0e\x62urn_arguments\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0c\x62urn_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x19\n\x0bvhp_address\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\r\n\x0b\x62urn_result\"$\n\"get_consensus_parameters_arguments\"\\\n\x1fget_consensus_parameters_result\x12\x39\n\x05value\x18\x01 \x01(\x0b\x32*.koinos.contracts.pob.consensus_parameters\"\x18\n\x16get_metadata_arguments\"D\n\x13get_metadata_result\x12-\n\x05value\x18\x01 \x01(\x0b\x32\x1e.koinos.contracts.pob.metadata\"L\n\x19register_public_key_event\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x15\n\x07\x61\x64\x64ress\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x42<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pobb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -252,8 +252,15 @@ _REGISTER_PUBLIC_KEY_ARGUMENTS = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='public_key', full_name='koinos.contracts.pob.register_public_key_arguments.public_key', index=0,
+      name='producer', full_name='koinos.contracts.pob.register_public_key_arguments.producer', index=0,
       number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='public_key', full_name='koinos.contracts.pob.register_public_key_arguments.public_key', index=1,
+      number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -271,7 +278,7 @@ _REGISTER_PUBLIC_KEY_ARGUMENTS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=510,
-  serialized_end=567,
+  serialized_end=591,
 )
 
 
@@ -295,8 +302,8 @@ _REGISTER_PUBLIC_KEY_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=569,
-  serialized_end=597,
+  serialized_start=593,
+  serialized_end=621,
 )
 
 
@@ -341,8 +348,8 @@ _BURN_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=599,
-  serialized_end=696,
+  serialized_start=623,
+  serialized_end=720,
 )
 
 
@@ -366,8 +373,8 @@ _BURN_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=698,
-  serialized_end=711,
+  serialized_start=722,
+  serialized_end=735,
 )
 
 
@@ -391,8 +398,8 @@ _GET_CONSENSUS_PARAMETERS_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=713,
-  serialized_end=749,
+  serialized_start=737,
+  serialized_end=773,
 )
 
 
@@ -423,8 +430,8 @@ _GET_CONSENSUS_PARAMETERS_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=751,
-  serialized_end=843,
+  serialized_start=775,
+  serialized_end=867,
 )
 
 
@@ -448,8 +455,8 @@ _GET_METADATA_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=845,
-  serialized_end=869,
+  serialized_start=869,
+  serialized_end=893,
 )
 
 
@@ -480,8 +487,8 @@ _GET_METADATA_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=871,
-  serialized_end=939,
+  serialized_start=895,
+  serialized_end=963,
 )
 
 
@@ -519,8 +526,8 @@ _REGISTER_PUBLIC_KEY_EVENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=941,
-  serialized_end=1017,
+  serialized_start=965,
+  serialized_end=1041,
 )
 
 _GET_CONSENSUS_PARAMETERS_RESULT.fields_by_name['value'].message_type = _CONSENSUS_PARAMETERS
@@ -650,6 +657,7 @@ _SIGNATURE_DATA.fields_by_name['vrf_hash']._options = None
 _SIGNATURE_DATA.fields_by_name['signature']._options = None
 _VRF_PAYLOAD.fields_by_name['seed']._options = None
 _VRF_PAYLOAD.fields_by_name['block_time']._options = None
+_REGISTER_PUBLIC_KEY_ARGUMENTS.fields_by_name['producer']._options = None
 _REGISTER_PUBLIC_KEY_ARGUMENTS.fields_by_name['public_key']._options = None
 _BURN_ARGUMENTS.fields_by_name['token_amount']._options = None
 _BURN_ARGUMENTS.fields_by_name['burn_address']._options = None
