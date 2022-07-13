@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18koinos/chain/error.proto\x12\x0ckoinos.chain*\x80\x05\n\nerror_code\x12\x0b\n\x07success\x10\x00\x12\r\n\treversion\x10\x01\x12\x12\n\x0einternal_error\x10\x64\x12 \n\x1csystem_authorization_failure\x10\x65\x12\x14\n\x10invalid_contract\x10\x66\x12\x1b\n\x17insufficient_privileges\x10g\x12\x13\n\x0finsufficient_rc\x10h\x12\x1e\n\x1ainsufficient_return_buffer\x10i\x12\x11\n\runknown_thunk\x10j\x12\x15\n\x11unknown_operation\x10k\x12\x15\n\x11read_only_context\x10l\x12\x14\n\x07\x66\x61ilure\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1c\n\x0f\x66ield_not_found\x10\x9c\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1e\n\x11unknown_hash_code\x10\x9b\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x18\n\x0bunknown_dsa\x10\x9a\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13unknown_system_call\x10\x99\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13operation_not_found\x10\x98\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15\x61uthorization_failure\x10\xb8\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1a\n\rinvalid_nonce\x10\xb7\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1e\n\x11invalid_signature\x10\xb6\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1c\n\x0fmalformed_block\x10\xb5\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15malformed_transaction\x10\xb4\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12#\n\x16\x62lock_resource_failure\x10\xb3\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x18koinos/chain/error.proto\x12\x0ckoinos.chain*\xd6\x07\n\nerror_code\x12\x0b\n\x07success\x10\x00\x12\r\n\treversion\x10\x01\x12\x12\n\x0einternal_error\x10\x64\x12 \n\x1csystem_authorization_failure\x10\x65\x12\x14\n\x10invalid_contract\x10\x66\x12\x1b\n\x17insufficient_privileges\x10g\x12\x13\n\x0finsufficient_rc\x10h\x12\x1e\n\x1ainsufficient_return_buffer\x10i\x12\x11\n\runknown_thunk\x10j\x12\x15\n\x11unknown_operation\x10k\x12\x15\n\x11read_only_context\x10l\x12\x14\n\x07\x66\x61ilure\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1c\n\x0f\x66ield_not_found\x10\x9c\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1e\n\x11unknown_hash_code\x10\x9b\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x18\n\x0bunknown_dsa\x10\x9a\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13unknown_system_call\x10\x99\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13operation_not_found\x10\x98\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15\x61uthorization_failure\x10\xb8\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1a\n\rinvalid_nonce\x10\xb7\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1e\n\x11invalid_signature\x10\xb6\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1c\n\x0fmalformed_block\x10\xb5\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15malformed_transaction\x10\xb4\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12#\n\x16\x62lock_resource_failure\x10\xb3\xfe\xff\xff\xff\xff\xff\xff\xff\x01\x12&\n\x19unknown_backend_exception\x10\x98\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1d\n\x10unexpected_state\x10\x97\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\'\n\x1amissing_required_arguments\x10\x96\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12#\n\x16unknown_previous_block\x10\x95\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1e\n\x11unexpected_height\x10\x94\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1e\n\x11\x62lock_state_error\x10\x93\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15state_merkle_mismatch\x10\x92\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1f\n\x12unexpected_receipt\x10\x91\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12\x18\n\x0brpc_failure\x10\x90\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13pending_state_error\x10\x8f\xf8\xff\xff\xff\xff\xff\xff\xff\x01\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
 )
 
 _ERROR_CODE = _descriptor.EnumDescriptor(
@@ -145,11 +145,61 @@ _ERROR_CODE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='unknown_backend_exception', index=23, number=-1000,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='unexpected_state', index=24, number=-1001,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='missing_required_arguments', index=25, number=-1002,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='unknown_previous_block', index=26, number=-1003,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='unexpected_height', index=27, number=-1004,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='block_state_error', index=28, number=-1005,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='state_merkle_mismatch', index=29, number=-1006,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='unexpected_receipt', index=30, number=-1007,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='rpc_failure', index=31, number=-1008,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='pending_state_error', index=32, number=-1009,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=43,
-  serialized_end=683,
+  serialized_end=1025,
 )
 _sym_db.RegisterEnumDescriptor(_ERROR_CODE)
 
@@ -177,6 +227,16 @@ invalid_signature = -202
 malformed_block = -203
 malformed_transaction = -204
 block_resource_failure = -205
+unknown_backend_exception = -1000
+unexpected_state = -1001
+missing_required_arguments = -1002
+unknown_previous_block = -1003
+unexpected_height = -1004
+block_state_error = -1005
+state_merkle_mismatch = -1006
+unexpected_receipt = -1007
+rpc_failure = -1008
+pending_state_error = -1009
 
 
 DESCRIPTOR.enum_types_by_name['error_code'] = _ERROR_CODE
