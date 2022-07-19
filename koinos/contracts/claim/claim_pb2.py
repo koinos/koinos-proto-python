@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claim',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\",\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\"\x0e\n\x0c\x63laim_resultB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
+  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"H\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x0e\n\x0c\x63laim_resultB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -81,6 +81,13 @@ _CLAIM_ARGUMENTS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'\200\265\030\002', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='koin_address', full_name='koinos.contracts.claim.claim_arguments.koin_address', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -94,7 +101,7 @@ _CLAIM_ARGUMENTS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=143,
-  serialized_end=187,
+  serialized_end=215,
 )
 
 
@@ -118,8 +125,8 @@ _CLAIM_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=189,
-  serialized_end=203,
+  serialized_start=217,
+  serialized_end=231,
 )
 
 DESCRIPTOR.message_types_by_name['claim_status'] = _CLAIM_STATUS
@@ -152,4 +159,5 @@ _sym_db.RegisterMessage(claim_result)
 DESCRIPTOR._options = None
 _CLAIM_STATUS.fields_by_name['token_amount']._options = None
 _CLAIM_ARGUMENTS.fields_by_name['eth_address']._options = None
+_CLAIM_ARGUMENTS.fields_by_name['koin_address']._options = None
 # @@protoc_insertion_point(module_scope)
