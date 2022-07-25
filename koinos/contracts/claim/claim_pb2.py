@@ -20,11 +20,64 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claim',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"H\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x0e\n\x0c\x63laim_resultB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
+  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"p\n\nclaim_info\x12\x1a\n\x12total_eth_accounts\x18\x01 \x01(\r\x12\x1c\n\x14\x65th_accounts_claimed\x18\x02 \x01(\r\x12\x12\n\ntotal_koin\x18\x03 \x01(\x04\x12\x14\n\x0ckoin_claimed\x18\x04 \x01(\x04\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"H\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x0e\n\x0c\x63laim_result\"\x14\n\x12get_info_arguments\"D\n\x0fget_info_result\x12\x31\n\x05value\x18\x01 \x01(\x0b\x32\".koinos.contracts.claim.claim_infoB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
 
+
+
+_CLAIM_INFO = _descriptor.Descriptor(
+  name='claim_info',
+  full_name='koinos.contracts.claim.claim_info',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='total_eth_accounts', full_name='koinos.contracts.claim.claim_info.total_eth_accounts', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='eth_accounts_claimed', full_name='koinos.contracts.claim.claim_info.eth_accounts_claimed', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='total_koin', full_name='koinos.contracts.claim.claim_info.total_koin', index=2,
+      number=3, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='koin_claimed', full_name='koinos.contracts.claim.claim_info.koin_claimed', index=3,
+      number=4, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=84,
+  serialized_end=196,
+)
 
 
 _CLAIM_STATUS = _descriptor.Descriptor(
@@ -61,8 +114,8 @@ _CLAIM_STATUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=84,
-  serialized_end=141,
+  serialized_start=198,
+  serialized_end=255,
 )
 
 
@@ -100,8 +153,8 @@ _CLAIM_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=143,
-  serialized_end=215,
+  serialized_start=257,
+  serialized_end=329,
 )
 
 
@@ -125,14 +178,82 @@ _CLAIM_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=217,
-  serialized_end=231,
+  serialized_start=331,
+  serialized_end=345,
 )
 
+
+_GET_INFO_ARGUMENTS = _descriptor.Descriptor(
+  name='get_info_arguments',
+  full_name='koinos.contracts.claim.get_info_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=347,
+  serialized_end=367,
+)
+
+
+_GET_INFO_RESULT = _descriptor.Descriptor(
+  name='get_info_result',
+  full_name='koinos.contracts.claim.get_info_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.claim.get_info_result.value', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=369,
+  serialized_end=437,
+)
+
+_GET_INFO_RESULT.fields_by_name['value'].message_type = _CLAIM_INFO
+DESCRIPTOR.message_types_by_name['claim_info'] = _CLAIM_INFO
 DESCRIPTOR.message_types_by_name['claim_status'] = _CLAIM_STATUS
 DESCRIPTOR.message_types_by_name['claim_arguments'] = _CLAIM_ARGUMENTS
 DESCRIPTOR.message_types_by_name['claim_result'] = _CLAIM_RESULT
+DESCRIPTOR.message_types_by_name['get_info_arguments'] = _GET_INFO_ARGUMENTS
+DESCRIPTOR.message_types_by_name['get_info_result'] = _GET_INFO_RESULT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+claim_info = _reflection.GeneratedProtocolMessageType('claim_info', (_message.Message,), {
+  'DESCRIPTOR' : _CLAIM_INFO,
+  '__module__' : 'koinos.contracts.claim.claim_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.claim.claim_info)
+  })
+_sym_db.RegisterMessage(claim_info)
 
 claim_status = _reflection.GeneratedProtocolMessageType('claim_status', (_message.Message,), {
   'DESCRIPTOR' : _CLAIM_STATUS,
@@ -154,6 +275,20 @@ claim_result = _reflection.GeneratedProtocolMessageType('claim_result', (_messag
   # @@protoc_insertion_point(class_scope:koinos.contracts.claim.claim_result)
   })
 _sym_db.RegisterMessage(claim_result)
+
+get_info_arguments = _reflection.GeneratedProtocolMessageType('get_info_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _GET_INFO_ARGUMENTS,
+  '__module__' : 'koinos.contracts.claim.claim_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.claim.get_info_arguments)
+  })
+_sym_db.RegisterMessage(get_info_arguments)
+
+get_info_result = _reflection.GeneratedProtocolMessageType('get_info_result', (_message.Message,), {
+  'DESCRIPTOR' : _GET_INFO_RESULT,
+  '__module__' : 'koinos.contracts.claim.claim_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.claim.get_info_result)
+  })
+_sym_db.RegisterMessage(get_info_result)
 
 
 DESCRIPTOR._options = None
