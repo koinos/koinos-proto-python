@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claim',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"p\n\nclaim_info\x12\x1a\n\x12total_eth_accounts\x18\x01 \x01(\r\x12\x1c\n\x14\x65th_accounts_claimed\x18\x02 \x01(\r\x12\x12\n\ntotal_koin\x18\x03 \x01(\x04\x12\x14\n\x0ckoin_claimed\x18\x04 \x01(\x04\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"H\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x0e\n\x0c\x63laim_result\"\x14\n\x12get_info_arguments\"D\n\x0fget_info_result\x12\x31\n\x05value\x18\x01 \x01(\x0b\x32\".koinos.contracts.claim.claim_infoB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
+  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"p\n\nclaim_info\x12\x1a\n\x12total_eth_accounts\x18\x01 \x01(\r\x12\x1c\n\x14\x65th_accounts_claimed\x18\x02 \x01(\r\x12\x12\n\ntotal_koin\x18\x03 \x01(\x04\x12\x14\n\x0ckoin_claimed\x18\x04 \x01(\x04\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"[\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\tsignature\x18\x03 \x01(\x0c\"\x0e\n\x0c\x63laim_result\"\x14\n\x12get_info_arguments\"D\n\x0fget_info_result\x12\x31\n\x05value\x18\x01 \x01(\x0b\x32\".koinos.contracts.claim.claim_infoB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -141,6 +141,13 @@ _CLAIM_ARGUMENTS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'\200\265\030\006', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='signature', full_name='koinos.contracts.claim.claim_arguments.signature', index=2,
+      number=3, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -154,7 +161,7 @@ _CLAIM_ARGUMENTS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=257,
-  serialized_end=329,
+  serialized_end=348,
 )
 
 
@@ -178,8 +185,8 @@ _CLAIM_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=331,
-  serialized_end=345,
+  serialized_start=350,
+  serialized_end=364,
 )
 
 
@@ -203,8 +210,8 @@ _GET_INFO_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=347,
-  serialized_end=367,
+  serialized_start=366,
+  serialized_end=386,
 )
 
 
@@ -235,8 +242,8 @@ _GET_INFO_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=369,
-  serialized_end=437,
+  serialized_start=388,
+  serialized_end=456,
 )
 
 _GET_INFO_RESULT.fields_by_name['value'].message_type = _CLAIM_INFO
