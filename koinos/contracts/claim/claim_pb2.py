@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claim',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"p\n\nclaim_info\x12\x1a\n\x12total_eth_accounts\x18\x01 \x01(\r\x12\x1c\n\x14\x65th_accounts_claimed\x18\x02 \x01(\r\x12\x12\n\ntotal_koin\x18\x03 \x01(\x04\x12\x14\n\x0ckoin_claimed\x18\x04 \x01(\x04\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"[\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\tsignature\x18\x03 \x01(\x0c\"\x0e\n\x0c\x63laim_result\"\x14\n\x12get_info_arguments\"D\n\x0fget_info_result\x12\x31\n\x05value\x18\x01 \x01(\x0b\x32\".koinos.contracts.claim.claim_infoB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
+  serialized_pb=b'\n\"koinos/contracts/claim/claim.proto\x12\x16koinos.contracts.claim\x1a\x14koinos/options.proto\"p\n\nclaim_info\x12\x1a\n\x12total_eth_accounts\x18\x01 \x01(\r\x12\x1c\n\x14\x65th_accounts_claimed\x18\x02 \x01(\r\x12\x12\n\ntotal_koin\x18\x03 \x01(\x04\x12\x14\n\x0ckoin_claimed\x18\x04 \x01(\x04\"9\n\x0c\x63laim_status\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x0f\n\x07\x63laimed\x18\x02 \x01(\x08\"[\n\x0f\x63laim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\x12\x1a\n\x0ckoin_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\tsignature\x18\x03 \x01(\x0c\"\x0e\n\x0c\x63laim_result\"\x14\n\x12get_info_arguments\"D\n\x0fget_info_result\x12\x31\n\x05value\x18\x01 \x01(\x0b\x32\".koinos.contracts.claim.claim_info\"2\n\x15\x63heck_claim_arguments\x12\x19\n\x0b\x65th_address\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x02\"I\n\x12\x63heck_claim_result\x12\x33\n\x05value\x18\x01 \x01(\x0b\x32$.koinos.contracts.claim.claim_statusB>Z<github.com/koinos/koinos-proto-golang/koinos/contracts/claimb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -246,13 +246,80 @@ _GET_INFO_RESULT = _descriptor.Descriptor(
   serialized_end=456,
 )
 
+
+_CHECK_CLAIM_ARGUMENTS = _descriptor.Descriptor(
+  name='check_claim_arguments',
+  full_name='koinos.contracts.claim.check_claim_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='eth_address', full_name='koinos.contracts.claim.check_claim_arguments.eth_address', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\200\265\030\002', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=458,
+  serialized_end=508,
+)
+
+
+_CHECK_CLAIM_RESULT = _descriptor.Descriptor(
+  name='check_claim_result',
+  full_name='koinos.contracts.claim.check_claim_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.claim.check_claim_result.value', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=510,
+  serialized_end=583,
+)
+
 _GET_INFO_RESULT.fields_by_name['value'].message_type = _CLAIM_INFO
+_CHECK_CLAIM_RESULT.fields_by_name['value'].message_type = _CLAIM_STATUS
 DESCRIPTOR.message_types_by_name['claim_info'] = _CLAIM_INFO
 DESCRIPTOR.message_types_by_name['claim_status'] = _CLAIM_STATUS
 DESCRIPTOR.message_types_by_name['claim_arguments'] = _CLAIM_ARGUMENTS
 DESCRIPTOR.message_types_by_name['claim_result'] = _CLAIM_RESULT
 DESCRIPTOR.message_types_by_name['get_info_arguments'] = _GET_INFO_ARGUMENTS
 DESCRIPTOR.message_types_by_name['get_info_result'] = _GET_INFO_RESULT
+DESCRIPTOR.message_types_by_name['check_claim_arguments'] = _CHECK_CLAIM_ARGUMENTS
+DESCRIPTOR.message_types_by_name['check_claim_result'] = _CHECK_CLAIM_RESULT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 claim_info = _reflection.GeneratedProtocolMessageType('claim_info', (_message.Message,), {
@@ -297,9 +364,24 @@ get_info_result = _reflection.GeneratedProtocolMessageType('get_info_result', (_
   })
 _sym_db.RegisterMessage(get_info_result)
 
+check_claim_arguments = _reflection.GeneratedProtocolMessageType('check_claim_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _CHECK_CLAIM_ARGUMENTS,
+  '__module__' : 'koinos.contracts.claim.claim_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.claim.check_claim_arguments)
+  })
+_sym_db.RegisterMessage(check_claim_arguments)
+
+check_claim_result = _reflection.GeneratedProtocolMessageType('check_claim_result', (_message.Message,), {
+  'DESCRIPTOR' : _CHECK_CLAIM_RESULT,
+  '__module__' : 'koinos.contracts.claim.claim_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.claim.check_claim_result)
+  })
+_sym_db.RegisterMessage(check_claim_result)
+
 
 DESCRIPTOR._options = None
 _CLAIM_STATUS.fields_by_name['token_amount']._options = None
 _CLAIM_ARGUMENTS.fields_by_name['eth_address']._options = None
 _CLAIM_ARGUMENTS.fields_by_name['koin_address']._options = None
+_CHECK_CLAIM_ARGUMENTS.fields_by_name['eth_address']._options = None
 # @@protoc_insertion_point(module_scope)
