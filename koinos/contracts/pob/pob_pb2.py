@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pob',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/contracts/pob/pob.proto\x12\x14koinos.contracts.pob\x1a\x14koinos/options.proto\"\xac\x01\n\x14\x63onsensus_parameters\x12$\n\x1ctarget_annual_inflation_rate\x18\x01 \x01(\r\x12\x1b\n\x13target_burn_percent\x18\x02 \x01(\r\x12\x1d\n\x15target_block_interval\x18\x03 \x01(\r\x12\x16\n\x0equantum_length\x18\x04 \x01(\r\x12\x1a\n\x12minimum_block_time\x18\x05 \x01(\x04\"K\n\x11public_key_record\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1c\n\x10set_block_height\x18\x02 \x01(\x04\x42\x02\x30\x01\"U\n\x08metadata\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x18\n\ndifficulty\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1b\n\x0flast_block_time\x18\x03 \x01(\x04\x42\x02\x30\x01\"Z\n\x0esignature_data\x12\x17\n\tvrf_proof\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\x08vrf_hash\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"9\n\x0bvrf_payload\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\nblock_time\x18\x02 \x01(\x04\x42\x02\x30\x01\"Q\n\x1dregister_public_key_arguments\x12\x16\n\x08producer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\npublic_key\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"\x1c\n\x1aregister_public_key_result\"a\n\x0e\x62urn_arguments\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0c\x62urn_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x19\n\x0bvhp_address\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\r\n\x0b\x62urn_result\"$\n\"get_consensus_parameters_arguments\"\\\n\x1fget_consensus_parameters_result\x12\x39\n\x05value\x18\x01 \x01(\x0b\x32*.koinos.contracts.pob.consensus_parameters\"\x18\n\x16get_metadata_arguments\"D\n\x13get_metadata_result\x12-\n\x05value\x18\x01 \x01(\x0b\x32\x1e.koinos.contracts.pob.metadata\"L\n\x19register_public_key_event\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x15\n\x07\x61\x64\x64ress\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"2\n\x18get_public_key_arguments\x12\x16\n\x08producer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\",\n\x15get_public_key_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x42<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pobb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/contracts/pob/pob.proto\x12\x14koinos.contracts.pob\x1a\x14koinos/options.proto\"\xac\x01\n\x14\x63onsensus_parameters\x12$\n\x1ctarget_annual_inflation_rate\x18\x01 \x01(\r\x12\x1b\n\x13target_burn_percent\x18\x02 \x01(\r\x12\x1d\n\x15target_block_interval\x18\x03 \x01(\r\x12\x16\n\x0equantum_length\x18\x04 \x01(\r\x12\x1a\n\x12minimum_block_time\x18\x05 \x01(\x04\"K\n\x11public_key_record\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1c\n\x10set_block_height\x18\x02 \x01(\x04\x42\x02\x30\x01\"U\n\x08metadata\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x18\n\ndifficulty\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x1b\n\x0flast_block_time\x18\x03 \x01(\x04\x42\x02\x30\x01\"Z\n\x0esignature_data\x12\x17\n\tvrf_proof\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\x08vrf_hash\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x17\n\tsignature\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"9\n\x0bvrf_payload\x12\x12\n\x04seed\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x16\n\nblock_time\x18\x02 \x01(\x04\x42\x02\x30\x01\"Q\n\x1dregister_public_key_arguments\x12\x16\n\x08producer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\npublic_key\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"\x1c\n\x1aregister_public_key_result\"a\n\x0e\x62urn_arguments\x12\x18\n\x0ctoken_amount\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0c\x62urn_address\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x19\n\x0bvhp_address\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\r\n\x0b\x62urn_result\"$\n\"get_consensus_parameters_arguments\"\\\n\x1fget_consensus_parameters_result\x12\x39\n\x05value\x18\x01 \x01(\x0b\x32*.koinos.contracts.pob.consensus_parameters\"\x18\n\x16get_metadata_arguments\"D\n\x13get_metadata_result\x12-\n\x05value\x18\x01 \x01(\x0b\x32\x1e.koinos.contracts.pob.metadata\"L\n\x19register_public_key_event\x12\x18\n\npublic_key\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\x12\x15\n\x07\x61\x64\x64ress\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"2\n\x18get_public_key_arguments\x12\x16\n\x08producer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\",\n\x15get_public_key_result\x12\x13\n\x05value\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x00\"b\n%update_consensus_parameters_arguments\x12\x39\n\x05value\x18\x01 \x01(\x0b\x32*.koinos.contracts.pob.consensus_parameters\"$\n\"update_consensus_parameters_resultB<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pobb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -608,8 +608,66 @@ _GET_PUBLIC_KEY_RESULT = _descriptor.Descriptor(
   serialized_end=1197,
 )
 
+
+_UPDATE_CONSENSUS_PARAMETERS_ARGUMENTS = _descriptor.Descriptor(
+  name='update_consensus_parameters_arguments',
+  full_name='koinos.contracts.pob.update_consensus_parameters_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.pob.update_consensus_parameters_arguments.value', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1199,
+  serialized_end=1297,
+)
+
+
+_UPDATE_CONSENSUS_PARAMETERS_RESULT = _descriptor.Descriptor(
+  name='update_consensus_parameters_result',
+  full_name='koinos.contracts.pob.update_consensus_parameters_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1299,
+  serialized_end=1335,
+)
+
 _GET_CONSENSUS_PARAMETERS_RESULT.fields_by_name['value'].message_type = _CONSENSUS_PARAMETERS
 _GET_METADATA_RESULT.fields_by_name['value'].message_type = _METADATA
+_UPDATE_CONSENSUS_PARAMETERS_ARGUMENTS.fields_by_name['value'].message_type = _CONSENSUS_PARAMETERS
 DESCRIPTOR.message_types_by_name['consensus_parameters'] = _CONSENSUS_PARAMETERS
 DESCRIPTOR.message_types_by_name['public_key_record'] = _PUBLIC_KEY_RECORD
 DESCRIPTOR.message_types_by_name['metadata'] = _METADATA
@@ -626,6 +684,8 @@ DESCRIPTOR.message_types_by_name['get_metadata_result'] = _GET_METADATA_RESULT
 DESCRIPTOR.message_types_by_name['register_public_key_event'] = _REGISTER_PUBLIC_KEY_EVENT
 DESCRIPTOR.message_types_by_name['get_public_key_arguments'] = _GET_PUBLIC_KEY_ARGUMENTS
 DESCRIPTOR.message_types_by_name['get_public_key_result'] = _GET_PUBLIC_KEY_RESULT
+DESCRIPTOR.message_types_by_name['update_consensus_parameters_arguments'] = _UPDATE_CONSENSUS_PARAMETERS_ARGUMENTS
+DESCRIPTOR.message_types_by_name['update_consensus_parameters_result'] = _UPDATE_CONSENSUS_PARAMETERS_RESULT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 consensus_parameters = _reflection.GeneratedProtocolMessageType('consensus_parameters', (_message.Message,), {
@@ -739,6 +799,20 @@ get_public_key_result = _reflection.GeneratedProtocolMessageType('get_public_key
   # @@protoc_insertion_point(class_scope:koinos.contracts.pob.get_public_key_result)
   })
 _sym_db.RegisterMessage(get_public_key_result)
+
+update_consensus_parameters_arguments = _reflection.GeneratedProtocolMessageType('update_consensus_parameters_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _UPDATE_CONSENSUS_PARAMETERS_ARGUMENTS,
+  '__module__' : 'koinos.contracts.pob.pob_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.pob.update_consensus_parameters_arguments)
+  })
+_sym_db.RegisterMessage(update_consensus_parameters_arguments)
+
+update_consensus_parameters_result = _reflection.GeneratedProtocolMessageType('update_consensus_parameters_result', (_message.Message,), {
+  'DESCRIPTOR' : _UPDATE_CONSENSUS_PARAMETERS_RESULT,
+  '__module__' : 'koinos.contracts.pob.pob_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.pob.update_consensus_parameters_result)
+  })
+_sym_db.RegisterMessage(update_consensus_parameters_result)
 
 
 DESCRIPTOR._options = None
