@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z@github.com/koinos/koinos-proto-golang/koinos/contracts/resources',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n*koinos/contracts/resources/resources.proto\x12\x1akoinos.contracts.resources\"p\n\x06market\x12\x1b\n\x0fresource_supply\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x16\n\nrc_reserve\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x18\n\x0c\x62lock_budget\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x17\n\x0b\x62lock_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\"\xca\x01\n\x10resource_markets\x12\x38\n\x0c\x64isk_storage\x18\x01 \x01(\x0b\x32\".koinos.contracts.resources.market\x12=\n\x11network_bandwidth\x18\x02 \x01(\x0b\x32\".koinos.contracts.resources.market\x12=\n\x11\x63ompute_bandwidth\x18\x03 \x01(\x0b\x32\".koinos.contracts.resources.market\" \n\x1eget_resource_markets_arguments\"Z\n\x1bget_resource_markets_result\x12;\n\x05value\x18\x01 \x01(\x0b\x32,.koinos.contracts.resources.resource_marketsBBZ@github.com/koinos/koinos-proto-golang/koinos/contracts/resourcesb\x06proto3'
+  serialized_pb=b'\n*koinos/contracts/resources/resources.proto\x12\x1akoinos.contracts.resources\"X\n\x06market\x12\x1b\n\x0fresource_supply\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x18\n\x0c\x62lock_budget\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x17\n\x0b\x62lock_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\"\xca\x01\n\x10resource_markets\x12\x38\n\x0c\x64isk_storage\x18\x01 \x01(\x0b\x32\".koinos.contracts.resources.market\x12=\n\x11network_bandwidth\x18\x02 \x01(\x0b\x32\".koinos.contracts.resources.market\x12=\n\x11\x63ompute_bandwidth\x18\x03 \x01(\x0b\x32\".koinos.contracts.resources.market\"F\n\x11market_parameters\x12\x18\n\x0c\x62lock_budget\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x17\n\x0b\x62lock_limit\x18\x02 \x01(\x04\x42\x02\x30\x01\"\xd1\x01\n\x13resource_parameters\x12\x1d\n\x11\x62lock_interval_ms\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x17\n\x0brc_regen_ms\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1a\n\x0e\x64\x65\x63\x61y_constant\x18\x03 \x01(\x04\x42\x02\x30\x01\x12$\n\x18one_minus_decay_constant\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x1e\n\x12print_rate_premium\x18\x05 \x01(\x04\x42\x02\x30\x01\x12 \n\x14print_rate_precision\x18\x06 \x01(\x04\x42\x02\x30\x01\"\x84\x02\n)set_resource_markets_parameters_arguments\x12\x43\n\x0c\x64isk_storage\x18\x01 \x01(\x0b\x32-.koinos.contracts.resources.market_parameters\x12H\n\x11network_bandwidth\x18\x02 \x01(\x0b\x32-.koinos.contracts.resources.market_parameters\x12H\n\x11\x63ompute_bandwidth\x18\x03 \x01(\x0b\x32-.koinos.contracts.resources.market_parameters\"(\n&set_resource_markets_parameters_result\" \n\x1eget_resource_markets_arguments\"Z\n\x1bget_resource_markets_result\x12;\n\x05value\x18\x01 \x01(\x0b\x32,.koinos.contracts.resources.resource_markets\"d\n!set_resource_parameters_arguments\x12?\n\x06params\x18\x01 \x01(\x0b\x32/.koinos.contracts.resources.resource_parameters\" \n\x1eset_resource_parameters_result\"#\n!get_resource_parameters_arguments\"`\n\x1eget_resource_parameters_result\x12>\n\x05value\x18\x01 \x01(\x0b\x32/.koinos.contracts.resources.resource_parametersBBZ@github.com/koinos/koinos-proto-golang/koinos/contracts/resourcesb\x06proto3'
 )
 
 
@@ -41,21 +41,14 @@ _MARKET = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='rc_reserve', full_name='koinos.contracts.resources.market.rc_reserve', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='block_budget', full_name='koinos.contracts.resources.market.block_budget', index=2,
+      name='block_budget', full_name='koinos.contracts.resources.market.block_budget', index=1,
       number=3, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='block_limit', full_name='koinos.contracts.resources.market.block_limit', index=3,
+      name='block_limit', full_name='koinos.contracts.resources.market.block_limit', index=2,
       number=4, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -74,7 +67,7 @@ _MARKET = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=74,
-  serialized_end=186,
+  serialized_end=162,
 )
 
 
@@ -119,8 +112,185 @@ _RESOURCE_MARKETS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=189,
-  serialized_end=391,
+  serialized_start=165,
+  serialized_end=367,
+)
+
+
+_MARKET_PARAMETERS = _descriptor.Descriptor(
+  name='market_parameters',
+  full_name='koinos.contracts.resources.market_parameters',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='block_budget', full_name='koinos.contracts.resources.market_parameters.block_budget', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='block_limit', full_name='koinos.contracts.resources.market_parameters.block_limit', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=369,
+  serialized_end=439,
+)
+
+
+_RESOURCE_PARAMETERS = _descriptor.Descriptor(
+  name='resource_parameters',
+  full_name='koinos.contracts.resources.resource_parameters',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='block_interval_ms', full_name='koinos.contracts.resources.resource_parameters.block_interval_ms', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='rc_regen_ms', full_name='koinos.contracts.resources.resource_parameters.rc_regen_ms', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='decay_constant', full_name='koinos.contracts.resources.resource_parameters.decay_constant', index=2,
+      number=3, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='one_minus_decay_constant', full_name='koinos.contracts.resources.resource_parameters.one_minus_decay_constant', index=3,
+      number=4, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='print_rate_premium', full_name='koinos.contracts.resources.resource_parameters.print_rate_premium', index=4,
+      number=5, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='print_rate_precision', full_name='koinos.contracts.resources.resource_parameters.print_rate_precision', index=5,
+      number=6, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=442,
+  serialized_end=651,
+)
+
+
+_SET_RESOURCE_MARKETS_PARAMETERS_ARGUMENTS = _descriptor.Descriptor(
+  name='set_resource_markets_parameters_arguments',
+  full_name='koinos.contracts.resources.set_resource_markets_parameters_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='disk_storage', full_name='koinos.contracts.resources.set_resource_markets_parameters_arguments.disk_storage', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='network_bandwidth', full_name='koinos.contracts.resources.set_resource_markets_parameters_arguments.network_bandwidth', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='compute_bandwidth', full_name='koinos.contracts.resources.set_resource_markets_parameters_arguments.compute_bandwidth', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=654,
+  serialized_end=914,
+)
+
+
+_SET_RESOURCE_MARKETS_PARAMETERS_RESULT = _descriptor.Descriptor(
+  name='set_resource_markets_parameters_result',
+  full_name='koinos.contracts.resources.set_resource_markets_parameters_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=916,
+  serialized_end=956,
 )
 
 
@@ -144,8 +314,8 @@ _GET_RESOURCE_MARKETS_ARGUMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=393,
-  serialized_end=425,
+  serialized_start=958,
+  serialized_end=990,
 )
 
 
@@ -176,18 +346,145 @@ _GET_RESOURCE_MARKETS_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=427,
-  serialized_end=517,
+  serialized_start=992,
+  serialized_end=1082,
+)
+
+
+_SET_RESOURCE_PARAMETERS_ARGUMENTS = _descriptor.Descriptor(
+  name='set_resource_parameters_arguments',
+  full_name='koinos.contracts.resources.set_resource_parameters_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='params', full_name='koinos.contracts.resources.set_resource_parameters_arguments.params', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1084,
+  serialized_end=1184,
+)
+
+
+_SET_RESOURCE_PARAMETERS_RESULT = _descriptor.Descriptor(
+  name='set_resource_parameters_result',
+  full_name='koinos.contracts.resources.set_resource_parameters_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1186,
+  serialized_end=1218,
+)
+
+
+_GET_RESOURCE_PARAMETERS_ARGUMENTS = _descriptor.Descriptor(
+  name='get_resource_parameters_arguments',
+  full_name='koinos.contracts.resources.get_resource_parameters_arguments',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1220,
+  serialized_end=1255,
+)
+
+
+_GET_RESOURCE_PARAMETERS_RESULT = _descriptor.Descriptor(
+  name='get_resource_parameters_result',
+  full_name='koinos.contracts.resources.get_resource_parameters_result',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.contracts.resources.get_resource_parameters_result.value', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1257,
+  serialized_end=1353,
 )
 
 _RESOURCE_MARKETS.fields_by_name['disk_storage'].message_type = _MARKET
 _RESOURCE_MARKETS.fields_by_name['network_bandwidth'].message_type = _MARKET
 _RESOURCE_MARKETS.fields_by_name['compute_bandwidth'].message_type = _MARKET
+_SET_RESOURCE_MARKETS_PARAMETERS_ARGUMENTS.fields_by_name['disk_storage'].message_type = _MARKET_PARAMETERS
+_SET_RESOURCE_MARKETS_PARAMETERS_ARGUMENTS.fields_by_name['network_bandwidth'].message_type = _MARKET_PARAMETERS
+_SET_RESOURCE_MARKETS_PARAMETERS_ARGUMENTS.fields_by_name['compute_bandwidth'].message_type = _MARKET_PARAMETERS
 _GET_RESOURCE_MARKETS_RESULT.fields_by_name['value'].message_type = _RESOURCE_MARKETS
+_SET_RESOURCE_PARAMETERS_ARGUMENTS.fields_by_name['params'].message_type = _RESOURCE_PARAMETERS
+_GET_RESOURCE_PARAMETERS_RESULT.fields_by_name['value'].message_type = _RESOURCE_PARAMETERS
 DESCRIPTOR.message_types_by_name['market'] = _MARKET
 DESCRIPTOR.message_types_by_name['resource_markets'] = _RESOURCE_MARKETS
+DESCRIPTOR.message_types_by_name['market_parameters'] = _MARKET_PARAMETERS
+DESCRIPTOR.message_types_by_name['resource_parameters'] = _RESOURCE_PARAMETERS
+DESCRIPTOR.message_types_by_name['set_resource_markets_parameters_arguments'] = _SET_RESOURCE_MARKETS_PARAMETERS_ARGUMENTS
+DESCRIPTOR.message_types_by_name['set_resource_markets_parameters_result'] = _SET_RESOURCE_MARKETS_PARAMETERS_RESULT
 DESCRIPTOR.message_types_by_name['get_resource_markets_arguments'] = _GET_RESOURCE_MARKETS_ARGUMENTS
 DESCRIPTOR.message_types_by_name['get_resource_markets_result'] = _GET_RESOURCE_MARKETS_RESULT
+DESCRIPTOR.message_types_by_name['set_resource_parameters_arguments'] = _SET_RESOURCE_PARAMETERS_ARGUMENTS
+DESCRIPTOR.message_types_by_name['set_resource_parameters_result'] = _SET_RESOURCE_PARAMETERS_RESULT
+DESCRIPTOR.message_types_by_name['get_resource_parameters_arguments'] = _GET_RESOURCE_PARAMETERS_ARGUMENTS
+DESCRIPTOR.message_types_by_name['get_resource_parameters_result'] = _GET_RESOURCE_PARAMETERS_RESULT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 market = _reflection.GeneratedProtocolMessageType('market', (_message.Message,), {
@@ -204,6 +501,34 @@ resource_markets = _reflection.GeneratedProtocolMessageType('resource_markets', 
   })
 _sym_db.RegisterMessage(resource_markets)
 
+market_parameters = _reflection.GeneratedProtocolMessageType('market_parameters', (_message.Message,), {
+  'DESCRIPTOR' : _MARKET_PARAMETERS,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.market_parameters)
+  })
+_sym_db.RegisterMessage(market_parameters)
+
+resource_parameters = _reflection.GeneratedProtocolMessageType('resource_parameters', (_message.Message,), {
+  'DESCRIPTOR' : _RESOURCE_PARAMETERS,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.resource_parameters)
+  })
+_sym_db.RegisterMessage(resource_parameters)
+
+set_resource_markets_parameters_arguments = _reflection.GeneratedProtocolMessageType('set_resource_markets_parameters_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _SET_RESOURCE_MARKETS_PARAMETERS_ARGUMENTS,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.set_resource_markets_parameters_arguments)
+  })
+_sym_db.RegisterMessage(set_resource_markets_parameters_arguments)
+
+set_resource_markets_parameters_result = _reflection.GeneratedProtocolMessageType('set_resource_markets_parameters_result', (_message.Message,), {
+  'DESCRIPTOR' : _SET_RESOURCE_MARKETS_PARAMETERS_RESULT,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.set_resource_markets_parameters_result)
+  })
+_sym_db.RegisterMessage(set_resource_markets_parameters_result)
+
 get_resource_markets_arguments = _reflection.GeneratedProtocolMessageType('get_resource_markets_arguments', (_message.Message,), {
   'DESCRIPTOR' : _GET_RESOURCE_MARKETS_ARGUMENTS,
   '__module__' : 'koinos.contracts.resources.resources_pb2'
@@ -218,10 +543,45 @@ get_resource_markets_result = _reflection.GeneratedProtocolMessageType('get_reso
   })
 _sym_db.RegisterMessage(get_resource_markets_result)
 
+set_resource_parameters_arguments = _reflection.GeneratedProtocolMessageType('set_resource_parameters_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _SET_RESOURCE_PARAMETERS_ARGUMENTS,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.set_resource_parameters_arguments)
+  })
+_sym_db.RegisterMessage(set_resource_parameters_arguments)
+
+set_resource_parameters_result = _reflection.GeneratedProtocolMessageType('set_resource_parameters_result', (_message.Message,), {
+  'DESCRIPTOR' : _SET_RESOURCE_PARAMETERS_RESULT,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.set_resource_parameters_result)
+  })
+_sym_db.RegisterMessage(set_resource_parameters_result)
+
+get_resource_parameters_arguments = _reflection.GeneratedProtocolMessageType('get_resource_parameters_arguments', (_message.Message,), {
+  'DESCRIPTOR' : _GET_RESOURCE_PARAMETERS_ARGUMENTS,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.get_resource_parameters_arguments)
+  })
+_sym_db.RegisterMessage(get_resource_parameters_arguments)
+
+get_resource_parameters_result = _reflection.GeneratedProtocolMessageType('get_resource_parameters_result', (_message.Message,), {
+  'DESCRIPTOR' : _GET_RESOURCE_PARAMETERS_RESULT,
+  '__module__' : 'koinos.contracts.resources.resources_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.contracts.resources.get_resource_parameters_result)
+  })
+_sym_db.RegisterMessage(get_resource_parameters_result)
+
 
 DESCRIPTOR._options = None
 _MARKET.fields_by_name['resource_supply']._options = None
-_MARKET.fields_by_name['rc_reserve']._options = None
 _MARKET.fields_by_name['block_budget']._options = None
 _MARKET.fields_by_name['block_limit']._options = None
+_MARKET_PARAMETERS.fields_by_name['block_budget']._options = None
+_MARKET_PARAMETERS.fields_by_name['block_limit']._options = None
+_RESOURCE_PARAMETERS.fields_by_name['block_interval_ms']._options = None
+_RESOURCE_PARAMETERS.fields_by_name['rc_regen_ms']._options = None
+_RESOURCE_PARAMETERS.fields_by_name['decay_constant']._options = None
+_RESOURCE_PARAMETERS.fields_by_name['one_minus_decay_constant']._options = None
+_RESOURCE_PARAMETERS.fields_by_name['print_rate_premium']._options = None
+_RESOURCE_PARAMETERS.fields_by_name['print_rate_precision']._options = None
 # @@protoc_insertion_point(module_scope)
