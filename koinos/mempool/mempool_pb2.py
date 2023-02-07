@@ -11,7 +11,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from koinos import options_pb2 as koinos_dot_options__pb2
 from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 
 
@@ -21,9 +20,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z4github.com/koinos/koinos-proto-golang/koinos/mempool',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ckoinos/mempool/mempool.proto\x12\x0ekoinos.mempool\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"#\n\x10mempool_metadata\x12\x0f\n\x07seq_num\x18\x01 \x01(\x04\"=\n\x17\x61\x64\x64ress_resource_record\x12\x0e\n\x06max_rc\x18\x01 \x01(\x04\x12\x12\n\ncurrent_rc\x18\x02 \x01(\x04\"\xbd\x01\n\x1apending_transaction_record\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x11\n\ttimestamp\x18\x02 \x01(\x04\x12\x19\n\x11\x64isk_storage_used\x18\x03 \x01(\x04\x12\x1e\n\x16network_bandwidth_used\x18\x04 \x01(\x04\x12\x1e\n\x16\x63ompute_bandwidth_used\x18\x05 \x01(\x04\x42\x36Z4github.com/koinos/koinos-proto-golang/koinos/mempoolb\x06proto3'
+  serialized_pb=b'\n\x1ckoinos/mempool/mempool.proto\x12\x0ekoinos.mempool\x1a\x1ekoinos/protocol/protocol.proto\"#\n\x10mempool_metadata\x12\x0f\n\x07seq_num\x18\x01 \x01(\x04\"=\n\x17\x61\x64\x64ress_resource_record\x12\x0e\n\x06max_rc\x18\x01 \x01(\x04\x12\x12\n\ncurrent_rc\x18\x02 \x01(\x04\"\xbd\x01\n\x1apending_transaction_record\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x11\n\ttimestamp\x18\x02 \x01(\x04\x12\x19\n\x11\x64isk_storage_used\x18\x03 \x01(\x04\x12\x1e\n\x16network_bandwidth_used\x18\x04 \x01(\x04\x12\x1e\n\x16\x63ompute_bandwidth_used\x18\x05 \x01(\x04\x42\x36Z4github.com/koinos/koinos-proto-golang/koinos/mempoolb\x06proto3'
   ,
-  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 
 
 
@@ -55,8 +54,8 @@ _MEMPOOL_METADATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=102,
-  serialized_end=137,
+  serialized_start=80,
+  serialized_end=115,
 )
 
 
@@ -94,8 +93,8 @@ _ADDRESS_RESOURCE_RECORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=139,
-  serialized_end=200,
+  serialized_start=117,
+  serialized_end=178,
 )
 
 
@@ -154,8 +153,8 @@ _PENDING_TRANSACTION_RECORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=203,
-  serialized_end=392,
+  serialized_start=181,
+  serialized_end=370,
 )
 
 _PENDING_TRANSACTION_RECORD.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION

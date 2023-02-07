@@ -13,8 +13,6 @@ _sym_db = _symbol_database.Default()
 
 from koinos.account_history import account_history_pb2 as koinos_dot_account__history_dot_account__history__pb2
 from koinos import options_pb2 as koinos_dot_options__pb2
-from koinos import common_pb2 as koinos_dot_common__pb2
-from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 from koinos.rpc import rpc_pb2 as koinos_dot_rpc_dot_rpc__pb2
 
 
@@ -24,9 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z@github.com/koinos/koinos-proto-golang/koinos/rpc/account_history',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n4koinos/rpc/account_history/account_history_rpc.proto\x12\x1akoinos.rpc.account_history\x1a,koinos/account_history/account_history.proto\x1a\x14koinos/options.proto\x1a\x13koinos/common.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"\xa8\x01\n\x15\x61\x63\x63ount_history_entry\x12\x13\n\x07seq_num\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x39\n\x03trx\x18\x02 \x01(\x0b\x32*.koinos.account_history.transaction_recordH\x00\x12\x35\n\x05\x62lock\x18\x03 \x01(\x0b\x32$.koinos.account_history.block_recordH\x00\x42\x08\n\x06record\"\x96\x01\n\x1bget_account_history_request\x12\x15\n\x07\x61\x64\x64ress\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x07seq_num\x18\x02 \x01(\x04\x42\x02\x30\x01H\x00\x88\x01\x01\x12\x11\n\x05limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x11\n\tascending\x18\x04 \x01(\x08\x12\x14\n\x0cirreversible\x18\x05 \x01(\x08\x42\n\n\x08_seq_num\"a\n\x1cget_account_history_response\x12\x41\n\x06values\x18\x01 \x03(\x0b\x32\x31.koinos.rpc.account_history.account_history_entry\"\xaa\x01\n\x17\x61\x63\x63ount_history_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12V\n\x13get_account_history\x18\x02 \x01(\x0b\x32\x37.koinos.rpc.account_history.get_account_history_requestH\x00\x42\t\n\x07request\"\xda\x01\n\x18\x61\x63\x63ount_history_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12W\n\x13get_account_history\x18\x03 \x01(\x0b\x32\x38.koinos.rpc.account_history.get_account_history_responseH\x00\x42\n\n\x08responseBBZ@github.com/koinos/koinos-proto-golang/koinos/rpc/account_historyb\x06proto3'
+  serialized_pb=b'\n4koinos/rpc/account_history/account_history_rpc.proto\x12\x1akoinos.rpc.account_history\x1a,koinos/account_history/account_history.proto\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\"\xa8\x01\n\x15\x61\x63\x63ount_history_entry\x12\x13\n\x07seq_num\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x39\n\x03trx\x18\x02 \x01(\x0b\x32*.koinos.account_history.transaction_recordH\x00\x12\x35\n\x05\x62lock\x18\x03 \x01(\x0b\x32$.koinos.account_history.block_recordH\x00\x42\x08\n\x06record\"\x96\x01\n\x1bget_account_history_request\x12\x15\n\x07\x61\x64\x64ress\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x07seq_num\x18\x02 \x01(\x04\x42\x02\x30\x01H\x00\x88\x01\x01\x12\x11\n\x05limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x11\n\tascending\x18\x04 \x01(\x08\x12\x14\n\x0cirreversible\x18\x05 \x01(\x08\x42\n\n\x08_seq_num\"a\n\x1cget_account_history_response\x12\x41\n\x06values\x18\x01 \x03(\x0b\x32\x31.koinos.rpc.account_history.account_history_entry\"\xaa\x01\n\x17\x61\x63\x63ount_history_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12V\n\x13get_account_history\x18\x02 \x01(\x0b\x32\x37.koinos.rpc.account_history.get_account_history_requestH\x00\x42\t\n\x07request\"\xda\x01\n\x18\x61\x63\x63ount_history_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12W\n\x13get_account_history\x18\x03 \x01(\x0b\x32\x38.koinos.rpc.account_history.get_account_history_responseH\x00\x42\n\n\x08responseBBZ@github.com/koinos/koinos-proto-golang/koinos/rpc/account_historyb\x06proto3'
   ,
-  dependencies=[koinos_dot_account__history_dot_account__history__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_account__history_dot_account__history__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
 
 
 
@@ -77,8 +75,8 @@ _ACCOUNT_HISTORY_ENTRY = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=228,
-  serialized_end=396,
+  serialized_start=175,
+  serialized_end=343,
 )
 
 
@@ -142,8 +140,8 @@ _GET_ACCOUNT_HISTORY_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=399,
-  serialized_end=549,
+  serialized_start=346,
+  serialized_end=496,
 )
 
 
@@ -174,8 +172,8 @@ _GET_ACCOUNT_HISTORY_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=551,
-  serialized_end=648,
+  serialized_start=498,
+  serialized_end=595,
 )
 
 
@@ -218,8 +216,8 @@ _ACCOUNT_HISTORY_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=651,
-  serialized_end=821,
+  serialized_start=598,
+  serialized_end=768,
 )
 
 
@@ -269,8 +267,8 @@ _ACCOUNT_HISTORY_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=824,
-  serialized_end=1042,
+  serialized_start=771,
+  serialized_end=989,
 )
 
 _ACCOUNT_HISTORY_ENTRY.fields_by_name['trx'].message_type = koinos_dot_account__history_dot_account__history__pb2._TRANSACTION_RECORD

@@ -11,7 +11,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from koinos import options_pb2 as koinos_dot_options__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -20,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z;github.com/koinos/koinos-proto-golang/koinos/contracts/koin',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/contracts/koin/koin.proto\x12\x15koinos.contracts.koin\x1a\x14koinos/options.proto\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\x42=Z;github.com/koinos/koinos-proto-golang/koinos/contracts/koinb\x06proto3'
-  ,
-  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
+  serialized_pb=b'\n koinos/contracts/koin/koin.proto\x12\x15koinos.contracts.koin\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\x42=Z;github.com/koinos/koinos-proto-golang/koinos/contracts/koinb\x06proto3'
+)
 
 
 
@@ -68,8 +66,8 @@ _MANA_BALANCE_OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=81,
-  serialized_end=171,
+  serialized_start=59,
+  serialized_end=149,
 )
 
 DESCRIPTOR.message_types_by_name['mana_balance_object'] = _MANA_BALANCE_OBJECT
