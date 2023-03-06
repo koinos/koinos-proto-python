@@ -24,7 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z6github.com/koinos/koinos-proto-golang/koinos/rpc/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/rpc/chain/chain_rpc.proto\x12\x10koinos.rpc.chain\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x18koinos/chain/chain.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"=\n\x14submit_block_request\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\"H\n\x15submit_block_response\x12/\n\x07receipt\x18\x01 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"b\n\x1asubmit_transaction_request\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x11\n\tbroadcast\x18\x02 \x01(\x08\"T\n\x1bsubmit_transaction_response\x12\x35\n\x07receipt\x18\x01 \x01(\x0b\x32$.koinos.protocol.transaction_receipt\"\x17\n\x15get_head_info_request\"\xa9\x01\n\x16get_head_info_response\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12#\n\x17last_irreversible_block\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1e\n\x16head_state_merkle_root\x18\x03 \x01(\x0c\x12\x1b\n\x0fhead_block_time\x18\x04 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_chain_id_request\")\n\x15get_chain_id_response\x12\x10\n\x08\x63hain_id\x18\x01 \x01(\x0c\"\x18\n\x16get_fork_heads_request\"~\n\x17get_fork_heads_response\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12*\n\nfork_heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topology\"U\n\x15read_contract_request\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"6\n\x16read_contract_response\x12\x0e\n\x06result\x18\x01 \x01(\x0c\x12\x0c\n\x04logs\x18\x02 \x03(\t\"2\n\x19get_account_nonce_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"+\n\x1aget_account_nonce_response\x12\r\n\x05nonce\x18\x01 \x01(\x0c\"/\n\x16get_account_rc_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\")\n\x17get_account_rc_response\x12\x0e\n\x02rc\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x1d\n\x1bget_resource_limits_request\"^\n\x1cget_resource_limits_response\x12>\n\x13resource_limit_data\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"\xb8\x05\n\rchain_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12>\n\x0csubmit_block\x18\x02 \x01(\x0b\x32&.koinos.rpc.chain.submit_block_requestH\x00\x12J\n\x12submit_transaction\x18\x03 \x01(\x0b\x32,.koinos.rpc.chain.submit_transaction_requestH\x00\x12@\n\rget_head_info\x18\x04 \x01(\x0b\x32\'.koinos.rpc.chain.get_head_info_requestH\x00\x12>\n\x0cget_chain_id\x18\x05 \x01(\x0b\x32&.koinos.rpc.chain.get_chain_id_requestH\x00\x12\x42\n\x0eget_fork_heads\x18\x06 \x01(\x0b\x32(.koinos.rpc.chain.get_fork_heads_requestH\x00\x12@\n\rread_contract\x18\x07 \x01(\x0b\x32\'.koinos.rpc.chain.read_contract_requestH\x00\x12H\n\x11get_account_nonce\x18\x08 \x01(\x0b\x32+.koinos.rpc.chain.get_account_nonce_requestH\x00\x12\x42\n\x0eget_account_rc\x18\t \x01(\x0b\x32(.koinos.rpc.chain.get_account_rc_requestH\x00\x12L\n\x13get_resource_limits\x18\n \x01(\x0b\x32-.koinos.rpc.chain.get_resource_limits_requestH\x00\x42\t\n\x07request\"\xf0\x05\n\x0e\x63hain_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12?\n\x0csubmit_block\x18\x03 \x01(\x0b\x32\'.koinos.rpc.chain.submit_block_responseH\x00\x12K\n\x12submit_transaction\x18\x04 \x01(\x0b\x32-.koinos.rpc.chain.submit_transaction_responseH\x00\x12\x41\n\rget_head_info\x18\x05 \x01(\x0b\x32(.koinos.rpc.chain.get_head_info_responseH\x00\x12?\n\x0cget_chain_id\x18\x06 \x01(\x0b\x32\'.koinos.rpc.chain.get_chain_id_responseH\x00\x12\x43\n\x0eget_fork_heads\x18\x07 \x01(\x0b\x32).koinos.rpc.chain.get_fork_heads_responseH\x00\x12\x41\n\rread_contract\x18\x08 \x01(\x0b\x32(.koinos.rpc.chain.read_contract_responseH\x00\x12I\n\x11get_account_nonce\x18\t \x01(\x0b\x32,.koinos.rpc.chain.get_account_nonce_responseH\x00\x12\x43\n\x0eget_account_rc\x18\n \x01(\x0b\x32).koinos.rpc.chain.get_account_rc_responseH\x00\x12M\n\x13get_resource_limits\x18\x0b \x01(\x0b\x32..koinos.rpc.chain.get_resource_limits_responseH\x00\x42\n\n\x08responseB8Z6github.com/koinos/koinos-proto-golang/koinos/rpc/chainb\x06proto3'
+  serialized_pb=b'\n koinos/rpc/chain/chain_rpc.proto\x12\x10koinos.rpc.chain\x1a\x13koinos/common.proto\x1a\x14koinos/options.proto\x1a\x18koinos/chain/chain.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"=\n\x14submit_block_request\x12%\n\x05\x62lock\x18\x01 \x01(\x0b\x32\x16.koinos.protocol.block\"H\n\x15submit_block_response\x12/\n\x07receipt\x18\x01 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"b\n\x1asubmit_transaction_request\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x11\n\tbroadcast\x18\x02 \x01(\x08\"T\n\x1bsubmit_transaction_response\x12\x35\n\x07receipt\x18\x01 \x01(\x0b\x32$.koinos.protocol.transaction_receipt\"\x17\n\x15get_head_info_request\"\xa9\x01\n\x16get_head_info_response\x12-\n\rhead_topology\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12#\n\x17last_irreversible_block\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1e\n\x16head_state_merkle_root\x18\x03 \x01(\x0c\x12\x1b\n\x0fhead_block_time\x18\x04 \x01(\x04\x42\x02\x30\x01\"\x16\n\x14get_chain_id_request\")\n\x15get_chain_id_response\x12\x10\n\x08\x63hain_id\x18\x01 \x01(\x0c\"\x18\n\x16get_fork_heads_request\"~\n\x17get_fork_heads_response\x12\x37\n\x17last_irreversible_block\x18\x01 \x01(\x0b\x32\x16.koinos.block_topology\x12*\n\nfork_heads\x18\x02 \x03(\x0b\x32\x16.koinos.block_topology\"U\n\x15read_contract_request\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"6\n\x16read_contract_response\x12\x0e\n\x06result\x18\x01 \x01(\x0c\x12\x0c\n\x04logs\x18\x02 \x03(\t\"2\n\x19get_account_nonce_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"+\n\x1aget_account_nonce_response\x12\r\n\x05nonce\x18\x01 \x01(\x0c\"/\n\x16get_account_rc_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\")\n\x17get_account_rc_response\x12\x0e\n\x02rc\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x1d\n\x1bget_resource_limits_request\"^\n\x1cget_resource_limits_response\x12>\n\x13resource_limit_data\x18\x01 \x01(\x0b\x32!.koinos.chain.resource_limit_data\"W\n\x1ainvoke_system_call_request\x12\x0c\n\x02id\x18\x01 \x01(\x03H\x00\x12\x0e\n\x04name\x18\x02 \x01(\tH\x00\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\x42\r\n\x0bsystem_call\",\n\x1binvoke_system_call_response\x12\r\n\x05value\x18\x01 \x01(\x0c\"\x84\x06\n\rchain_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12>\n\x0csubmit_block\x18\x02 \x01(\x0b\x32&.koinos.rpc.chain.submit_block_requestH\x00\x12J\n\x12submit_transaction\x18\x03 \x01(\x0b\x32,.koinos.rpc.chain.submit_transaction_requestH\x00\x12@\n\rget_head_info\x18\x04 \x01(\x0b\x32\'.koinos.rpc.chain.get_head_info_requestH\x00\x12>\n\x0cget_chain_id\x18\x05 \x01(\x0b\x32&.koinos.rpc.chain.get_chain_id_requestH\x00\x12\x42\n\x0eget_fork_heads\x18\x06 \x01(\x0b\x32(.koinos.rpc.chain.get_fork_heads_requestH\x00\x12@\n\rread_contract\x18\x07 \x01(\x0b\x32\'.koinos.rpc.chain.read_contract_requestH\x00\x12H\n\x11get_account_nonce\x18\x08 \x01(\x0b\x32+.koinos.rpc.chain.get_account_nonce_requestH\x00\x12\x42\n\x0eget_account_rc\x18\t \x01(\x0b\x32(.koinos.rpc.chain.get_account_rc_requestH\x00\x12L\n\x13get_resource_limits\x18\n \x01(\x0b\x32-.koinos.rpc.chain.get_resource_limits_requestH\x00\x12J\n\x12invoke_system_call\x18\x0b \x01(\x0b\x32,.koinos.rpc.chain.invoke_system_call_requestH\x00\x42\t\n\x07request\"\xbd\x06\n\x0e\x63hain_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12?\n\x0csubmit_block\x18\x03 \x01(\x0b\x32\'.koinos.rpc.chain.submit_block_responseH\x00\x12K\n\x12submit_transaction\x18\x04 \x01(\x0b\x32-.koinos.rpc.chain.submit_transaction_responseH\x00\x12\x41\n\rget_head_info\x18\x05 \x01(\x0b\x32(.koinos.rpc.chain.get_head_info_responseH\x00\x12?\n\x0cget_chain_id\x18\x06 \x01(\x0b\x32\'.koinos.rpc.chain.get_chain_id_responseH\x00\x12\x43\n\x0eget_fork_heads\x18\x07 \x01(\x0b\x32).koinos.rpc.chain.get_fork_heads_responseH\x00\x12\x41\n\rread_contract\x18\x08 \x01(\x0b\x32(.koinos.rpc.chain.read_contract_responseH\x00\x12I\n\x11get_account_nonce\x18\t \x01(\x0b\x32,.koinos.rpc.chain.get_account_nonce_responseH\x00\x12\x43\n\x0eget_account_rc\x18\n \x01(\x0b\x32).koinos.rpc.chain.get_account_rc_responseH\x00\x12M\n\x13get_resource_limits\x18\x0b \x01(\x0b\x32..koinos.rpc.chain.get_resource_limits_responseH\x00\x12K\n\x12invoke_system_call\x18\x0c \x01(\x0b\x32-.koinos.rpc.chain.invoke_system_call_responseH\x00\x42\n\n\x08responseB8Z6github.com/koinos/koinos-proto-golang/koinos/rpc/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_common__pb2.DESCRIPTOR,koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_chain_dot_chain__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
 
@@ -635,6 +635,89 @@ _GET_RESOURCE_LIMITS_RESPONSE = _descriptor.Descriptor(
 )
 
 
+_INVOKE_SYSTEM_CALL_REQUEST = _descriptor.Descriptor(
+  name='invoke_system_call_request',
+  full_name='koinos.rpc.chain.invoke_system_call_request',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='koinos.rpc.chain.invoke_system_call_request.id', index=0,
+      number=1, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='koinos.rpc.chain.invoke_system_call_request.name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='args', full_name='koinos.rpc.chain.invoke_system_call_request.args', index=2,
+      number=3, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+    _descriptor.OneofDescriptor(
+      name='system_call', full_name='koinos.rpc.chain.invoke_system_call_request.system_call',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
+  ],
+  serialized_start=1377,
+  serialized_end=1464,
+)
+
+
+_INVOKE_SYSTEM_CALL_RESPONSE = _descriptor.Descriptor(
+  name='invoke_system_call_response',
+  full_name='koinos.rpc.chain.invoke_system_call_response',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.rpc.chain.invoke_system_call_response.value', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1466,
+  serialized_end=1510,
+)
+
+
 _CHAIN_REQUEST = _descriptor.Descriptor(
   name='chain_request',
   full_name='koinos.rpc.chain.chain_request',
@@ -713,6 +796,13 @@ _CHAIN_REQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='invoke_system_call', full_name='koinos.rpc.chain.chain_request.invoke_system_call', index=10,
+      number=11, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -730,8 +820,8 @@ _CHAIN_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1378,
-  serialized_end=2074,
+  serialized_start=1513,
+  serialized_end=2285,
 )
 
 
@@ -820,6 +910,13 @@ _CHAIN_RESPONSE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='invoke_system_call', full_name='koinos.rpc.chain.chain_response.invoke_system_call', index=11,
+      number=12, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -837,8 +934,8 @@ _CHAIN_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=2077,
-  serialized_end=2829,
+  serialized_start=2288,
+  serialized_end=3117,
 )
 
 _SUBMIT_BLOCK_REQUEST.fields_by_name['block'].message_type = koinos_dot_protocol_dot_protocol__pb2._BLOCK
@@ -849,6 +946,12 @@ _GET_HEAD_INFO_RESPONSE.fields_by_name['head_topology'].message_type = koinos_do
 _GET_FORK_HEADS_RESPONSE.fields_by_name['last_irreversible_block'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _GET_FORK_HEADS_RESPONSE.fields_by_name['fork_heads'].message_type = koinos_dot_common__pb2._BLOCK_TOPOLOGY
 _GET_RESOURCE_LIMITS_RESPONSE.fields_by_name['resource_limit_data'].message_type = koinos_dot_chain_dot_chain__pb2._RESOURCE_LIMIT_DATA
+_INVOKE_SYSTEM_CALL_REQUEST.oneofs_by_name['system_call'].fields.append(
+  _INVOKE_SYSTEM_CALL_REQUEST.fields_by_name['id'])
+_INVOKE_SYSTEM_CALL_REQUEST.fields_by_name['id'].containing_oneof = _INVOKE_SYSTEM_CALL_REQUEST.oneofs_by_name['system_call']
+_INVOKE_SYSTEM_CALL_REQUEST.oneofs_by_name['system_call'].fields.append(
+  _INVOKE_SYSTEM_CALL_REQUEST.fields_by_name['name'])
+_INVOKE_SYSTEM_CALL_REQUEST.fields_by_name['name'].containing_oneof = _INVOKE_SYSTEM_CALL_REQUEST.oneofs_by_name['system_call']
 _CHAIN_REQUEST.fields_by_name['reserved'].message_type = koinos_dot_rpc_dot_rpc__pb2._RESERVED_RPC
 _CHAIN_REQUEST.fields_by_name['submit_block'].message_type = _SUBMIT_BLOCK_REQUEST
 _CHAIN_REQUEST.fields_by_name['submit_transaction'].message_type = _SUBMIT_TRANSACTION_REQUEST
@@ -859,6 +962,7 @@ _CHAIN_REQUEST.fields_by_name['read_contract'].message_type = _READ_CONTRACT_REQ
 _CHAIN_REQUEST.fields_by_name['get_account_nonce'].message_type = _GET_ACCOUNT_NONCE_REQUEST
 _CHAIN_REQUEST.fields_by_name['get_account_rc'].message_type = _GET_ACCOUNT_RC_REQUEST
 _CHAIN_REQUEST.fields_by_name['get_resource_limits'].message_type = _GET_RESOURCE_LIMITS_REQUEST
+_CHAIN_REQUEST.fields_by_name['invoke_system_call'].message_type = _INVOKE_SYSTEM_CALL_REQUEST
 _CHAIN_REQUEST.oneofs_by_name['request'].fields.append(
   _CHAIN_REQUEST.fields_by_name['reserved'])
 _CHAIN_REQUEST.fields_by_name['reserved'].containing_oneof = _CHAIN_REQUEST.oneofs_by_name['request']
@@ -889,6 +993,9 @@ _CHAIN_REQUEST.fields_by_name['get_account_rc'].containing_oneof = _CHAIN_REQUES
 _CHAIN_REQUEST.oneofs_by_name['request'].fields.append(
   _CHAIN_REQUEST.fields_by_name['get_resource_limits'])
 _CHAIN_REQUEST.fields_by_name['get_resource_limits'].containing_oneof = _CHAIN_REQUEST.oneofs_by_name['request']
+_CHAIN_REQUEST.oneofs_by_name['request'].fields.append(
+  _CHAIN_REQUEST.fields_by_name['invoke_system_call'])
+_CHAIN_REQUEST.fields_by_name['invoke_system_call'].containing_oneof = _CHAIN_REQUEST.oneofs_by_name['request']
 _CHAIN_RESPONSE.fields_by_name['reserved'].message_type = koinos_dot_rpc_dot_rpc__pb2._RESERVED_RPC
 _CHAIN_RESPONSE.fields_by_name['error'].message_type = koinos_dot_rpc_dot_rpc__pb2._ERROR_RESPONSE
 _CHAIN_RESPONSE.fields_by_name['submit_block'].message_type = _SUBMIT_BLOCK_RESPONSE
@@ -900,6 +1007,7 @@ _CHAIN_RESPONSE.fields_by_name['read_contract'].message_type = _READ_CONTRACT_RE
 _CHAIN_RESPONSE.fields_by_name['get_account_nonce'].message_type = _GET_ACCOUNT_NONCE_RESPONSE
 _CHAIN_RESPONSE.fields_by_name['get_account_rc'].message_type = _GET_ACCOUNT_RC_RESPONSE
 _CHAIN_RESPONSE.fields_by_name['get_resource_limits'].message_type = _GET_RESOURCE_LIMITS_RESPONSE
+_CHAIN_RESPONSE.fields_by_name['invoke_system_call'].message_type = _INVOKE_SYSTEM_CALL_RESPONSE
 _CHAIN_RESPONSE.oneofs_by_name['response'].fields.append(
   _CHAIN_RESPONSE.fields_by_name['reserved'])
 _CHAIN_RESPONSE.fields_by_name['reserved'].containing_oneof = _CHAIN_RESPONSE.oneofs_by_name['response']
@@ -933,6 +1041,9 @@ _CHAIN_RESPONSE.fields_by_name['get_account_rc'].containing_oneof = _CHAIN_RESPO
 _CHAIN_RESPONSE.oneofs_by_name['response'].fields.append(
   _CHAIN_RESPONSE.fields_by_name['get_resource_limits'])
 _CHAIN_RESPONSE.fields_by_name['get_resource_limits'].containing_oneof = _CHAIN_RESPONSE.oneofs_by_name['response']
+_CHAIN_RESPONSE.oneofs_by_name['response'].fields.append(
+  _CHAIN_RESPONSE.fields_by_name['invoke_system_call'])
+_CHAIN_RESPONSE.fields_by_name['invoke_system_call'].containing_oneof = _CHAIN_RESPONSE.oneofs_by_name['response']
 DESCRIPTOR.message_types_by_name['submit_block_request'] = _SUBMIT_BLOCK_REQUEST
 DESCRIPTOR.message_types_by_name['submit_block_response'] = _SUBMIT_BLOCK_RESPONSE
 DESCRIPTOR.message_types_by_name['submit_transaction_request'] = _SUBMIT_TRANSACTION_REQUEST
@@ -951,6 +1062,8 @@ DESCRIPTOR.message_types_by_name['get_account_rc_request'] = _GET_ACCOUNT_RC_REQ
 DESCRIPTOR.message_types_by_name['get_account_rc_response'] = _GET_ACCOUNT_RC_RESPONSE
 DESCRIPTOR.message_types_by_name['get_resource_limits_request'] = _GET_RESOURCE_LIMITS_REQUEST
 DESCRIPTOR.message_types_by_name['get_resource_limits_response'] = _GET_RESOURCE_LIMITS_RESPONSE
+DESCRIPTOR.message_types_by_name['invoke_system_call_request'] = _INVOKE_SYSTEM_CALL_REQUEST
+DESCRIPTOR.message_types_by_name['invoke_system_call_response'] = _INVOKE_SYSTEM_CALL_RESPONSE
 DESCRIPTOR.message_types_by_name['chain_request'] = _CHAIN_REQUEST
 DESCRIPTOR.message_types_by_name['chain_response'] = _CHAIN_RESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -1080,6 +1193,20 @@ get_resource_limits_response = _reflection.GeneratedProtocolMessageType('get_res
   # @@protoc_insertion_point(class_scope:koinos.rpc.chain.get_resource_limits_response)
   })
 _sym_db.RegisterMessage(get_resource_limits_response)
+
+invoke_system_call_request = _reflection.GeneratedProtocolMessageType('invoke_system_call_request', (_message.Message,), {
+  'DESCRIPTOR' : _INVOKE_SYSTEM_CALL_REQUEST,
+  '__module__' : 'koinos.rpc.chain.chain_rpc_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.rpc.chain.invoke_system_call_request)
+  })
+_sym_db.RegisterMessage(invoke_system_call_request)
+
+invoke_system_call_response = _reflection.GeneratedProtocolMessageType('invoke_system_call_response', (_message.Message,), {
+  'DESCRIPTOR' : _INVOKE_SYSTEM_CALL_RESPONSE,
+  '__module__' : 'koinos.rpc.chain.chain_rpc_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.rpc.chain.invoke_system_call_response)
+  })
+_sym_db.RegisterMessage(invoke_system_call_response)
 
 chain_request = _reflection.GeneratedProtocolMessageType('chain_request', (_message.Message,), {
   'DESCRIPTOR' : _CHAIN_REQUEST,

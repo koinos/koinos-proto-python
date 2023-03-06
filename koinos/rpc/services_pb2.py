@@ -26,7 +26,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z5github.com/koinos/koinos-proto-golang/koinos/services',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x19koinos/rpc/services.proto\x12\x0fkoinos.services\x1a\x34koinos/rpc/account_history/account_history_rpc.proto\x1a,koinos/rpc/block_store/block_store_rpc.proto\x1a koinos/rpc/chain/chain_rpc.proto\x1a<koinos/rpc/contract_meta_store/contract_meta_store_rpc.proto\x1a$koinos/rpc/mempool/mempool_rpc.proto\x1a\x1ckoinos/rpc/p2p/p2p_rpc.proto\x1a\x38koinos/rpc/transaction_store/transaction_store_rpc.proto2\x9d\x11\n\x06koinos\x12\x8a\x01\n\x13get_account_history\x12\x37.koinos.rpc.account_history.get_account_history_request\x1a\x38.koinos.rpc.account_history.get_account_history_response\"\x00\x12y\n\x10get_blocks_by_id\x12\x30.koinos.rpc.block_store.get_blocks_by_id_request\x1a\x31.koinos.rpc.block_store.get_blocks_by_id_response\"\x00\x12\x85\x01\n\x14get_blocks_by_height\x12\x34.koinos.rpc.block_store.get_blocks_by_height_request\x1a\x35.koinos.rpc.block_store.get_blocks_by_height_response\"\x00\x12|\n\x11get_highest_block\x12\x31.koinos.rpc.block_store.get_highest_block_request\x1a\x32.koinos.rpc.block_store.get_highest_block_response\"\x00\x12\x61\n\x0csubmit_block\x12&.koinos.rpc.chain.submit_block_request\x1a\'.koinos.rpc.chain.submit_block_response\"\x00\x12s\n\x12submit_transaction\x12,.koinos.rpc.chain.submit_transaction_request\x1a-.koinos.rpc.chain.submit_transaction_response\"\x00\x12\x64\n\rget_head_info\x12\'.koinos.rpc.chain.get_head_info_request\x1a(.koinos.rpc.chain.get_head_info_response\"\x00\x12\x61\n\x0cget_chain_id\x12&.koinos.rpc.chain.get_chain_id_request\x1a\'.koinos.rpc.chain.get_chain_id_response\"\x00\x12g\n\x0eget_fork_heads\x12(.koinos.rpc.chain.get_fork_heads_request\x1a).koinos.rpc.chain.get_fork_heads_response\"\x00\x12\x64\n\rread_contract\x12\'.koinos.rpc.chain.read_contract_request\x1a(.koinos.rpc.chain.read_contract_response\"\x00\x12p\n\x11get_account_nonce\x12+.koinos.rpc.chain.get_account_nonce_request\x1a,.koinos.rpc.chain.get_account_nonce_response\"\x00\x12g\n\x0eget_account_rc\x12(.koinos.rpc.chain.get_account_rc_request\x1a).koinos.rpc.chain.get_account_rc_response\"\x00\x12v\n\x13get_resource_limits\x12-.koinos.rpc.chain.get_resource_limits_request\x1a..koinos.rpc.chain.get_resource_limits_response\"\x00\x12\x8c\x01\n\x11get_contract_meta\x12\x39.koinos.rpc.contract_meta_store.get_contract_meta_request\x1a:.koinos.rpc.contract_meta_store.get_contract_meta_response\"\x00\x12\x89\x01\n\x18get_pending_transactions\x12\x34.koinos.rpc.mempool.get_pending_transactions_request\x1a\x35.koinos.rpc.mempool.get_pending_transactions_response\"\x00\x12\x9e\x01\n\x1f\x63heck_pending_account_resources\x12;.koinos.rpc.mempool.check_pending_account_resources_request\x1a<.koinos.rpc.mempool.check_pending_account_resources_response\"\x00\x12l\n\x11get_gossip_status\x12).koinos.rpc.p2p.get_gossip_status_request\x1a*.koinos.rpc.p2p.get_gossip_status_response\"\x00\x12\x97\x01\n\x16get_transactions_by_id\x12<.koinos.rpc.transaction_store.get_transactions_by_id_request\x1a=.koinos.rpc.transaction_store.get_transactions_by_id_response\"\x00\x42\x37Z5github.com/koinos/koinos-proto-golang/koinos/servicesb\x06proto3'
+  serialized_pb=b'\n\x19koinos/rpc/services.proto\x12\x0fkoinos.services\x1a\x34koinos/rpc/account_history/account_history_rpc.proto\x1a,koinos/rpc/block_store/block_store_rpc.proto\x1a koinos/rpc/chain/chain_rpc.proto\x1a<koinos/rpc/contract_meta_store/contract_meta_store_rpc.proto\x1a$koinos/rpc/mempool/mempool_rpc.proto\x1a\x1ckoinos/rpc/p2p/p2p_rpc.proto\x1a\x38koinos/rpc/transaction_store/transaction_store_rpc.proto2\x92\x12\n\x06koinos\x12\x8a\x01\n\x13get_account_history\x12\x37.koinos.rpc.account_history.get_account_history_request\x1a\x38.koinos.rpc.account_history.get_account_history_response\"\x00\x12y\n\x10get_blocks_by_id\x12\x30.koinos.rpc.block_store.get_blocks_by_id_request\x1a\x31.koinos.rpc.block_store.get_blocks_by_id_response\"\x00\x12\x85\x01\n\x14get_blocks_by_height\x12\x34.koinos.rpc.block_store.get_blocks_by_height_request\x1a\x35.koinos.rpc.block_store.get_blocks_by_height_response\"\x00\x12|\n\x11get_highest_block\x12\x31.koinos.rpc.block_store.get_highest_block_request\x1a\x32.koinos.rpc.block_store.get_highest_block_response\"\x00\x12\x61\n\x0csubmit_block\x12&.koinos.rpc.chain.submit_block_request\x1a\'.koinos.rpc.chain.submit_block_response\"\x00\x12s\n\x12submit_transaction\x12,.koinos.rpc.chain.submit_transaction_request\x1a-.koinos.rpc.chain.submit_transaction_response\"\x00\x12\x64\n\rget_head_info\x12\'.koinos.rpc.chain.get_head_info_request\x1a(.koinos.rpc.chain.get_head_info_response\"\x00\x12\x61\n\x0cget_chain_id\x12&.koinos.rpc.chain.get_chain_id_request\x1a\'.koinos.rpc.chain.get_chain_id_response\"\x00\x12g\n\x0eget_fork_heads\x12(.koinos.rpc.chain.get_fork_heads_request\x1a).koinos.rpc.chain.get_fork_heads_response\"\x00\x12\x64\n\rread_contract\x12\'.koinos.rpc.chain.read_contract_request\x1a(.koinos.rpc.chain.read_contract_response\"\x00\x12p\n\x11get_account_nonce\x12+.koinos.rpc.chain.get_account_nonce_request\x1a,.koinos.rpc.chain.get_account_nonce_response\"\x00\x12g\n\x0eget_account_rc\x12(.koinos.rpc.chain.get_account_rc_request\x1a).koinos.rpc.chain.get_account_rc_response\"\x00\x12v\n\x13get_resource_limits\x12-.koinos.rpc.chain.get_resource_limits_request\x1a..koinos.rpc.chain.get_resource_limits_response\"\x00\x12s\n\x12invoke_system_call\x12,.koinos.rpc.chain.invoke_system_call_request\x1a-.koinos.rpc.chain.invoke_system_call_response\"\x00\x12\x8c\x01\n\x11get_contract_meta\x12\x39.koinos.rpc.contract_meta_store.get_contract_meta_request\x1a:.koinos.rpc.contract_meta_store.get_contract_meta_response\"\x00\x12\x89\x01\n\x18get_pending_transactions\x12\x34.koinos.rpc.mempool.get_pending_transactions_request\x1a\x35.koinos.rpc.mempool.get_pending_transactions_response\"\x00\x12\x9e\x01\n\x1f\x63heck_pending_account_resources\x12;.koinos.rpc.mempool.check_pending_account_resources_request\x1a<.koinos.rpc.mempool.check_pending_account_resources_response\"\x00\x12l\n\x11get_gossip_status\x12).koinos.rpc.p2p.get_gossip_status_request\x1a*.koinos.rpc.p2p.get_gossip_status_response\"\x00\x12\x97\x01\n\x16get_transactions_by_id\x12<.koinos.rpc.transaction_store.get_transactions_by_id_request\x1a=.koinos.rpc.transaction_store.get_transactions_by_id_response\"\x00\x42\x37Z5github.com/koinos/koinos-proto-golang/koinos/servicesb\x06proto3'
   ,
   dependencies=[koinos_dot_rpc_dot_account__history_dot_account__history__rpc__pb2.DESCRIPTOR,koinos_dot_rpc_dot_block__store_dot_block__store__rpc__pb2.DESCRIPTOR,koinos_dot_rpc_dot_chain_dot_chain__rpc__pb2.DESCRIPTOR,koinos_dot_rpc_dot_contract__meta__store_dot_contract__meta__store__rpc__pb2.DESCRIPTOR,koinos_dot_rpc_dot_mempool_dot_mempool__rpc__pb2.DESCRIPTOR,koinos_dot_rpc_dot_p2p_dot_p2p__rpc__pb2.DESCRIPTOR,koinos_dot_rpc_dot_transaction__store_dot_transaction__store__rpc__pb2.DESCRIPTOR,])
 
@@ -45,7 +45,7 @@ _KOINOS = _descriptor.ServiceDescriptor(
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
   serialized_start=369,
-  serialized_end=2574,
+  serialized_end=2691,
   methods=[
   _descriptor.MethodDescriptor(
     name='get_account_history',
@@ -178,9 +178,19 @@ _KOINOS = _descriptor.ServiceDescriptor(
     create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
+    name='invoke_system_call',
+    full_name='koinos.services.koinos.invoke_system_call',
+    index=13,
+    containing_service=None,
+    input_type=koinos_dot_rpc_dot_chain_dot_chain__rpc__pb2._INVOKE_SYSTEM_CALL_REQUEST,
+    output_type=koinos_dot_rpc_dot_chain_dot_chain__rpc__pb2._INVOKE_SYSTEM_CALL_RESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
     name='get_contract_meta',
     full_name='koinos.services.koinos.get_contract_meta',
-    index=13,
+    index=14,
     containing_service=None,
     input_type=koinos_dot_rpc_dot_contract__meta__store_dot_contract__meta__store__rpc__pb2._GET_CONTRACT_META_REQUEST,
     output_type=koinos_dot_rpc_dot_contract__meta__store_dot_contract__meta__store__rpc__pb2._GET_CONTRACT_META_RESPONSE,
@@ -190,7 +200,7 @@ _KOINOS = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='get_pending_transactions',
     full_name='koinos.services.koinos.get_pending_transactions',
-    index=14,
+    index=15,
     containing_service=None,
     input_type=koinos_dot_rpc_dot_mempool_dot_mempool__rpc__pb2._GET_PENDING_TRANSACTIONS_REQUEST,
     output_type=koinos_dot_rpc_dot_mempool_dot_mempool__rpc__pb2._GET_PENDING_TRANSACTIONS_RESPONSE,
@@ -200,7 +210,7 @@ _KOINOS = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='check_pending_account_resources',
     full_name='koinos.services.koinos.check_pending_account_resources',
-    index=15,
+    index=16,
     containing_service=None,
     input_type=koinos_dot_rpc_dot_mempool_dot_mempool__rpc__pb2._CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST,
     output_type=koinos_dot_rpc_dot_mempool_dot_mempool__rpc__pb2._CHECK_PENDING_ACCOUNT_RESOURCES_RESPONSE,
@@ -210,7 +220,7 @@ _KOINOS = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='get_gossip_status',
     full_name='koinos.services.koinos.get_gossip_status',
-    index=16,
+    index=17,
     containing_service=None,
     input_type=koinos_dot_rpc_dot_p2p_dot_p2p__rpc__pb2._GET_GOSSIP_STATUS_REQUEST,
     output_type=koinos_dot_rpc_dot_p2p_dot_p2p__rpc__pb2._GET_GOSSIP_STATUS_RESPONSE,
@@ -220,7 +230,7 @@ _KOINOS = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='get_transactions_by_id',
     full_name='koinos.services.koinos.get_transactions_by_id',
-    index=17,
+    index=18,
     containing_service=None,
     input_type=koinos_dot_rpc_dot_transaction__store_dot_transaction__store__rpc__pb2._GET_TRANSACTIONS_BY_ID_REQUEST,
     output_type=koinos_dot_rpc_dot_transaction__store_dot_transaction__store__rpc__pb2._GET_TRANSACTIONS_BY_ID_RESPONSE,
