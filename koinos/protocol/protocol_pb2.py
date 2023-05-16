@@ -20,11 +20,57 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z5github.com/koinos/koinos-proto-golang/koinos/protocol',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/protocol/protocol.proto\x12\x0fkoinos.protocol\x1a\x14koinos/options.proto\"h\n\nevent_data\x12\x10\n\x08sequence\x18\x01 \x01(\r\x12\x14\n\x06source\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\x12\x16\n\x08impacted\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x06\"F\n\x14\x63ontract_call_bundle\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"w\n\x12system_call_target\x12\x12\n\x08thunk_id\x18\x01 \x01(\rH\x00\x12\x43\n\x12system_call_bundle\x18\x02 \x01(\x0b\x32%.koinos.protocol.contract_call_bundleH\x00\x42\x08\n\x06target\"\xc7\x01\n\x19upload_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x10\n\x08\x62ytecode\x18\x02 \x01(\x0c\x12\x0b\n\x03\x61\x62i\x18\x03 \x01(\t\x12 \n\x18\x61uthorizes_call_contract\x18\x04 \x01(\x08\x12*\n\"authorizes_transaction_application\x18\x05 \x01(\x08\x12\"\n\x1a\x61uthorizes_upload_contract\x18\x06 \x01(\x08\"W\n\x17\x63\x61ll_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"a\n\x19set_system_call_operation\x12\x0f\n\x07\x63\x61ll_id\x18\x01 \x01(\r\x12\x33\n\x06target\x18\x02 \x01(\x0b\x32#.koinos.protocol.system_call_target\"S\n\x1dset_system_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x17\n\x0fsystem_contract\x18\x02 \x01(\x08\"\xb1\x02\n\toperation\x12\x45\n\x0fupload_contract\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operationH\x00\x12\x41\n\rcall_contract\x18\x02 \x01(\x0b\x32(.koinos.protocol.call_contract_operationH\x00\x12\x45\n\x0fset_system_call\x18\x03 \x01(\x0b\x32*.koinos.protocol.set_system_call_operationH\x00\x12M\n\x13set_system_contract\x18\x04 \x01(\x0b\x32..koinos.protocol.set_system_contract_operationH\x00\x42\x04\n\x02op\"\x94\x01\n\x12transaction_header\x12\x10\n\x08\x63hain_id\x18\x01 \x01(\x0c\x12\x14\n\x08rc_limit\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\r\n\x05nonce\x18\x03 \x01(\x0c\x12\x1d\n\x15operation_merkle_root\x18\x04 \x01(\x0c\x12\x13\n\x05payer\x18\x05 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x05payee\x18\x06 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x98\x01\n\x0btransaction\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x33\n\x06header\x18\x02 \x01(\x0b\x32#.koinos.protocol.transaction_header\x12.\n\noperations\x18\x03 \x03(\x0b\x32\x1a.koinos.protocol.operation\x12\x12\n\nsignatures\x18\x04 \x03(\x0c\"\xb5\x02\n\x13transaction_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x13\n\x05payer\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x13\n\x07rc_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x06 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x07 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x08 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x08reverted\x18\t \x01(\x08\x12+\n\x06\x65vents\x18\n \x03(\x0b\x32\x1b.koinos.protocol.event_data\x12\x0c\n\x04logs\x18\x0b \x03(\t\"\xce\x01\n\x0c\x62lock_header\x12\x16\n\x08previous\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x15\n\ttimestamp\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x1aprevious_state_merkle_root\x18\x04 \x01(\x0c\x12\x1f\n\x17transaction_merkle_root\x18\x05 \x01(\x0c\x12\x14\n\x06signer\x18\x06 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12 \n\x12\x61pproved_proposals\x18\x07 \x03(\x0c\x42\x04\x80\xb5\x18\x04\"\x8f\x01\n\x05\x62lock\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12-\n\x06header\x18\x02 \x01(\x0b\x32\x1d.koinos.protocol.block_header\x12\x32\n\x0ctransactions\x18\x03 \x03(\x0b\x32\x1c.koinos.protocol.transaction\x12\x11\n\tsignature\x18\x04 \x01(\x0c\"\xa6\x03\n\rblock_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x19\n\x11state_merkle_root\x18\x06 \x01(\x0c\x12+\n\x06\x65vents\x18\x07 \x03(\x0b\x32\x1b.koinos.protocol.event_data\x12\x42\n\x14transaction_receipts\x18\x08 \x03(\x0b\x32$.koinos.protocol.transaction_receipt\x12\x0c\n\x04logs\x18\t \x03(\t\x12 \n\x14\x64isk_storage_charged\x18\n \x01(\x04\x42\x02\x30\x01\x12%\n\x19network_bandwidth_charged\x18\x0b \x01(\x04\x42\x02\x30\x01\x12%\n\x19\x63ompute_bandwidth_charged\x18\x0c \x01(\x04\x42\x02\x30\x01\x42\x37Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/protocol/protocol.proto\x12\x0fkoinos.protocol\x1a\x14koinos/options.proto\"8\n\x0cobject_space\x12\x0e\n\x06system\x18\x01 \x01(\x08\x12\x0c\n\x04zone\x18\x02 \x01(\x0c\x12\n\n\x02id\x18\x03 \x01(\r\"h\n\nevent_data\x12\x10\n\x08sequence\x18\x01 \x01(\r\x12\x14\n\x06source\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\x12\x16\n\x08impacted\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x06\"F\n\x14\x63ontract_call_bundle\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\"w\n\x12system_call_target\x12\x12\n\x08thunk_id\x18\x01 \x01(\rH\x00\x12\x43\n\x12system_call_bundle\x18\x02 \x01(\x0b\x32%.koinos.protocol.contract_call_bundleH\x00\x42\x08\n\x06target\"\xc7\x01\n\x19upload_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x10\n\x08\x62ytecode\x18\x02 \x01(\x0c\x12\x0b\n\x03\x61\x62i\x18\x03 \x01(\t\x12 \n\x18\x61uthorizes_call_contract\x18\x04 \x01(\x08\x12*\n\"authorizes_transaction_application\x18\x05 \x01(\x08\x12\"\n\x1a\x61uthorizes_upload_contract\x18\x06 \x01(\x08\"W\n\x17\x63\x61ll_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x03 \x01(\x0c\"a\n\x19set_system_call_operation\x12\x0f\n\x07\x63\x61ll_id\x18\x01 \x01(\r\x12\x33\n\x06target\x18\x02 \x01(\x0b\x32#.koinos.protocol.system_call_target\"S\n\x1dset_system_contract_operation\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x17\n\x0fsystem_contract\x18\x02 \x01(\x08\"\xb1\x02\n\toperation\x12\x45\n\x0fupload_contract\x18\x01 \x01(\x0b\x32*.koinos.protocol.upload_contract_operationH\x00\x12\x41\n\rcall_contract\x18\x02 \x01(\x0b\x32(.koinos.protocol.call_contract_operationH\x00\x12\x45\n\x0fset_system_call\x18\x03 \x01(\x0b\x32*.koinos.protocol.set_system_call_operationH\x00\x12M\n\x13set_system_contract\x18\x04 \x01(\x0b\x32..koinos.protocol.set_system_contract_operationH\x00\x42\x04\n\x02op\"\x94\x01\n\x12transaction_header\x12\x10\n\x08\x63hain_id\x18\x01 \x01(\x0c\x12\x14\n\x08rc_limit\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\r\n\x05nonce\x18\x03 \x01(\x0c\x12\x1d\n\x15operation_merkle_root\x18\x04 \x01(\x0c\x12\x13\n\x05payer\x18\x05 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x05payee\x18\x06 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"\x98\x01\n\x0btransaction\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x33\n\x06header\x18\x02 \x01(\x0b\x32#.koinos.protocol.transaction_header\x12.\n\noperations\x18\x03 \x03(\x0b\x32\x1a.koinos.protocol.operation\x12\x12\n\nsignatures\x18\x04 \x03(\x0c\"\xf6\x02\n\x13transaction_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x04\x12\x13\n\x05payer\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\x13\n\x07rc_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x06 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x07 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x08 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x08reverted\x18\t \x01(\x08\x12+\n\x06\x65vents\x18\n \x03(\x0b\x32\x1b.koinos.protocol.event_data\x12\x0c\n\x04logs\x18\x0b \x03(\t\x12?\n\x13state_delta_entries\x18\x0c \x03(\x0b\x32\".koinos.protocol.state_delta_entry\"\xce\x01\n\x0c\x62lock_header\x12\x16\n\x08previous\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x15\n\ttimestamp\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x1aprevious_state_merkle_root\x18\x04 \x01(\x0c\x12\x1f\n\x17transaction_merkle_root\x18\x05 \x01(\x0c\x12\x14\n\x06signer\x18\x06 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12 \n\x12\x61pproved_proposals\x18\x07 \x03(\x0c\x42\x04\x80\xb5\x18\x04\"\x8f\x01\n\x05\x62lock\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12-\n\x06header\x18\x02 \x01(\x0b\x32\x1d.koinos.protocol.block_header\x12\x32\n\x0ctransactions\x18\x03 \x03(\x0b\x32\x1c.koinos.protocol.transaction\x12\x11\n\tsignature\x18\x04 \x01(\x0c\"\xe7\x03\n\rblock_receipt\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1d\n\x11\x64isk_storage_used\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x04 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x05 \x01(\x04\x42\x02\x30\x01\x12\x19\n\x11state_merkle_root\x18\x06 \x01(\x0c\x12+\n\x06\x65vents\x18\x07 \x03(\x0b\x32\x1b.koinos.protocol.event_data\x12\x42\n\x14transaction_receipts\x18\x08 \x03(\x0b\x32$.koinos.protocol.transaction_receipt\x12\x0c\n\x04logs\x18\t \x03(\t\x12 \n\x14\x64isk_storage_charged\x18\n \x01(\x04\x42\x02\x30\x01\x12%\n\x19network_bandwidth_charged\x18\x0b \x01(\x04\x42\x02\x30\x01\x12%\n\x19\x63ompute_bandwidth_charged\x18\x0c \x01(\x04\x42\x02\x30\x01\x12?\n\x13state_delta_entries\x18\r \x03(\x0b\x32\".koinos.protocol.state_delta_entry\"s\n\x11state_delta_entry\x12\x33\n\x0cobject_space\x18\x01 \x01(\x0b\x32\x1d.koinos.protocol.object_space\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x12\n\x05value\x18\x03 \x01(\x0cH\x00\x88\x01\x01\x42\x08\n\x06_valueB7Z5github.com/koinos/koinos-proto-golang/koinos/protocolb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
 
+
+
+_OBJECT_SPACE = _descriptor.Descriptor(
+  name='object_space',
+  full_name='koinos.protocol.object_space',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='system', full_name='koinos.protocol.object_space.system', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='zone', full_name='koinos.protocol.object_space.zone', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='id', full_name='koinos.protocol.object_space.id', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=73,
+  serialized_end=129,
+)
 
 
 _EVENT_DATA = _descriptor.Descriptor(
@@ -82,8 +128,8 @@ _EVENT_DATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=73,
-  serialized_end=177,
+  serialized_start=131,
+  serialized_end=235,
 )
 
 
@@ -121,8 +167,8 @@ _CONTRACT_CALL_BUNDLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=179,
-  serialized_end=249,
+  serialized_start=237,
+  serialized_end=307,
 )
 
 
@@ -165,8 +211,8 @@ _SYSTEM_CALL_TARGET = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=251,
-  serialized_end=370,
+  serialized_start=309,
+  serialized_end=428,
 )
 
 
@@ -232,8 +278,8 @@ _UPLOAD_CONTRACT_OPERATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=373,
-  serialized_end=572,
+  serialized_start=431,
+  serialized_end=630,
 )
 
 
@@ -278,8 +324,8 @@ _CALL_CONTRACT_OPERATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=574,
-  serialized_end=661,
+  serialized_start=632,
+  serialized_end=719,
 )
 
 
@@ -317,8 +363,8 @@ _SET_SYSTEM_CALL_OPERATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=663,
-  serialized_end=760,
+  serialized_start=721,
+  serialized_end=818,
 )
 
 
@@ -356,8 +402,8 @@ _SET_SYSTEM_CONTRACT_OPERATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=762,
-  serialized_end=845,
+  serialized_start=820,
+  serialized_end=903,
 )
 
 
@@ -414,8 +460,8 @@ _OPERATION = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=848,
-  serialized_end=1153,
+  serialized_start=906,
+  serialized_end=1211,
 )
 
 
@@ -481,8 +527,8 @@ _TRANSACTION_HEADER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1156,
-  serialized_end=1304,
+  serialized_start=1214,
+  serialized_end=1362,
 )
 
 
@@ -534,8 +580,8 @@ _TRANSACTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1307,
-  serialized_end=1459,
+  serialized_start=1365,
+  serialized_end=1517,
 )
 
 
@@ -624,6 +670,13 @@ _TRANSACTION_RECEIPT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='state_delta_entries', full_name='koinos.protocol.transaction_receipt.state_delta_entries', index=11,
+      number=12, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -636,8 +689,8 @@ _TRANSACTION_RECEIPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1462,
-  serialized_end=1771,
+  serialized_start=1520,
+  serialized_end=1894,
 )
 
 
@@ -710,8 +763,8 @@ _BLOCK_HEADER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1774,
-  serialized_end=1980,
+  serialized_start=1897,
+  serialized_end=2103,
 )
 
 
@@ -763,8 +816,8 @@ _BLOCK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1983,
-  serialized_end=2126,
+  serialized_start=2106,
+  serialized_end=2249,
 )
 
 
@@ -860,6 +913,13 @@ _BLOCK_RECEIPT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='state_delta_entries', full_name='koinos.protocol.block_receipt.state_delta_entries', index=12,
+      number=13, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -872,8 +932,59 @@ _BLOCK_RECEIPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2129,
-  serialized_end=2551,
+  serialized_start=2252,
+  serialized_end=2739,
+)
+
+
+_STATE_DELTA_ENTRY = _descriptor.Descriptor(
+  name='state_delta_entry',
+  full_name='koinos.protocol.state_delta_entry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='object_space', full_name='koinos.protocol.state_delta_entry.object_space', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='key', full_name='koinos.protocol.state_delta_entry.key', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='koinos.protocol.state_delta_entry.value', index=2,
+      number=3, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_value', full_name='koinos.protocol.state_delta_entry._value',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
+  ],
+  serialized_start=2741,
+  serialized_end=2856,
 )
 
 _SYSTEM_CALL_TARGET.fields_by_name['system_call_bundle'].message_type = _CONTRACT_CALL_BUNDLE
@@ -903,10 +1014,17 @@ _OPERATION.fields_by_name['set_system_contract'].containing_oneof = _OPERATION.o
 _TRANSACTION.fields_by_name['header'].message_type = _TRANSACTION_HEADER
 _TRANSACTION.fields_by_name['operations'].message_type = _OPERATION
 _TRANSACTION_RECEIPT.fields_by_name['events'].message_type = _EVENT_DATA
+_TRANSACTION_RECEIPT.fields_by_name['state_delta_entries'].message_type = _STATE_DELTA_ENTRY
 _BLOCK.fields_by_name['header'].message_type = _BLOCK_HEADER
 _BLOCK.fields_by_name['transactions'].message_type = _TRANSACTION
 _BLOCK_RECEIPT.fields_by_name['events'].message_type = _EVENT_DATA
 _BLOCK_RECEIPT.fields_by_name['transaction_receipts'].message_type = _TRANSACTION_RECEIPT
+_BLOCK_RECEIPT.fields_by_name['state_delta_entries'].message_type = _STATE_DELTA_ENTRY
+_STATE_DELTA_ENTRY.fields_by_name['object_space'].message_type = _OBJECT_SPACE
+_STATE_DELTA_ENTRY.oneofs_by_name['_value'].fields.append(
+  _STATE_DELTA_ENTRY.fields_by_name['value'])
+_STATE_DELTA_ENTRY.fields_by_name['value'].containing_oneof = _STATE_DELTA_ENTRY.oneofs_by_name['_value']
+DESCRIPTOR.message_types_by_name['object_space'] = _OBJECT_SPACE
 DESCRIPTOR.message_types_by_name['event_data'] = _EVENT_DATA
 DESCRIPTOR.message_types_by_name['contract_call_bundle'] = _CONTRACT_CALL_BUNDLE
 DESCRIPTOR.message_types_by_name['system_call_target'] = _SYSTEM_CALL_TARGET
@@ -921,7 +1039,15 @@ DESCRIPTOR.message_types_by_name['transaction_receipt'] = _TRANSACTION_RECEIPT
 DESCRIPTOR.message_types_by_name['block_header'] = _BLOCK_HEADER
 DESCRIPTOR.message_types_by_name['block'] = _BLOCK
 DESCRIPTOR.message_types_by_name['block_receipt'] = _BLOCK_RECEIPT
+DESCRIPTOR.message_types_by_name['state_delta_entry'] = _STATE_DELTA_ENTRY
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+object_space = _reflection.GeneratedProtocolMessageType('object_space', (_message.Message,), {
+  'DESCRIPTOR' : _OBJECT_SPACE,
+  '__module__' : 'koinos.protocol.protocol_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.protocol.object_space)
+  })
+_sym_db.RegisterMessage(object_space)
 
 event_data = _reflection.GeneratedProtocolMessageType('event_data', (_message.Message,), {
   'DESCRIPTOR' : _EVENT_DATA,
@@ -1020,6 +1146,13 @@ block_receipt = _reflection.GeneratedProtocolMessageType('block_receipt', (_mess
   # @@protoc_insertion_point(class_scope:koinos.protocol.block_receipt)
   })
 _sym_db.RegisterMessage(block_receipt)
+
+state_delta_entry = _reflection.GeneratedProtocolMessageType('state_delta_entry', (_message.Message,), {
+  'DESCRIPTOR' : _STATE_DELTA_ENTRY,
+  '__module__' : 'koinos.protocol.protocol_pb2'
+  # @@protoc_insertion_point(class_scope:koinos.protocol.state_delta_entry)
+  })
+_sym_db.RegisterMessage(state_delta_entry)
 
 
 DESCRIPTOR._options = None
