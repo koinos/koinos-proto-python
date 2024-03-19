@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z0github.com/koinos/koinos-proto-golang/koinos/rpc',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x14koinos/rpc/rpc.proto\x12\nkoinos.rpc\x1a\x19google/protobuf/any.proto\"\x0e\n\x0creserved_rpc\"b\n\x0c\x65rror_status\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\t\x12\x0c\n\x04\x63ode\x18\x03 \x01(\x05\x12%\n\x07\x64\x65tails\x18\n \x03(\x0b\x32\x14.google.protobuf.AnyB2Z0github.com/koinos/koinos-proto-golang/koinos/rpcb\x06proto3'
+  serialized_pb=b'\n\x14koinos/rpc/rpc.proto\x12\nkoinos.rpc\x1a\x19google/protobuf/any.proto\"\x0e\n\x0creserved_rpc\"T\n\x0c\x65rror_status\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\t\x12%\n\x07\x64\x65tails\x18\n \x03(\x0b\x32\x14.google.protobuf.AnyB2Z0github.com/koinos/koinos-proto-golang/koinos/rpcb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 
@@ -75,14 +75,7 @@ _ERROR_STATUS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='code', full_name='koinos.rpc.error_status.code', index=2,
-      number=3, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='details', full_name='koinos.rpc.error_status.details', index=3,
+      name='details', full_name='koinos.rpc.error_status.details', index=2,
       number=10, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -101,7 +94,7 @@ _ERROR_STATUS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=79,
-  serialized_end=177,
+  serialized_end=163,
 )
 
 _ERROR_STATUS.fields_by_name['details'].message_type = google_dot_protobuf_dot_any__pb2._ANY
