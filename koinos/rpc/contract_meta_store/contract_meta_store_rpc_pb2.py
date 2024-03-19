@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'ZDgithub.com/koinos/koinos-proto-golang/koinos/rpc/contract_meta_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n<koinos/rpc/contract_meta_store/contract_meta_store_rpc.proto\x12\x1ekoinos.rpc.contract_meta_store\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\x1a\x34koinos/contract_meta_store/contract_meta_store.proto\"6\n\x19get_contract_meta_request\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\"Z\n\x1aget_contract_meta_response\x12<\n\x04meta\x18\x01 \x01(\x0b\x32..koinos.contract_meta_store.contract_meta_item\"\xae\x01\n\x1b\x63ontract_meta_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12V\n\x11get_contract_meta\x18\x02 \x01(\x0b\x32\x39.koinos.rpc.contract_meta_store.get_contract_meta_requestH\x00\x42\t\n\x07request\"\xde\x01\n\x1c\x63ontract_meta_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12W\n\x11get_contract_meta\x18\x03 \x01(\x0b\x32:.koinos.rpc.contract_meta_store.get_contract_meta_responseH\x00\x42\n\n\x08responseBFZDgithub.com/koinos/koinos-proto-golang/koinos/rpc/contract_meta_storeb\x06proto3'
+  serialized_pb=b'\n<koinos/rpc/contract_meta_store/contract_meta_store_rpc.proto\x12\x1ekoinos.rpc.contract_meta_store\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\x1a\x34koinos/contract_meta_store/contract_meta_store.proto\"6\n\x19get_contract_meta_request\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\"Z\n\x1aget_contract_meta_response\x12<\n\x04meta\x18\x01 \x01(\x0b\x32..koinos.contract_meta_store.contract_meta_item\"\xae\x01\n\x1b\x63ontract_meta_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12V\n\x11get_contract_meta\x18\x02 \x01(\x0b\x32\x39.koinos.rpc.contract_meta_store.get_contract_meta_requestH\x00\x42\t\n\x07request\"\xdc\x01\n\x1c\x63ontract_meta_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12)\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x18.koinos.rpc.error_statusH\x00\x12W\n\x11get_contract_meta\x18\x03 \x01(\x0b\x32:.koinos.rpc.contract_meta_store.get_contract_meta_responseH\x00\x42\n\n\x08responseBFZDgithub.com/koinos/koinos-proto-golang/koinos/rpc/contract_meta_storeb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,koinos_dot_contract__meta__store_dot_contract__meta__store__pb2.DESCRIPTOR,])
 
@@ -184,7 +184,7 @@ _CONTRACT_META_STORE_RESPONSE = _descriptor.Descriptor(
     fields=[]),
   ],
   serialized_start=520,
-  serialized_end=742,
+  serialized_end=740,
 )
 
 _GET_CONTRACT_META_RESPONSE.fields_by_name['meta'].message_type = koinos_dot_contract__meta__store_dot_contract__meta__store__pb2._CONTRACT_META_ITEM
@@ -197,7 +197,7 @@ _CONTRACT_META_STORE_REQUEST.oneofs_by_name['request'].fields.append(
   _CONTRACT_META_STORE_REQUEST.fields_by_name['get_contract_meta'])
 _CONTRACT_META_STORE_REQUEST.fields_by_name['get_contract_meta'].containing_oneof = _CONTRACT_META_STORE_REQUEST.oneofs_by_name['request']
 _CONTRACT_META_STORE_RESPONSE.fields_by_name['reserved'].message_type = koinos_dot_rpc_dot_rpc__pb2._RESERVED_RPC
-_CONTRACT_META_STORE_RESPONSE.fields_by_name['error'].message_type = koinos_dot_rpc_dot_rpc__pb2._ERROR_RESPONSE
+_CONTRACT_META_STORE_RESPONSE.fields_by_name['error'].message_type = koinos_dot_rpc_dot_rpc__pb2._ERROR_STATUS
 _CONTRACT_META_STORE_RESPONSE.fields_by_name['get_contract_meta'].message_type = _GET_CONTRACT_META_RESPONSE
 _CONTRACT_META_STORE_RESPONSE.oneofs_by_name['response'].fields.append(
   _CONTRACT_META_STORE_RESPONSE.fields_by_name['reserved'])

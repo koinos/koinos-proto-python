@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'ZBgithub.com/koinos/koinos-proto-golang/koinos/rpc/transaction_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n8koinos/rpc/transaction_store/transaction_store_rpc.proto\x12\x1ckoinos.rpc.transaction_store\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\x1a\x30koinos/transaction_store/transaction_store.proto\"?\n\x1eget_transactions_by_id_request\x12\x1d\n\x0ftransaction_ids\x18\x01 \x03(\x0c\x42\x04\x80\xb5\x18\x04\"c\n\x1fget_transactions_by_id_response\x12@\n\x0ctransactions\x18\x01 \x03(\x0b\x32*.koinos.transaction_store.transaction_item\"\xb4\x01\n\x19transaction_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12^\n\x16get_transactions_by_id\x18\x02 \x01(\x0b\x32<.koinos.rpc.transaction_store.get_transactions_by_id_requestH\x00\x42\t\n\x07request\"\xe4\x01\n\x1atransaction_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12+\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x1a.koinos.rpc.error_responseH\x00\x12_\n\x16get_transactions_by_id\x18\x03 \x01(\x0b\x32=.koinos.rpc.transaction_store.get_transactions_by_id_responseH\x00\x42\n\n\x08responseBDZBgithub.com/koinos/koinos-proto-golang/koinos/rpc/transaction_storeb\x06proto3'
+  serialized_pb=b'\n8koinos/rpc/transaction_store/transaction_store_rpc.proto\x12\x1ckoinos.rpc.transaction_store\x1a\x14koinos/options.proto\x1a\x14koinos/rpc/rpc.proto\x1a\x30koinos/transaction_store/transaction_store.proto\"?\n\x1eget_transactions_by_id_request\x12\x1d\n\x0ftransaction_ids\x18\x01 \x03(\x0c\x42\x04\x80\xb5\x18\x04\"c\n\x1fget_transactions_by_id_response\x12@\n\x0ctransactions\x18\x01 \x03(\x0b\x32*.koinos.transaction_store.transaction_item\"\xb4\x01\n\x19transaction_store_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12^\n\x16get_transactions_by_id\x18\x02 \x01(\x0b\x32<.koinos.rpc.transaction_store.get_transactions_by_id_requestH\x00\x42\t\n\x07request\"\xe2\x01\n\x1atransaction_store_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12)\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x18.koinos.rpc.error_statusH\x00\x12_\n\x16get_transactions_by_id\x18\x03 \x01(\x0b\x32=.koinos.rpc.transaction_store.get_transactions_by_id_responseH\x00\x42\n\n\x08responseBDZBgithub.com/koinos/koinos-proto-golang/koinos/rpc/transaction_storeb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,koinos_dot_transaction__store_dot_transaction__store__pb2.DESCRIPTOR,])
 
@@ -184,7 +184,7 @@ _TRANSACTION_STORE_RESPONSE = _descriptor.Descriptor(
     fields=[]),
   ],
   serialized_start=534,
-  serialized_end=762,
+  serialized_end=760,
 )
 
 _GET_TRANSACTIONS_BY_ID_RESPONSE.fields_by_name['transactions'].message_type = koinos_dot_transaction__store_dot_transaction__store__pb2._TRANSACTION_ITEM
@@ -197,7 +197,7 @@ _TRANSACTION_STORE_REQUEST.oneofs_by_name['request'].fields.append(
   _TRANSACTION_STORE_REQUEST.fields_by_name['get_transactions_by_id'])
 _TRANSACTION_STORE_REQUEST.fields_by_name['get_transactions_by_id'].containing_oneof = _TRANSACTION_STORE_REQUEST.oneofs_by_name['request']
 _TRANSACTION_STORE_RESPONSE.fields_by_name['reserved'].message_type = koinos_dot_rpc_dot_rpc__pb2._RESERVED_RPC
-_TRANSACTION_STORE_RESPONSE.fields_by_name['error'].message_type = koinos_dot_rpc_dot_rpc__pb2._ERROR_RESPONSE
+_TRANSACTION_STORE_RESPONSE.fields_by_name['error'].message_type = koinos_dot_rpc_dot_rpc__pb2._ERROR_STATUS
 _TRANSACTION_STORE_RESPONSE.fields_by_name['get_transactions_by_id'].message_type = _GET_TRANSACTIONS_BY_ID_RESPONSE
 _TRANSACTION_STORE_RESPONSE.oneofs_by_name['response'].fields.append(
   _TRANSACTION_STORE_RESPONSE.fields_by_name['reserved'])
