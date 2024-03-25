@@ -18,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/chain/object_spaces.proto',
   package='koinos.chain',
   syntax='proto3',
-  serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
+  serialized_options=b'Z5github.com/koinos/koinos-proto-golang/v2/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/chain/object_spaces.proto\x12\x0ckoinos.chain*~\n\x0fsystem_space_id\x12\x0c\n\x08metadata\x10\x00\x12\x18\n\x14system_call_dispatch\x10\x01\x12\x15\n\x11\x63ontract_bytecode\x10\x02\x12\x15\n\x11\x63ontract_metadata\x10\x03\x12\x15\n\x11transaction_nonce\x10\x04\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n koinos/chain/object_spaces.proto\x12\x0ckoinos.chain*~\n\x0fsystem_space_id\x12\x0c\n\x08metadata\x10\x00\x12\x18\n\x14system_call_dispatch\x10\x01\x12\x15\n\x11\x63ontract_bytecode\x10\x02\x12\x15\n\x11\x63ontract_metadata\x10\x03\x12\x15\n\x11transaction_nonce\x10\x04\x42\x37Z5github.com/koinos/koinos-proto-golang/v2/koinos/chainb\x06proto3'
 )
 
 _SYSTEM_SPACE_ID = _descriptor.EnumDescriptor(

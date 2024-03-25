@@ -18,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/contracts/vhp/vhp.proto',
   package='koinos.contracts.vhp',
   syntax='proto3',
-  serialized_options=b'Z:github.com/koinos/koinos-proto-golang/koinos/contracts/vhp',
+  serialized_options=b'Z=github.com/koinos/koinos-proto-golang/v2/koinos/contracts/vhp',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/contracts/vhp/vhp.proto\x12\x14koinos.contracts.vhp\x1a\x14koinos/options.proto\"5\n\x1e\x65\x66\x66\x65\x63tive_balance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"0\n\x1b\x65\x66\x66\x65\x63tive_balance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\">\n\rbalance_entry\x12\x18\n\x0c\x62lock_height\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x13\n\x07\x62\x61lance\x18\x02 \x01(\x04\x42\x02\x30\x01\"s\n\x18\x65\x66\x66\x65\x63tive_balance_object\x12\x1b\n\x0f\x63urrent_balance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12:\n\rpast_balances\x18\x02 \x03(\x0b\x32#.koinos.contracts.vhp.balance_entryB<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/vhpb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/contracts/vhp/vhp.proto\x12\x14koinos.contracts.vhp\x1a\x14koinos/options.proto\"5\n\x1e\x65\x66\x66\x65\x63tive_balance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"0\n\x1b\x65\x66\x66\x65\x63tive_balance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\">\n\rbalance_entry\x12\x18\n\x0c\x62lock_height\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x13\n\x07\x62\x61lance\x18\x02 \x01(\x04\x42\x02\x30\x01\"s\n\x18\x65\x66\x66\x65\x63tive_balance_object\x12\x1b\n\x0f\x63urrent_balance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12:\n\rpast_balances\x18\x02 \x03(\x0b\x32#.koinos.contracts.vhp.balance_entryB?Z=github.com/koinos/koinos-proto-golang/v2/koinos/contracts/vhpb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 

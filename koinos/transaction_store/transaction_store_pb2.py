@@ -19,9 +19,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/transaction_store/transaction_store.proto',
   package='koinos.transaction_store',
   syntax='proto3',
-  serialized_options=b'Z>github.com/koinos/koinos-proto-golang/koinos/transaction_store',
+  serialized_options=b'ZAgithub.com/koinos/koinos-proto-golang/v2/koinos/transaction_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n0koinos/transaction_store/transaction_store.proto\x12\x18koinos.transaction_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"f\n\x10transaction_item\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x1f\n\x11\x63ontaining_blocks\x18\x02 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x42@Z>github.com/koinos/koinos-proto-golang/koinos/transaction_storeb\x06proto3'
+  serialized_pb=b'\n0koinos/transaction_store/transaction_store.proto\x12\x18koinos.transaction_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"f\n\x10transaction_item\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x1f\n\x11\x63ontaining_blocks\x18\x02 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x42\x43ZAgithub.com/koinos/koinos-proto-golang/v2/koinos/transaction_storeb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 

@@ -19,9 +19,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/block_store/block_store.proto',
   package='koinos.block_store',
   syntax='proto3',
-  serialized_options=b'Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_store',
+  serialized_options=b'Z?github.com/koinos/koinos-proto-golang/v2/koinos/rpc/block_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n$koinos/block_store/block_store.proto\x12\x12koinos.block_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x96\x01\n\nblock_item\x12\x16\n\x08\x62lock_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"\xba\x01\n\x0c\x62lock_record\x12\x16\n\x08\x62lock_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\x12 \n\x12previous_block_ids\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x42>Z<github.com/koinos/koinos-proto-golang/koinos/rpc/block_storeb\x06proto3'
+  serialized_pb=b'\n$koinos/block_store/block_store.proto\x12\x12koinos.block_store\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"\x96\x01\n\nblock_item\x12\x16\n\x08\x62lock_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\"\xba\x01\n\x0c\x62lock_record\x12\x16\n\x08\x62lock_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x18\n\x0c\x62lock_height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12%\n\x05\x62lock\x18\x03 \x01(\x0b\x32\x16.koinos.protocol.block\x12/\n\x07receipt\x18\x04 \x01(\x0b\x32\x1e.koinos.protocol.block_receipt\x12 \n\x12previous_block_ids\x18\x05 \x03(\x0c\x42\x04\x80\xb5\x18\x03\x42\x41Z?github.com/koinos/koinos-proto-golang/v2/koinos/rpc/block_storeb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 

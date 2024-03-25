@@ -19,9 +19,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/options.proto',
   package='koinos',
   syntax='proto3',
-  serialized_options=b'Z,github.com/koinos/koinos-proto-golang/koinos',
+  serialized_options=b'Z/github.com/koinos/koinos-proto-golang/v2/koinos',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x14koinos/options.proto\x12\x06koinos\x1a google/protobuf/descriptor.proto*m\n\nbytes_type\x12\n\n\x06\x42\x41SE64\x10\x00\x12\n\n\x06\x42\x41SE58\x10\x01\x12\x07\n\x03HEX\x10\x02\x12\x0c\n\x08\x42LOCK_ID\x10\x03\x12\x12\n\x0eTRANSACTION_ID\x10\x04\x12\x0f\n\x0b\x43ONTRACT_ID\x10\x05\x12\x0b\n\x07\x41\x44\x44RESS\x10\x06:E\n\x05\x62type\x12\x1d.google.protobuf.FieldOptions\x18\xd0\x86\x03 \x01(\x0e\x32\x12.koinos.bytes_type\x88\x01\x01\x42.Z,github.com/koinos/koinos-proto-golang/koinosb\x06proto3'
+  serialized_pb=b'\n\x14koinos/options.proto\x12\x06koinos\x1a google/protobuf/descriptor.proto*m\n\nbytes_type\x12\n\n\x06\x42\x41SE64\x10\x00\x12\n\n\x06\x42\x41SE58\x10\x01\x12\x07\n\x03HEX\x10\x02\x12\x0c\n\x08\x42LOCK_ID\x10\x03\x12\x12\n\x0eTRANSACTION_ID\x10\x04\x12\x0f\n\x0b\x43ONTRACT_ID\x10\x05\x12\x0b\n\x07\x41\x44\x44RESS\x10\x06:E\n\x05\x62type\x12\x1d.google.protobuf.FieldOptions\x18\xd0\x86\x03 \x01(\x0e\x32\x12.koinos.bytes_type\x88\x01\x01\x42\x31Z/github.com/koinos/koinos-proto-golang/v2/koinosb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_descriptor__pb2.DESCRIPTOR,])
 

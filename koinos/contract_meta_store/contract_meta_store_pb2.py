@@ -17,9 +17,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/contract_meta_store/contract_meta_store.proto',
   package='koinos.contract_meta_store',
   syntax='proto3',
-  serialized_options=b'Z@github.com/koinos/koinos-proto-golang/koinos/contract_meta_store',
+  serialized_options=b'ZCgithub.com/koinos/koinos-proto-golang/v2/koinos/contract_meta_store',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n4koinos/contract_meta_store/contract_meta_store.proto\x12\x1akoinos.contract_meta_store\"!\n\x12\x63ontract_meta_item\x12\x0b\n\x03\x61\x62i\x18\x01 \x01(\tBBZ@github.com/koinos/koinos-proto-golang/koinos/contract_meta_storeb\x06proto3'
+  serialized_pb=b'\n4koinos/contract_meta_store/contract_meta_store.proto\x12\x1akoinos.contract_meta_store\"!\n\x12\x63ontract_meta_item\x12\x0b\n\x03\x61\x62i\x18\x01 \x01(\tBEZCgithub.com/koinos/koinos-proto-golang/v2/koinos/contract_meta_storeb\x06proto3'
 )
 
 

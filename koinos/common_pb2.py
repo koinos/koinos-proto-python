@@ -18,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/common.proto',
   package='koinos',
   syntax='proto3',
-  serialized_options=b'Z,github.com/koinos/koinos-proto-golang/koinos',
+  serialized_options=b'Z/github.com/koinos/koinos-proto-golang/v2/koinos',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x13koinos/common.proto\x12\x06koinos\x1a\x14koinos/options.proto\"N\n\x0e\x62lock_topology\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x16\n\x08previous\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x42.Z,github.com/koinos/koinos-proto-golang/koinosb\x06proto3'
+  serialized_pb=b'\n\x13koinos/common.proto\x12\x06koinos\x1a\x14koinos/options.proto\"N\n\x0e\x62lock_topology\x12\x10\n\x02id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x12\x12\n\x06height\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x16\n\x08previous\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x03\x42\x31Z/github.com/koinos/koinos-proto-golang/v2/koinosb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 

@@ -19,9 +19,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/chain/authority.proto',
   package='koinos.chain',
   syntax='proto3',
-  serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
+  serialized_options=b'Z5github.com/koinos/koinos-proto-golang/v2/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ckoinos/chain/authority.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\"Y\n\tcall_data\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0e\n\x06\x63\x61ller\x18\x03 \x01(\x0c\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\"z\n\x13\x61uthorize_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12*\n\x04\x63\x61ll\x18\x02 \x01(\x0b\x32\x17.koinos.chain.call_dataH\x00\x88\x01\x01\x42\x07\n\x05_call\"!\n\x10\x61uthorize_result\x12\r\n\x05value\x18\x01 \x01(\x08*Y\n\x12\x61uthorization_type\x12\x11\n\rcontract_call\x10\x00\x12\x1b\n\x17transaction_application\x10\x01\x12\x13\n\x0f\x63ontract_upload\x10\x02\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x1ckoinos/chain/authority.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\"Y\n\tcall_data\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x0b\x65ntry_point\x18\x02 \x01(\r\x12\x0e\n\x06\x63\x61ller\x18\x03 \x01(\x0c\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\"z\n\x13\x61uthorize_arguments\x12.\n\x04type\x18\x01 \x01(\x0e\x32 .koinos.chain.authorization_type\x12*\n\x04\x63\x61ll\x18\x02 \x01(\x0b\x32\x17.koinos.chain.call_dataH\x00\x88\x01\x01\x42\x07\n\x05_call\"!\n\x10\x61uthorize_result\x12\r\n\x05value\x18\x01 \x01(\x08*Y\n\x12\x61uthorization_type\x12\x11\n\rcontract_call\x10\x00\x12\x1b\n\x17transaction_application\x10\x01\x12\x13\n\x0f\x63ontract_upload\x10\x02\x42\x37Z5github.com/koinos/koinos-proto-golang/v2/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 

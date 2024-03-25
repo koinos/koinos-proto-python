@@ -17,9 +17,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/contracts/pow/pow.proto',
   package='koinos.contracts.pow',
   syntax='proto3',
-  serialized_options=b'Z:github.com/koinos/koinos-proto-golang/koinos/contracts/pow',
+  serialized_options=b'Z=github.com/koinos/koinos-proto-golang/v2/koinos/contracts/pow',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ekoinos/contracts/pow/pow.proto\x12\x14koinos.contracts.pow\"y\n\x13\x64ifficulty_metadata\x12\x0e\n\x06target\x18\x01 \x01(\x0c\x12\x1b\n\x0flast_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x12\n\ndifficulty\x18\x03 \x01(\x0c\x12!\n\x15target_block_interval\x18\x04 \x01(\x04\x42\x02\x30\x01\"#\n!get_difficulty_metadata_arguments\"Z\n\x1eget_difficulty_metadata_result\x12\x38\n\x05value\x18\x01 \x01(\x0b\x32).koinos.contracts.pow.difficulty_metadata\"B\n\x12pow_signature_data\x12\r\n\x05nonce\x18\x01 \x01(\x0c\x12\x1d\n\x15recoverable_signature\x18\x02 \x01(\x0c\x42<Z:github.com/koinos/koinos-proto-golang/koinos/contracts/powb\x06proto3'
+  serialized_pb=b'\n\x1ekoinos/contracts/pow/pow.proto\x12\x14koinos.contracts.pow\"y\n\x13\x64ifficulty_metadata\x12\x0e\n\x06target\x18\x01 \x01(\x0c\x12\x1b\n\x0flast_block_time\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x12\n\ndifficulty\x18\x03 \x01(\x0c\x12!\n\x15target_block_interval\x18\x04 \x01(\x04\x42\x02\x30\x01\"#\n!get_difficulty_metadata_arguments\"Z\n\x1eget_difficulty_metadata_result\x12\x38\n\x05value\x18\x01 \x01(\x0b\x32).koinos.contracts.pow.difficulty_metadata\"B\n\x12pow_signature_data\x12\r\n\x05nonce\x18\x01 \x01(\x0c\x12\x1d\n\x15recoverable_signature\x18\x02 \x01(\x0c\x42?Z=github.com/koinos/koinos-proto-golang/v2/koinos/contracts/powb\x06proto3'
 )
 
 

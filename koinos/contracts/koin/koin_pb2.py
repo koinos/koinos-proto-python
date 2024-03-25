@@ -17,9 +17,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/contracts/koin/koin.proto',
   package='koinos.contracts.koin',
   syntax='proto3',
-  serialized_options=b'Z;github.com/koinos/koinos-proto-golang/koinos/contracts/koin',
+  serialized_options=b'Z>github.com/koinos/koinos-proto-golang/v2/koinos/contracts/koin',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n koinos/contracts/koin/koin.proto\x12\x15koinos.contracts.koin\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\x42=Z;github.com/koinos/koinos-proto-golang/koinos/contracts/koinb\x06proto3'
+  serialized_pb=b'\n koinos/contracts/koin/koin.proto\x12\x15koinos.contracts.koin\"Z\n\x13mana_balance_object\x12\x13\n\x07\x62\x61lance\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x10\n\x04mana\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x1c\n\x10last_mana_update\x18\x03 \x01(\x04\x42\x02\x30\x01\x42@Z>github.com/koinos/koinos-proto-golang/v2/koinos/contracts/koinb\x06proto3'
 )
 
 

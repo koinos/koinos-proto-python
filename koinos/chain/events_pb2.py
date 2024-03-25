@@ -19,9 +19,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/chain/events.proto',
   package='koinos.chain',
   syntax='proto3',
-  serialized_options=b'Z2github.com/koinos/koinos-proto-golang/koinos/chain',
+  serialized_options=b'Z5github.com/koinos/koinos-proto-golang/v2/koinos/chain',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x19koinos/chain/events.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"]\n\x15set_system_call_event\x12\x0f\n\x07\x63\x61ll_id\x18\x01 \x01(\r\x12\x33\n\x06target\x18\x02 \x01(\x0b\x32#.koinos.protocol.system_call_target\"O\n\x19set_system_contract_event\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x17\n\x0fsystem_contract\x18\x02 \x01(\x08\x42\x34Z2github.com/koinos/koinos-proto-golang/koinos/chainb\x06proto3'
+  serialized_pb=b'\n\x19koinos/chain/events.proto\x12\x0ckoinos.chain\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\"]\n\x15set_system_call_event\x12\x0f\n\x07\x63\x61ll_id\x18\x01 \x01(\r\x12\x33\n\x06target\x18\x02 \x01(\x0b\x32#.koinos.protocol.system_call_target\"O\n\x19set_system_contract_event\x12\x19\n\x0b\x63ontract_id\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x05\x12\x17\n\x0fsystem_contract\x18\x02 \x01(\x08\x42\x37Z5github.com/koinos/koinos-proto-golang/v2/koinos/chainb\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,])
 

@@ -18,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='koinos/rpc/rpc.proto',
   package='koinos.rpc',
   syntax='proto3',
-  serialized_options=b'Z0github.com/koinos/koinos-proto-golang/koinos/rpc',
+  serialized_options=b'Z3github.com/koinos/koinos-proto-golang/v2/koinos/rpc',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x14koinos/rpc/rpc.proto\x12\nkoinos.rpc\x1a\x19google/protobuf/any.proto\"\x0e\n\x0creserved_rpc\"T\n\x0c\x65rror_status\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\t\x12%\n\x07\x64\x65tails\x18\n \x03(\x0b\x32\x14.google.protobuf.AnyB2Z0github.com/koinos/koinos-proto-golang/koinos/rpcb\x06proto3'
+  serialized_pb=b'\n\x14koinos/rpc/rpc.proto\x12\nkoinos.rpc\x1a\x19google/protobuf/any.proto\"\x0e\n\x0creserved_rpc\"T\n\x0c\x65rror_status\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\t\x12%\n\x07\x64\x65tails\x18\n \x03(\x0b\x32\x14.google.protobuf.AnyB5Z3github.com/koinos/koinos-proto-golang/v2/koinos/rpcb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 
