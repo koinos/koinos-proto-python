@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z>github.com/koinos/koinos-proto-golang/v2/koinos/standards/kcs4',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1bkoinos/standards/kcs4.proto\x12\x15koinos.standards.kcs4\x1a\x14koinos/options.proto\"\x10\n\x0ename_arguments\"\x1c\n\x0bname_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x12\n\x10symbol_arguments\"\x1e\n\rsymbol_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x14\n\x12\x64\x65\x63imals_arguments\" \n\x0f\x64\x65\x63imals_result\x12\r\n\x05value\x18\x01 \x01(\r\"\x18\n\x16total_supply_arguments\"(\n\x13total_supply_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"+\n\x14\x62\x61lance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"&\n\x11\x62\x61lance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x14\n\x12get_info_arguments\"A\n\x0fget_info_result\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x10\n\x08\x64\x65\x63imals\x18\x03 \x01(\r\"A\n\x13\x61llowance_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x15\n\x07spender\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"%\n\x10\x61llowance_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"9\n\rspender_value\x12\x15\n\x07spender\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"g\n\x18get_allowances_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x05start\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\r\n\x05limit\x18\x03 \x01(\x05\x12\x12\n\ndescending\x18\x04 \x01(\x08\"f\n\x15get_allowances_result\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x38\n\nallowances\x18\x02 \x03(\x0b\x32$.koinos.standards.kcs4.spender_value\"[\n\x12transfer_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x0c\n\x04memo\x18\x04 \x01(\t\"\x11\n\x0ftransfer_result\"5\n\x0emint_arguments\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\r\n\x0bmint_result\"7\n\x0e\x62urn_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"\r\n\x0b\x62urn_result\"R\n\x11\x61pprove_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x15\n\x07spender\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\"\x10\n\x0e\x61pprove_result\"3\n\nburn_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"1\n\nmint_event\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"W\n\x0etransfer_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x0c\n\x04memo\x18\x04 \x01(\t\"N\n\rapprove_event\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x15\n\x07spender\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x42@Z>github.com/koinos/koinos-proto-golang/v2/koinos/standards/kcs4b\x06proto3'
+  serialized_pb=b'\n\x1bkoinos/standards/kcs4.proto\x12\x15koinos.standards.kcs4\x1a\x14koinos/options.proto\"\x10\n\x0ename_arguments\"\x1c\n\x0bname_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x12\n\x10symbol_arguments\"\x1e\n\rsymbol_result\x12\r\n\x05value\x18\x01 \x01(\t\"\x14\n\x12\x64\x65\x63imals_arguments\" \n\x0f\x64\x65\x63imals_result\x12\r\n\x05value\x18\x01 \x01(\r\"\x18\n\x16total_supply_arguments\"(\n\x13total_supply_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"+\n\x14\x62\x61lance_of_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"&\n\x11\x62\x61lance_of_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"\x14\n\x12get_info_arguments\"A\n\x0fget_info_result\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x10\n\x08\x64\x65\x63imals\x18\x03 \x01(\r\"A\n\x13\x61llowance_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x15\n\x07spender\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\"%\n\x10\x61llowance_result\x12\x11\n\x05value\x18\x01 \x01(\x04\x42\x02\x30\x01\"9\n\rspender_value\x12\x15\n\x07spender\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\"g\n\x18get_allowances_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x13\n\x05start\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\r\n\x05limit\x18\x03 \x01(\x05\x12\x12\n\ndescending\x18\x04 \x01(\x08\"f\n\x15get_allowances_result\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x38\n\nallowances\x18\x02 \x03(\x0b\x32$.koinos.standards.kcs4.spender_value\"i\n\x12transfer_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x04 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"\x11\n\x0ftransfer_result\"Q\n\x0emint_arguments\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x03 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"\r\n\x0bmint_result\"S\n\x0e\x62urn_arguments\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x03 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"\r\n\x0b\x62urn_result\"n\n\x11\x61pprove_arguments\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x15\n\x07spender\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x04 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"\x10\n\x0e\x61pprove_result\"O\n\nburn_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x03 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"M\n\nmint_event\x12\x10\n\x02to\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x03 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"e\n\x0etransfer_event\x12\x12\n\x04\x66rom\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x10\n\x02to\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x04 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memo\"j\n\rapprove_event\x12\x13\n\x05owner\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x15\n\x07spender\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x11\n\x05value\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x11\n\x04memo\x18\x04 \x01(\tH\x00\x88\x01\x01\x42\x07\n\x05_memoB@Z>github.com/koinos/koinos-proto-golang/v2/koinos/standards/kcs4b\x06proto3'
   ,
   dependencies=[koinos_dot_options__pb2.DESCRIPTOR,])
 
@@ -639,9 +639,14 @@ _TRANSFER_ARGUMENTS = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.transfer_arguments._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=848,
-  serialized_end=939,
+  serialized_end=953,
 )
 
 
@@ -665,8 +670,8 @@ _TRANSFER_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=941,
-  serialized_end=958,
+  serialized_start=955,
+  serialized_end=972,
 )
 
 
@@ -692,6 +697,13 @@ _MINT_ARGUMENTS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='memo', full_name='koinos.standards.kcs4.mint_arguments.memo', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -703,9 +715,14 @@ _MINT_ARGUMENTS = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.mint_arguments._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=960,
-  serialized_end=1013,
+  serialized_start=974,
+  serialized_end=1055,
 )
 
 
@@ -729,8 +746,8 @@ _MINT_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1015,
-  serialized_end=1028,
+  serialized_start=1057,
+  serialized_end=1070,
 )
 
 
@@ -756,6 +773,13 @@ _BURN_ARGUMENTS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='memo', full_name='koinos.standards.kcs4.burn_arguments.memo', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -767,9 +791,14 @@ _BURN_ARGUMENTS = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.burn_arguments._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=1030,
-  serialized_end=1085,
+  serialized_start=1072,
+  serialized_end=1155,
 )
 
 
@@ -793,8 +822,8 @@ _BURN_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1087,
-  serialized_end=1100,
+  serialized_start=1157,
+  serialized_end=1170,
 )
 
 
@@ -827,6 +856,13 @@ _APPROVE_ARGUMENTS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='memo', full_name='koinos.standards.kcs4.approve_arguments.memo', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -838,9 +874,14 @@ _APPROVE_ARGUMENTS = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.approve_arguments._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=1102,
-  serialized_end=1184,
+  serialized_start=1172,
+  serialized_end=1282,
 )
 
 
@@ -864,8 +905,8 @@ _APPROVE_RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1186,
-  serialized_end=1202,
+  serialized_start=1284,
+  serialized_end=1300,
 )
 
 
@@ -891,6 +932,13 @@ _BURN_EVENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='memo', full_name='koinos.standards.kcs4.burn_event.memo', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -902,9 +950,14 @@ _BURN_EVENT = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.burn_event._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=1204,
-  serialized_end=1255,
+  serialized_start=1302,
+  serialized_end=1381,
 )
 
 
@@ -930,6 +983,13 @@ _MINT_EVENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='memo', full_name='koinos.standards.kcs4.mint_event.memo', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -941,9 +1001,14 @@ _MINT_EVENT = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.mint_event._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=1257,
-  serialized_end=1306,
+  serialized_start=1383,
+  serialized_end=1460,
 )
 
 
@@ -994,9 +1059,14 @@ _TRANSFER_EVENT = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.transfer_event._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=1308,
-  serialized_end=1395,
+  serialized_start=1462,
+  serialized_end=1563,
 )
 
 
@@ -1029,6 +1099,13 @@ _APPROVE_EVENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='memo', full_name='koinos.standards.kcs4.approve_event.memo', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1040,12 +1117,41 @@ _APPROVE_EVENT = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='_memo', full_name='koinos.standards.kcs4.approve_event._memo',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=1397,
-  serialized_end=1475,
+  serialized_start=1565,
+  serialized_end=1671,
 )
 
 _GET_ALLOWANCES_RESULT.fields_by_name['allowances'].message_type = _SPENDER_VALUE
+_TRANSFER_ARGUMENTS.oneofs_by_name['_memo'].fields.append(
+  _TRANSFER_ARGUMENTS.fields_by_name['memo'])
+_TRANSFER_ARGUMENTS.fields_by_name['memo'].containing_oneof = _TRANSFER_ARGUMENTS.oneofs_by_name['_memo']
+_MINT_ARGUMENTS.oneofs_by_name['_memo'].fields.append(
+  _MINT_ARGUMENTS.fields_by_name['memo'])
+_MINT_ARGUMENTS.fields_by_name['memo'].containing_oneof = _MINT_ARGUMENTS.oneofs_by_name['_memo']
+_BURN_ARGUMENTS.oneofs_by_name['_memo'].fields.append(
+  _BURN_ARGUMENTS.fields_by_name['memo'])
+_BURN_ARGUMENTS.fields_by_name['memo'].containing_oneof = _BURN_ARGUMENTS.oneofs_by_name['_memo']
+_APPROVE_ARGUMENTS.oneofs_by_name['_memo'].fields.append(
+  _APPROVE_ARGUMENTS.fields_by_name['memo'])
+_APPROVE_ARGUMENTS.fields_by_name['memo'].containing_oneof = _APPROVE_ARGUMENTS.oneofs_by_name['_memo']
+_BURN_EVENT.oneofs_by_name['_memo'].fields.append(
+  _BURN_EVENT.fields_by_name['memo'])
+_BURN_EVENT.fields_by_name['memo'].containing_oneof = _BURN_EVENT.oneofs_by_name['_memo']
+_MINT_EVENT.oneofs_by_name['_memo'].fields.append(
+  _MINT_EVENT.fields_by_name['memo'])
+_MINT_EVENT.fields_by_name['memo'].containing_oneof = _MINT_EVENT.oneofs_by_name['_memo']
+_TRANSFER_EVENT.oneofs_by_name['_memo'].fields.append(
+  _TRANSFER_EVENT.fields_by_name['memo'])
+_TRANSFER_EVENT.fields_by_name['memo'].containing_oneof = _TRANSFER_EVENT.oneofs_by_name['_memo']
+_APPROVE_EVENT.oneofs_by_name['_memo'].fields.append(
+  _APPROVE_EVENT.fields_by_name['memo'])
+_APPROVE_EVENT.fields_by_name['memo'].containing_oneof = _APPROVE_EVENT.oneofs_by_name['_memo']
 DESCRIPTOR.message_types_by_name['name_arguments'] = _NAME_ARGUMENTS
 DESCRIPTOR.message_types_by_name['name_result'] = _NAME_RESULT
 DESCRIPTOR.message_types_by_name['symbol_arguments'] = _SYMBOL_ARGUMENTS
