@@ -12,6 +12,7 @@ _sym_db = _symbol_database.Default()
 
 
 from koinos import options_pb2 as koinos_dot_options__pb2
+from koinos.mempool import mempool_pb2 as koinos_dot_mempool_dot_mempool__pb2
 from koinos.protocol import protocol_pb2 as koinos_dot_protocol_dot_protocol__pb2
 from koinos.rpc import rpc_pb2 as koinos_dot_rpc_dot_rpc__pb2
 
@@ -22,64 +23,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z;github.com/koinos/koinos-proto-golang/v2/koinos/rpc/mempool',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n$koinos/rpc/mempool/mempool_rpc.proto\x12\x12koinos.rpc.mempool\x1a\x14koinos/options.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"\xaf\x01\n\x13pending_transaction\x12\x31\n\x0btransaction\x18\x01 \x01(\x0b\x32\x1c.koinos.protocol.transaction\x12\x1d\n\x11\x64isk_storage_used\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16network_bandwidth_used\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\"\n\x16\x63ompute_bandwidth_used\x18\x04 \x01(\x04\x42\x02\x30\x01\"\x98\x01\n\'check_pending_account_resources_request\x12\x13\n\x05payer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x1b\n\x08\x62lock_id\x18\x04 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\";\n(check_pending_account_resources_response\x12\x0f\n\x07success\x18\x01 \x01(\x08\"_\n get_pending_transactions_request\x12\x11\n\x05limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1b\n\x08\x62lock_id\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"j\n!get_pending_transactions_response\x12\x45\n\x14pending_transactions\x18\x01 \x03(\x0b\x32\'.koinos.rpc.mempool.pending_transaction\"k\n\x1b\x63heck_account_nonce_request\x12\x13\n\x05payee\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\r\n\x05nonce\x18\x02 \x01(\x0c\x12\x1b\n\x08\x62lock_id\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"/\n\x1c\x63heck_account_nonce_response\x12\x0f\n\x07success\x18\x01 \x01(\x08\"8\n\x1fget_reserved_account_rc_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\".\n get_reserved_account_rc_response\x12\n\n\x02rc\x18\x01 \x01(\x04\"Z\n\x19get_pending_nonce_request\x12\x13\n\x05payee\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x1b\n\x08\x62lock_id\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"+\n\x1aget_pending_nonce_response\x12\r\n\x05nonce\x18\x01 \x01(\x0c\"f\n%get_pending_transaction_count_request\x12\x13\n\x05payee\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x1b\n\x08\x62lock_id\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"7\n&get_pending_transaction_count_response\x12\r\n\x05\x63ount\x18\x01 \x01(\x04\"\xe4\x04\n\x0fmempool_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12\x66\n\x1f\x63heck_pending_account_resources\x18\x02 \x01(\x0b\x32;.koinos.rpc.mempool.check_pending_account_resources_requestH\x00\x12X\n\x18get_pending_transactions\x18\x03 \x01(\x0b\x32\x34.koinos.rpc.mempool.get_pending_transactions_requestH\x00\x12N\n\x13\x63heck_account_nonce\x18\x04 \x01(\x0b\x32/.koinos.rpc.mempool.check_account_nonce_requestH\x00\x12V\n\x17get_reserved_account_rc\x18\x05 \x01(\x0b\x32\x33.koinos.rpc.mempool.get_reserved_account_rc_requestH\x00\x12J\n\x11get_pending_nonce\x18\x06 \x01(\x0b\x32-.koinos.rpc.mempool.get_pending_nonce_requestH\x00\x12\x62\n\x1dget_pending_transaction_count\x18\x07 \x01(\x0b\x32\x39.koinos.rpc.mempool.get_pending_transaction_count_requestH\x00\x42\t\n\x07request\"\x97\x05\n\x10mempool_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12)\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x18.koinos.rpc.error_statusH\x00\x12g\n\x1f\x63heck_pending_account_resources\x18\x03 \x01(\x0b\x32<.koinos.rpc.mempool.check_pending_account_resources_responseH\x00\x12Y\n\x18get_pending_transactions\x18\x04 \x01(\x0b\x32\x35.koinos.rpc.mempool.get_pending_transactions_responseH\x00\x12O\n\x13\x63heck_account_nonce\x18\x05 \x01(\x0b\x32\x30.koinos.rpc.mempool.check_account_nonce_responseH\x00\x12W\n\x17get_reserved_account_rc\x18\x06 \x01(\x0b\x32\x34.koinos.rpc.mempool.get_reserved_account_rc_responseH\x00\x12K\n\x11get_pending_nonce\x18\x07 \x01(\x0b\x32..koinos.rpc.mempool.get_pending_nonce_responseH\x00\x12\x63\n\x1dget_pending_transaction_count\x18\x08 \x01(\x0b\x32:.koinos.rpc.mempool.get_pending_transaction_count_responseH\x00\x42\n\n\x08responseB=Z;github.com/koinos/koinos-proto-golang/v2/koinos/rpc/mempoolb\x06proto3'
+  serialized_pb=b'\n$koinos/rpc/mempool/mempool_rpc.proto\x12\x12koinos.rpc.mempool\x1a\x14koinos/options.proto\x1a\x1ckoinos/mempool/mempool.proto\x1a\x1ekoinos/protocol/protocol.proto\x1a\x14koinos/rpc/rpc.proto\"\x98\x01\n\'check_pending_account_resources_request\x12\x13\n\x05payer\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x18\n\x0cmax_payer_rc\x18\x02 \x01(\x04\x42\x02\x30\x01\x12\x14\n\x08rc_limit\x18\x03 \x01(\x04\x42\x02\x30\x01\x12\x1b\n\x08\x62lock_id\x18\x04 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\";\n(check_pending_account_resources_response\x12\x0f\n\x07success\x18\x01 \x01(\x08\"_\n get_pending_transactions_request\x12\x11\n\x05limit\x18\x01 \x01(\x04\x42\x02\x30\x01\x12\x1b\n\x08\x62lock_id\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"f\n!get_pending_transactions_response\x12\x41\n\x14pending_transactions\x18\x01 \x03(\x0b\x32#.koinos.mempool.pending_transaction\"k\n\x1b\x63heck_account_nonce_request\x12\x13\n\x05payee\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\r\n\x05nonce\x18\x02 \x01(\x0c\x12\x1b\n\x08\x62lock_id\x18\x03 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"/\n\x1c\x63heck_account_nonce_response\x12\x0f\n\x07success\x18\x01 \x01(\x08\"8\n\x1fget_reserved_account_rc_request\x12\x15\n\x07\x61\x63\x63ount\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\".\n get_reserved_account_rc_response\x12\n\n\x02rc\x18\x01 \x01(\x04\"Z\n\x19get_pending_nonce_request\x12\x13\n\x05payee\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x1b\n\x08\x62lock_id\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"+\n\x1aget_pending_nonce_response\x12\r\n\x05nonce\x18\x01 \x01(\x0c\"f\n%get_pending_transaction_count_request\x12\x13\n\x05payee\x18\x01 \x01(\x0c\x42\x04\x80\xb5\x18\x06\x12\x1b\n\x08\x62lock_id\x18\x02 \x01(\x0c\x42\x04\x80\xb5\x18\x03H\x00\x88\x01\x01\x42\x0b\n\t_block_id\"7\n&get_pending_transaction_count_response\x12\r\n\x05\x63ount\x18\x01 \x01(\x04\"\xe4\x04\n\x0fmempool_request\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12\x66\n\x1f\x63heck_pending_account_resources\x18\x02 \x01(\x0b\x32;.koinos.rpc.mempool.check_pending_account_resources_requestH\x00\x12X\n\x18get_pending_transactions\x18\x03 \x01(\x0b\x32\x34.koinos.rpc.mempool.get_pending_transactions_requestH\x00\x12N\n\x13\x63heck_account_nonce\x18\x04 \x01(\x0b\x32/.koinos.rpc.mempool.check_account_nonce_requestH\x00\x12V\n\x17get_reserved_account_rc\x18\x05 \x01(\x0b\x32\x33.koinos.rpc.mempool.get_reserved_account_rc_requestH\x00\x12J\n\x11get_pending_nonce\x18\x06 \x01(\x0b\x32-.koinos.rpc.mempool.get_pending_nonce_requestH\x00\x12\x62\n\x1dget_pending_transaction_count\x18\x07 \x01(\x0b\x32\x39.koinos.rpc.mempool.get_pending_transaction_count_requestH\x00\x42\t\n\x07request\"\x97\x05\n\x10mempool_response\x12,\n\x08reserved\x18\x01 \x01(\x0b\x32\x18.koinos.rpc.reserved_rpcH\x00\x12)\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x18.koinos.rpc.error_statusH\x00\x12g\n\x1f\x63heck_pending_account_resources\x18\x03 \x01(\x0b\x32<.koinos.rpc.mempool.check_pending_account_resources_responseH\x00\x12Y\n\x18get_pending_transactions\x18\x04 \x01(\x0b\x32\x35.koinos.rpc.mempool.get_pending_transactions_responseH\x00\x12O\n\x13\x63heck_account_nonce\x18\x05 \x01(\x0b\x32\x30.koinos.rpc.mempool.check_account_nonce_responseH\x00\x12W\n\x17get_reserved_account_rc\x18\x06 \x01(\x0b\x32\x34.koinos.rpc.mempool.get_reserved_account_rc_responseH\x00\x12K\n\x11get_pending_nonce\x18\x07 \x01(\x0b\x32..koinos.rpc.mempool.get_pending_nonce_responseH\x00\x12\x63\n\x1dget_pending_transaction_count\x18\x08 \x01(\x0b\x32:.koinos.rpc.mempool.get_pending_transaction_count_responseH\x00\x42\n\n\x08responseB=Z;github.com/koinos/koinos-proto-golang/v2/koinos/rpc/mempoolb\x06proto3'
   ,
-  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
+  dependencies=[koinos_dot_options__pb2.DESCRIPTOR,koinos_dot_mempool_dot_mempool__pb2.DESCRIPTOR,koinos_dot_protocol_dot_protocol__pb2.DESCRIPTOR,koinos_dot_rpc_dot_rpc__pb2.DESCRIPTOR,])
 
 
-
-
-_PENDING_TRANSACTION = _descriptor.Descriptor(
-  name='pending_transaction',
-  full_name='koinos.rpc.mempool.pending_transaction',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='transaction', full_name='koinos.rpc.mempool.pending_transaction.transaction', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='disk_storage_used', full_name='koinos.rpc.mempool.pending_transaction.disk_storage_used', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='network_bandwidth_used', full_name='koinos.rpc.mempool.pending_transaction.network_bandwidth_used', index=2,
-      number=3, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='compute_bandwidth_used', full_name='koinos.rpc.mempool.pending_transaction.compute_bandwidth_used', index=3,
-      number=4, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=b'0\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=137,
-  serialized_end=312,
-)
 
 
 _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST = _descriptor.Descriptor(
@@ -135,8 +83,8 @@ _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=315,
-  serialized_end=467,
+  serialized_start=167,
+  serialized_end=319,
 )
 
 
@@ -167,8 +115,8 @@ _CHECK_PENDING_ACCOUNT_RESOURCES_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=469,
-  serialized_end=528,
+  serialized_start=321,
+  serialized_end=380,
 )
 
 
@@ -211,8 +159,8 @@ _GET_PENDING_TRANSACTIONS_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=530,
-  serialized_end=625,
+  serialized_start=382,
+  serialized_end=477,
 )
 
 
@@ -243,8 +191,8 @@ _GET_PENDING_TRANSACTIONS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=627,
-  serialized_end=733,
+  serialized_start=479,
+  serialized_end=581,
 )
 
 
@@ -294,8 +242,8 @@ _CHECK_ACCOUNT_NONCE_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=735,
-  serialized_end=842,
+  serialized_start=583,
+  serialized_end=690,
 )
 
 
@@ -326,8 +274,8 @@ _CHECK_ACCOUNT_NONCE_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=844,
-  serialized_end=891,
+  serialized_start=692,
+  serialized_end=739,
 )
 
 
@@ -358,8 +306,8 @@ _GET_RESERVED_ACCOUNT_RC_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=893,
-  serialized_end=949,
+  serialized_start=741,
+  serialized_end=797,
 )
 
 
@@ -390,8 +338,8 @@ _GET_RESERVED_ACCOUNT_RC_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=951,
-  serialized_end=997,
+  serialized_start=799,
+  serialized_end=845,
 )
 
 
@@ -434,8 +382,8 @@ _GET_PENDING_NONCE_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=999,
-  serialized_end=1089,
+  serialized_start=847,
+  serialized_end=937,
 )
 
 
@@ -466,8 +414,8 @@ _GET_PENDING_NONCE_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1091,
-  serialized_end=1134,
+  serialized_start=939,
+  serialized_end=982,
 )
 
 
@@ -510,8 +458,8 @@ _GET_PENDING_TRANSACTION_COUNT_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1136,
-  serialized_end=1238,
+  serialized_start=984,
+  serialized_end=1086,
 )
 
 
@@ -542,8 +490,8 @@ _GET_PENDING_TRANSACTION_COUNT_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1240,
-  serialized_end=1295,
+  serialized_start=1088,
+  serialized_end=1143,
 )
 
 
@@ -621,8 +569,8 @@ _MEMPOOL_REQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1298,
-  serialized_end=1910,
+  serialized_start=1146,
+  serialized_end=1758,
 )
 
 
@@ -707,18 +655,17 @@ _MEMPOOL_RESPONSE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1913,
-  serialized_end=2576,
+  serialized_start=1761,
+  serialized_end=2424,
 )
 
-_PENDING_TRANSACTION.fields_by_name['transaction'].message_type = koinos_dot_protocol_dot_protocol__pb2._TRANSACTION
 _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.oneofs_by_name['_block_id'].fields.append(
   _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.fields_by_name['block_id'])
 _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.fields_by_name['block_id'].containing_oneof = _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.oneofs_by_name['_block_id']
 _GET_PENDING_TRANSACTIONS_REQUEST.oneofs_by_name['_block_id'].fields.append(
   _GET_PENDING_TRANSACTIONS_REQUEST.fields_by_name['block_id'])
 _GET_PENDING_TRANSACTIONS_REQUEST.fields_by_name['block_id'].containing_oneof = _GET_PENDING_TRANSACTIONS_REQUEST.oneofs_by_name['_block_id']
-_GET_PENDING_TRANSACTIONS_RESPONSE.fields_by_name['pending_transactions'].message_type = _PENDING_TRANSACTION
+_GET_PENDING_TRANSACTIONS_RESPONSE.fields_by_name['pending_transactions'].message_type = koinos_dot_mempool_dot_mempool__pb2._PENDING_TRANSACTION
 _CHECK_ACCOUNT_NONCE_REQUEST.oneofs_by_name['_block_id'].fields.append(
   _CHECK_ACCOUNT_NONCE_REQUEST.fields_by_name['block_id'])
 _CHECK_ACCOUNT_NONCE_REQUEST.fields_by_name['block_id'].containing_oneof = _CHECK_ACCOUNT_NONCE_REQUEST.oneofs_by_name['_block_id']
@@ -788,7 +735,6 @@ _MEMPOOL_RESPONSE.fields_by_name['get_pending_nonce'].containing_oneof = _MEMPOO
 _MEMPOOL_RESPONSE.oneofs_by_name['response'].fields.append(
   _MEMPOOL_RESPONSE.fields_by_name['get_pending_transaction_count'])
 _MEMPOOL_RESPONSE.fields_by_name['get_pending_transaction_count'].containing_oneof = _MEMPOOL_RESPONSE.oneofs_by_name['response']
-DESCRIPTOR.message_types_by_name['pending_transaction'] = _PENDING_TRANSACTION
 DESCRIPTOR.message_types_by_name['check_pending_account_resources_request'] = _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST
 DESCRIPTOR.message_types_by_name['check_pending_account_resources_response'] = _CHECK_PENDING_ACCOUNT_RESOURCES_RESPONSE
 DESCRIPTOR.message_types_by_name['get_pending_transactions_request'] = _GET_PENDING_TRANSACTIONS_REQUEST
@@ -804,13 +750,6 @@ DESCRIPTOR.message_types_by_name['get_pending_transaction_count_response'] = _GE
 DESCRIPTOR.message_types_by_name['mempool_request'] = _MEMPOOL_REQUEST
 DESCRIPTOR.message_types_by_name['mempool_response'] = _MEMPOOL_RESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
-
-pending_transaction = _reflection.GeneratedProtocolMessageType('pending_transaction', (_message.Message,), {
-  'DESCRIPTOR' : _PENDING_TRANSACTION,
-  '__module__' : 'koinos.rpc.mempool.mempool_rpc_pb2'
-  # @@protoc_insertion_point(class_scope:koinos.rpc.mempool.pending_transaction)
-  })
-_sym_db.RegisterMessage(pending_transaction)
 
 check_pending_account_resources_request = _reflection.GeneratedProtocolMessageType('check_pending_account_resources_request', (_message.Message,), {
   'DESCRIPTOR' : _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST,
@@ -912,9 +851,6 @@ _sym_db.RegisterMessage(mempool_response)
 
 
 DESCRIPTOR._options = None
-_PENDING_TRANSACTION.fields_by_name['disk_storage_used']._options = None
-_PENDING_TRANSACTION.fields_by_name['network_bandwidth_used']._options = None
-_PENDING_TRANSACTION.fields_by_name['compute_bandwidth_used']._options = None
 _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.fields_by_name['payer']._options = None
 _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.fields_by_name['max_payer_rc']._options = None
 _CHECK_PENDING_ACCOUNT_RESOURCES_REQUEST.fields_by_name['rc_limit']._options = None
